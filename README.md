@@ -1,6 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to OneLiner.com
 
-You can use the [editor on GitHub](https://github.com/piyush-sri/oneliner.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+A website where you can get prepared for mcq based questions with just reading a less text.
+The primary motto of this website is to encourage people to read less and Score more.
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
