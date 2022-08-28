@@ -1,6 +1,6 @@
 ## Welcome to OneLiner.com
 
-A website where you can get prepared for mcq based questions with just reading a less text.
+A website where you can get prepared for mcq based questions with just reading  less text.
 The primary motto of this website is to encourage people to read less and Score more.
 
 Follow me :<br>
