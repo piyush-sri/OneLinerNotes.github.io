@@ -1,7 +1,126 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>test</title>
+    <style>
+	body{
+	background-color:#FEFEFA;
+	}
+        .container {
+            display: flex;
+            flex-direction: row;
+			
+        }
+        .left {
+           height:670px;
+            display: block;
+            width: 20%;
+            background-color:;
+            overflow-y: scroll;
+        }
+        .right {
+             height:670px;
+            background-color:;
+            display: block;
+            width: 100%;
+            overflow-y: scroll;
+        }
+		.llist{
+		background:white;
+		}
+		
+    </style>
+</head>
+<body>
+<div>
+<img src="images/logo.png"/>
+<font SIZE=20>ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</font>
+ </div>
+ <nav><ul class="hov">
+ <li><a href="#">Home</a></li>
+ <li class="ol"><a href="#">Courses</a>
+ <ul class="il">
+   <li class="ool">HTML
+  <ul class="iil">
+  <li>HTML Notes</li>
+   <li>Video Lectures</li>
+    <li>HTML Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>HTML MCQs</li>
+	   <li>Mock Test</li>
+  </ul>
+  </li>
+  <li class="ool">CSS
+  <ul class="iil">
+  <li>CSS Notes</li>
+   <li>Video Lectures</li>
+    <li>HTML and CSS Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>CSS MCQs</li>
+	   <li>Mock Test</li>
+  </ul>
+  </li>
+   <li class="ool">JavaScript
+   
+  <ul class="iil">
+  <li>JavaScript Notes</li>
+   <li>Video Lectures</li>
+    <li> Javascript Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>JavaScript MCQs</li>
+	   <li>Mock Test</li>
+  </ul></li>
+ 	    <li class="ool">Docker
+		<ul class="iil">
+  <li>Docker Notes</li>
+   <li>Video Lectures</li>
+    <li>Docker Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>Docker MCQs</li>
+	   <li>Mock Test</li>
+  </ul></li>
+ </ul>
+ 
+ </li>
+ <li><a href="#">Blogs</a></li>
+ <li><a href="#">Projects</a></li>
+  <li><a href="#">Roadmaps</a></li>
+   <li><a href="#">Jobs</a></li>
+    <li><a href="#">About Us</a></li>
+ </ul>
+ 
+    </nav>
+</header>
+    <div class="container">
+	
+        <div class="left"> 
+		<h1>Topics</h1>
+		<table cellpadding="10px" border="1px" width="100%">
+		<a href="#"><tr><td>HTML Mcqs</td></tr></a>
+			<tr><td>Beginner</td></tr>
+				<tr><td>Intermediate</td></tr>
+					<tr><td>Advanced</td></tr>
+					<tr><td>Formatting Tags</td></tr>
+					<tr><td>Heading Tags</td></tr>
+					<tr><td>Difference between Block Level and Inline Tags</td></tr>
+					<tr><td>Block Level Tags</td></tr>
+					<tr><td>Inline Tags</td></tr>
+					<tr><td>Marquee Tag</td></tr>
+					<tr><td>HTML List Tags</td></tr>
+					<tr><td>Table Tags</td></tr>
+					<tr><td>Form Tags</td></tr>
+					<tr><td>Frameset Tag</td></tr>
+					<tr><td>Iframe Tag</td></tr>
+		</table>
+		
+		</div>
+        <div class="right">
 <head>
 	 <link rel="icon" type="image/png" href="C:\Users\piyus\OneDrive\Desktop\internshala web devleopment\HatchfulExport-All\logo.png"/>
 	<title>OneLiner HTML MSQs</title>
+	  
+ 
+</head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -274,33 +393,16 @@ $(document).ready(function(){
  });
 <!--$("*")--->Selects all elements,$(this)---selects the current elements,$(":button")---selects all the buttons element-->
 </script>
+<header>
 </head>
 <body>
-<header>
-<img src="images/logo.png"/>
-<font SIZE=20>ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</font>
-<nav>
-<ul>
-  <li><a href="secondwebpage.html">HTML Notes</a></li>
-  <li><a href="#">HTML MCQs</a></li>
-  <li><a href="#">Contact Us</a></li>
-  <li><a href="#">My Portfolio Website</a></li>
-  <li><a href="#">Question Sets</a></li>
-   <li><a href="#">Courses</a></li>
-  <li><a href="https://www.jdoodle.com/html-css-javascript-online-editor/">HTML/CSS/Javascript IDLE</a></li>
-</ul>
-</nav>
-</header>
-
 <style>
 img{
 height:100px;
 width:100px;
 display:inline-block;
 }
-body{
-  background-image:url("https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-}
+
 button{
 background-color:#E6E6FA;
 padding:0.4em;
@@ -310,36 +412,77 @@ p{
 color:Blue;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#333;
-}
 
-nav li {
-  float: left;
-}
+  a{
+  color:white;
+  text-decoration:none;
+  font-family:consolas;
+  }
+  .hov li{
+  background:purple;
+  list-style-type:none;
+  display:inline-block;
+  positive:relative;
+  width:100px;
+  text-align:center;
+  color:white;
+  
+  }
+  li:hover{
+  background-color:#fdaff1;
+  }
+  .ol{
+  position:relative;
+  }
+   .il li:hover{
+  background-color:#fdaff1;
+  color:white;
+  }
+  .il{
+  display:none;
 
-nav li a {
-  display: block;
-  color: white;
+  list-style-type:none;
+  position:absolute;
+  left:-2px;
+  }
+  .ol:hover .il{
+  display:block;
+  
+  list-style-type:none;
+ position:absolute;
+ padding:0;
+  }
+  .il li{
+  display:block;
+  }
+  .iil{
+  display:none;
+  position:absolute;
+  top:0;
+  left:100%;
+  padding:0;
+  }
+  .ool{
+  position:relative;
+  }
+  .ool:hover .iil{
+  display:block;
+  }
+  nav{
+  background-color:purple;
+  }
+ div.container {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-nav li a:hover {
-  background-color: #111;
+ol{
+  display: inline-block;
+  text-align: left;
 }
-</style>
-<style>
-body{
-  background-image:url("https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-}
-</style>
+  
+  </style>
+
+
 <h3>1.HTML Stands for:</h3>
 <ol type="A">
 <li>Hyper Tone Mangageable Language</li>
@@ -347,7 +490,7 @@ body{
 <li>Hyper Text Markup Language</li>
 <li>Hyper Text Machine Language</li>
 </ol>
-<p id="a">Option 3, Hyper Text Markup Language</p>
+<p id="a">Option 3, Hyper Text Markup Language</p><br/>
 <button id="h">Hide Answer</button>
 <button id="sw">show Answer</button>
  <br><br>
@@ -359,7 +502,7 @@ body{
 <li>3</li>
 <li>2</li>
 </ol>
-<p id="b">Option 3, ordered list, unordered list, description list</p>
+<p id="b">Option 3, ordered list, unordered list, description list</p><br/>
 <button id="hh">Hide Answer</button>
 <button id="ssw">show Answer</button>
  <br><br>
@@ -371,7 +514,7 @@ body{
 <li>body,head,html</li>
 <li>html,head,body</li>
 </ol>
-<p id="c">Option 4, html ,head,body </p>
+<p id="c">Option 4, html ,head,body </p><br/>
 <button id="hhh">Hide Answer</button>
 <button id="sssw">show Answer</button>
  <br><br>
@@ -383,7 +526,7 @@ body{
 <li>br</li>
 <li>bl</li>
 </ol>
-<p id="d">Option 3, br tag is used to break line </p>
+<p id="d">Option 3, br tag is used to break line </p><br/>
 <button id="aa">Hide Answer</button>
 <button id="bb">show Answer</button>
  <br><br>
@@ -395,7 +538,7 @@ body{
 <li>ul</li>
 <li>dd</li>
 </ol>
-<p id="e">Option 3, ul tag--unordered list </p>
+<p id="e">Option 3, ul tag--unordered list </p><br/>
 <button id="aaa">Hide Answer</button>
 <button id="bbb">show Answer</button>
  <br><br>
@@ -407,7 +550,7 @@ body{
 <li>/</li>
 <li><></li>
 </ol>
-<p id="f">Option 3, /-forward slash is used in closing tag </p>
+<p id="f">Option 3, /-forward slash is used in closing tag </p><br/>
 <button id="aaaa">Hide Answer</button>
 <button id="bbbb">show Answer</button>
  <br><br>
@@ -419,7 +562,7 @@ body{
 <li>dl</li>
 <li>ol</li>
 </ol>
-<p id="g">Option 4, ol-- ordered list </p>
+<p id="g">Option 4, ol-- ordered list </p><br/>
 <button id="ab">Hide Answer</button>
 <button id="bc">show Answer</button>
  <br><br>
@@ -431,7 +574,7 @@ body{
 <li>dl</li>
 <li>ol</li>
 </ol>
-<p id="gg">Option 2, is correct. </p>
+<p id="gg">Option 2, is correct. </p><br/>
 <button id="abc">Hide Answer</button>
 <button id="bca">show Answer</button>
  <br><br>
@@ -443,7 +586,7 @@ body{
 <li>Vertical Line</li>
 <li>Horizontal Ruler</li>
 </ol>
-<p id="ggg">Option 2, Hr tag is use to insert horizontal line </p>
+<p id="ggg">Option 2, Hr tag is use to insert horizontal line </p><br/>
 <button id="abcc">Hide Answer</button>
 <button id="bcaa">show Answer</button>
  <br><br>
@@ -458,7 +601,7 @@ body{
 <li>disc, circle, square</li>
 <li>All of the above</li>
 </ol>
-<p id="gggg">Option 3,type=circle,disc,square </p>
+<p id="gggg">Option 3,type=circle,disc,square </p><br/>
 <button id="abccc">Hide Answer</button>
 <button id="bcaaa">show Answer</button>
  <br><br>
@@ -470,7 +613,7 @@ body{
 <li>&lt;ol type = "1" num = "4"&gt;</li>
 <li>&lt;ol type = "1" start = 4 &gt;</li>
 </ol>
-<p id="gf">Option 4,type=circle,disc,square </p>
+<p id="gf">Option 4,type=circle,disc,square </p><br/>
 <button id="ca">Hide Answer</button>
 <button id="ac">show Answer</button>
  <br><br>
@@ -482,7 +625,7 @@ body{
 <li>.htm</li>
 <li>both b and c</li>
 </ol>
-<p id="gff">Option 4 is correct </p>
+<p id="gff">Option 4 is correct </p><br/>
 <button id="caa">Hide Answer</button>
 <button id="acc">show Answer</button>
  <br><br>
@@ -494,7 +637,7 @@ body{
 <li>case insensitive</li>
 <li>Uppercase</li>
 </ol>
-<p id="gfff">Option 3, is correct &lt;body&gt; and &lt;BODY&gt; are same </p>
+<p id="gfff">Option 3, is correct &lt;body&gt; and &lt;BODY&gt; are same </p><br/>
 <button id="caaa">Hide Answer</button>
 <button id="accc">show Answer</button>
  <br><br>
@@ -506,7 +649,7 @@ body{
 <li>&lt;html&gt;</li>
 <li>&lt;body&gt;</li>
 </ol>
-<p id="fg">Option 3, is correct &lt;html&gt; is the root element </p>
+<p id="fg">Option 3, is correct &lt;html&gt; is the root element </p><br/>
 <button id="cb">Hide Answer</button>
 <button id="mc">show Answer</button>
  <br><br>
@@ -518,7 +661,7 @@ body{
 <li>Using &lt;/-- and -/-&gt;</li>
 <li>Using&lt;!-- and -!&gt;</li>
 </ol>
-<p id="fgg">Option 2, is correct &lt;!--&gt;  </p>
+<p id="fgg">Option 2, is correct &lt;!--&gt;  </p><br/>
 <button id="cbb">Hide Answer</button>
 <button id="mcc">show Answer</button>
  <br><br>
@@ -530,7 +673,7 @@ body{
 <li>&lt;sup&gt;</li>
 <li>&lt;br&gt;</li>
 </ol>
-<p id="fggg">Option 3, For superscript we use&lt;sup&gt; </p>
+<p id="fggg">Option 3, For superscript we use&lt;sup&gt; </p><br/>
 <button id="cbbb">Hide Answer</button>
 <button id="mccc">show Answer</button>
  <br><br>
@@ -542,7 +685,7 @@ body{
 <li>markup</li>
 <li>low level</li>
 </ol>
-<p id="ffgg">Option 3, HTML  is a Markup Language. </p>
+<p id="ffgg">Option 3, HTML  is a Markup Language. </p><br/>
 <button id="ccbb">Hide Answer</button>
 <button id="mmc">show Answer</button>
  <br><br>
@@ -554,7 +697,7 @@ body{
 <li>Denis Ritchie</li>
 <li>All of the above</li>
 </ol>
-<p id="fffg">Option 2, HTML  is invented by Tim Berneer's Lee </p>
+<p id="fffg">Option 2, HTML  is invented by Tim Berneer's Lee </p><br/>
 <button id="ccb">Hide Answer</button>
 <button id="mmm">show Answer</button>
  <br><br>
@@ -566,7 +709,7 @@ body{
 <li>Advanced Tag</li>
 <li>Other Tag</li>
 </ol>
-<p id="ffffg">Option 2, Tags with no content is known as Empty Tag </p>
+<p id="ffffg">Option 2, Tags with no content is known as Empty Tag </p><br/>
 <button id="cccb">Hide Answer</button>
 <button id="mmmb">show Answer</button>
  <br><br>
@@ -578,7 +721,7 @@ body{
 <li>&lt;b&gt;</li>
 <li>&lt;strike&gt;</li>
 </ol>
-<p id="fffff">Option 3, Tags with no extra importance is defined using &lt;b&gt; Tag </p>
+<p id="fffff">Option 3, Tags with no extra importance is defined using &lt;b&gt; Tag </p><br/>
 <button id="ccccb">Hide Answer</button>
 <button id="mmmmb">show Answer</button>
  <br><br>
@@ -590,7 +733,7 @@ body{
 <li>&lt;b&gt;</li>
 <li>&lt;strike&gt;</li>
 </ol>
-<p id="cci">Option 1, Tags with  extra importance is defined using &lt;strong&gt; Tag </p>
+<p id="cci">Option 1, Tags with  extra importance is defined using &lt;strong&gt; Tag </p><br/>
 <button id="cbccb">Hide Answer</button>
 <button id="mbmmb">show Answer</button>
  <br><br>
@@ -602,7 +745,7 @@ body{
 <li>&lt;mark&gt;</li>
 <li>&lt;highlighted&gt;</li>
 </ol>
-<p id="jk">Option 3, To highlight text we use &lt;mark&gt; Tag </p>
+<p id="jk">Option 3, To highlight text we use &lt;mark&gt; Tag </p><br/>
 <button id="db">Hide Answer</button>
 <button id="nm">show Answer</button>
  <br><br>
@@ -614,7 +757,7 @@ body{
 <li>&lt;p&gt;H&lt;below&gt;2&lt;/below&gt;O&lt;/p&gt;</li>
 <li>&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt/p&gt;</li>
 </ol>
-<p id="jkk">Option 4, To highlight text we use &lt;sup&gt; Tag </p>
+<p id="jkk">Option 4, To highlight text we use &lt;sup&gt; Tag </p><br/>
 <button id="dbb">Hide Answer</button>
 <button id="nmm">show Answer</button>
  <br><br>
@@ -626,7 +769,7 @@ body{
 <li>&lt;p&gt;&lt;cut&gt;Hello&lt;/cut&gt;&lt;ins&gt;Hi!&lt;/ins&gt;&lt;/p&gt;</li>
 <li>Both a and b</li>
 </ol>
-<p id="jkkk">Option 4, is correct. </p>
+<p id="jkkk">Option 4, is correct. </p><br/>
 <button id="ddb">Hide Answer</button>
 <button id="nmv">show Answer</button>
  <br><br>
@@ -638,7 +781,7 @@ body{
 <li>&lt;link&gt;</li>
 <li>&lt;href&gt;</li>
 </ol>
-<p id="l">Option 1, &lt;a&gt; is used to create hyperlinks.</p>
+<p id="l">Option 1, &lt;a&gt; is used to create hyperlinks.</p><br/>
 <button id="ll">Hide Answer</button>
 <button id="lll">show Answer</button>
  <br><br>
@@ -650,7 +793,7 @@ body{
 <li>&lt;a href="url"&gt;link text&lt;/a&gt;</li>
 <li>&lt;a srclink="url"&gt;link text&lt;/a&gt;</li>
 </ol>
-<p id="k">Option 3, &lt;a href="url"&gt;link text&lt;/a&gt;  this syntax is correct</p>
+<p id="k">Option 3, &lt;a href="url"&gt;link text&lt;/a&gt;  this syntax is correct</p><br/>
 <button id="kk">Hide Answer</button>
 <button id="kkk">show Answer</button>
  <br><br>
@@ -662,7 +805,7 @@ body{
 <li>To define destination URL</li>
 <li>All of the above</li>
 </ol>
-<p id="x">Option 3, href-->hypertext reference, used to contain url of the documents</p>
+<p id="x">Option 3, href-->hypertext reference, used to contain url of the documents</p><br/>
 <button id="y">Hide Answer</button>
 <button id="z">show Answer</button>
  <br><br>
@@ -674,9 +817,15 @@ body{
 <li>&lt;img src="url" alt="alternatetext" /&gt;</li>
 <li>All of the above</li>
 </ol>
-<p id="xx">Option 3, &lt;img src="url" alt="alternatetext" /&gt; </p>
+<p id="xx">Option 3, &lt;img src="url" alt="alternatetext" /&gt; </p><br/>
 <button id="yy">Hide Answer</button>
 <button id="zz">show Answer</button>
  <br><br>
+ </table>
+ </div> 
+
+
+
+
 </body>
 </html>
