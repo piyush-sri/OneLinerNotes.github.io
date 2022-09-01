@@ -10,21 +10,21 @@
 	}
         .container {
             display: flex;
-            flex-direction:;
+            flex-direction:row;
 			
         }
 		.footer{
 		flex-direction:column;
 		}
         .left {
-           height:670px;
+           height:70 vh;
             display: block;
             width: 20%;
             background-color:;
             overflow-y: scroll;
         }
         .right {
-             height:670px;
+             height:90vh;
             background-color:;
             display: block;
             width: 100%;
@@ -37,19 +37,26 @@
 		color:blue;
 		}
 		nav ul li{
-		height:3vh;
-		width:18vw;
-		font-size:2vw;
+		height:10 vh;
+		width:10 vw;
+		font-size:1em;
 		text-align:center;
 		}
 		
+		img{
+		display:inline-block;
+		}
+		#g{
+		display:inline-block;
+		margin:0px;
+		}
+	
     </style>
 </head>
 <body>
-<div>
-<img src="images/logo.png" width="50px" height="60px"/>
-<h3>ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</h3>
- </div>
+<header>
+<img src="images/logo.png" width="50vw" height="60vh"/>
+<h3 id="g">ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</h3>
  <nav><ul class="hov">
  <li><a href="#">Home</a></li>
  <li class="ol"><a href="#">Courses</a>
@@ -148,7 +155,7 @@
   list-style-type:none;
   display:inline-block;
   positive:relative;
-  width:100px;
+  width:10vw;
   text-align:center;
   color:white;
   
@@ -165,7 +172,6 @@
   }
   .il{
   display:none;
-
   list-style-type:none;
   position:absolute;
   left:-2px;
@@ -196,10 +202,11 @@
   nav{
   background-color:purple;
   }
+  .footer{
+  width:1 vw;
+  }
   
   </style> 
-<header>
-
 <p>
 <h3 id="a1">What is HTML?</h3>
 <ul>
@@ -243,22 +250,7 @@ This is bold Tag of HTML--->This is content
 </li>
 </ul>
 </p>
-
 <p>
-<h3 id="a5">Basic Structure of HTML</h3>
-<ul>
-<pre>
-&lt;html&gt;
-	&lt;head&gt;------&lt;/head&gt;
-	&lt;body&gt;------&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-<ul>
-<li>&lt;html&gt;--->It is the Root Element.</li>
-<li>&lt;head&gt;--->Use to Add Meta and Title for the webpage.It is the child tag of HTML</li>
-<li>&lt;body&gt;--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
-</ul>
-
 <h3 id="a6">Types of HTML Tags :</h3>
 <ol>
 <li id="a6.1">Paired or container Tag<br/>
@@ -293,9 +285,49 @@ The tag which doesn't produce line break are called Inline Level Tag.<br>
 
 </li>
 </ol>
-
-Updating it Day by Day
 </p>
+
+<p>
+<h3>Basic Structure of HTML</h3>
+<center><img src="images/one.png" alt="check path please" height="50%" width="50%"/></center>
+<ul>
+<li>&lt;html&gt;--->It represents the root of an HTML document.</li>
+<li>&lt;head&gt;--->It is used to define the head portion of the document which contains information related to the document. 
+The &lt;head&gt; tag contains other head elements such as &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;style&gt; &lt;link&gt; etc. 
+In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> element can be omitted.</li>
+<li>&lt;body&gt;--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
+</ul>
+</p>
+<p>
+<h3> Basic Structure of HTML 5</h3>
+<center><img src="images/two.png" alt="error" height="60%" width="60%"/></center>
+
+<figcaption>Example 2:</figcaption>
+<center><img src="images/three.jpg" height="60%" width="60%"/></center>
+
+<h3>HTML 5 Elements:</h3>
+<ul>
+<li>html ---> It is the root element of our webpage.</li>
+<li>head ---> head tag is used to add title to our webpage and add fevicon icon .</li>
+<li>title ---> title tag is used to add title to our webpage and the title is shown in the tab bar.</li>
+<li>meta --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.</li>
+<li>link ---> Use to add external css file into our html file</li>
+<li>body ---> it contain all the content present in our webpage.</li>
+<li>header ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars</li>
+<li>nav ---> nav tag is used to create navigation bars</li>
+<li>main --->this tag contain the main content of our webpage that is content between header and footer tag .</li>
+<li>section ---> section tag is use to divide webpage into different sections</li>
+<li>article ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.</li>
+<li>aside ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</li>
+</ul>
+</p>
+<p>
+<h3>Example to understand about these html 5 tags in detail:</h3>
+Part:1 Creating a header for our website which consist of header and navbar
+
+
+</p>
+
 </div>
 
 </div>
@@ -307,13 +339,17 @@ width:1 em;
 text-align:center;
 }
 
+#h{
+color:white;
+font-size:1em;
+}
 
 </style>
 <footer class="footer" style="background-color:purple; width:100%">
-<center><h1>Designed And Developed by Piyush Srivastava</h1>
-<font color="white">
+<center><h3>Designed And Developed by Piyush Srivastava</h3>
+<p id="h">
 Founder:Piyush Srivastava<br>
-Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </font>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p>
 <table class="tbl">
 <tr><td>Social Links</td><td>Learn</td><td>Interview Preperation</td><td>Languages</td><td>Certifications</td><td>Careers</td></tr>
 <tr><td>LinkedIn</td><td>FrontEnd</td><td>DSA SHEETS</td><td>Languages</td><td>Certifications</td><td>Remote Jobs</td></tr>
