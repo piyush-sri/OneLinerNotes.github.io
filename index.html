@@ -5,12 +5,17 @@
     <style>
 	body{
 	background-color:#FEFEFA;
+	height:100vh;
+	width:100vw;
 	}
         .container {
             display: flex;
-            flex-direction: row;
+            flex-direction:;
 			
         }
+		.footer{
+		flex-direction:column;
+		}
         .left {
            height:670px;
             display: block;
@@ -27,6 +32,15 @@
         }
 		.llist{
 		background:white;
+		}
+		.b a{
+		color:blue;
+		}
+		nav ul li{
+		height:3vh;
+		width:18vw;
+		font-size:2vw;
+		text-align:center;
 		}
 		
     </style>
@@ -95,22 +109,22 @@
 	
         <div class="left"> 
 		<h1>Topics</h1>
-		<table cellpadding="10px" border="1px" width="100%">
-		<a href="#"><tr><td>Introduction</td></tr></a>
-			<tr><td>Types of Tags in HTML</td></tr>
-				<tr><td>HTML File Structure</td></tr>
-					<tr><td>HTML Basic Tags</td></tr>
-					<tr><td>Formatting Tags</td></tr>
-					<tr><td>Heading Tags</td></tr>
-					<tr><td>Difference between Block Level and Inline Tags</td></tr>
-					<tr><td>Block Level Tags</td></tr>
-					<tr><td>Inline Tags</td></tr>
-					<tr><td>Marquee Tag</td></tr>
-					<tr><td>HTML List Tags</td></tr>
-					<tr><td>Table Tags</td></tr>
-					<tr><td>Form Tags</td></tr>
-					<tr><td>Frameset Tag</td></tr>
-					<tr><td>Iframe Tag</td></tr>
+		<table cellpadding="10px" border="1px" width="100%" class="b">
+		<a href="#"><tr><td><a href="#">Introduction</a></td></tr></a>
+			<tr><td><a href="#">Types of Tags in HTML</a></td></tr>
+				<tr><td><a href="#">HTML File Structure</a></td></tr>
+					<tr><td><a href="#">HTML Basic Tags</a></td></tr>
+					<tr><td><a href="#">Formatting Tags</a></td></tr>
+					<tr><td><a href="#">Heading Tags</a></td></tr>
+					<tr><td><a href="#">Difference between Block Level and Inline Tags</a></td></tr>
+					<tr><td><a href="#">Block Level Tags</a></td></tr>
+					<tr><td><a href="#">Inline Tags</a></td></tr>
+					<tr><td><a href="#">Marquee Tag</a></td></tr>
+					<tr><td><a href="#">HTML List Tags</a></td></tr>
+					<tr><td><a href="#">Table Tags</a></td></tr>
+					<tr><td><a href="#">Form Tags</a></td></tr>
+					<tr><td><a href="#">Frameset Tag</a></td></tr>
+					<tr><td><a href="#">Iframe Tag</a></td></tr>
 		</table>
 		
 		</div>
@@ -124,7 +138,7 @@
 
 
 <style>
-  a{
+ a{
   color:white;
   text-decoration:none;
   font-family:consolas;
@@ -183,11 +197,6 @@
   background-color:purple;
   }
   
- footer{
- display:flex;
- flex-direction:col;
- 
- }
   </style> 
 <header>
 
@@ -291,8 +300,34 @@ Updating it Day by Day
 </p>
 </div>
 
+</div>
+<style>
+.tbl tr td{
+ font-face: consolas;
+ color:white;
+width:40px;
+text-align:center;
+}
 
 
+</style>
+<footer class="footer" style="background-color:purple; width:100%">
+<center><h1>Designed And Developed by Piyush Srivastava</h1>
+<font color="white">
+Founder:Piyush Srivastava<br>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </font>
+<table class="tbl">
+<tr><td>Social Links</td><td>Learn</td><td>Interview Preperation</td><td>Languages</td><td>Certifications</td><td>Careers</td></tr>
+<tr><td>LinkedIn</td><td>FrontEnd</td><td>DSA SHEETS</td><td>Languages</td><td>Certifications</td><td>Remote Jobs</td></tr>
+<tr><td>Twitter</td><td>BackEnd</td><td>ROADMAPS</td><td>JavaScript</td><td>O Level,A level</td><td>Job Portals</td></tr>
+<tr><td>Github</td><td>Docker</td><td>Interview Experience</td><td>Python</td><td>B level</td><td>Personal Blogs</td></tr>
+<tr><td>EmailId</td><td>Linux</td><td>Internships</td><td>
+ava</td><td>Microsoft Python certification,Oracle Certifications</td><td>Join community</td></tr>
+</table>
+
+
+</center>
+</footer>
 
 
 </body>
