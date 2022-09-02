@@ -24,7 +24,7 @@
             overflow-y: scroll;
         }
         .right {
-             height:90vh;
+             height:100vh;
             background-color:;
             display: block;
             width: 100%;
@@ -50,7 +50,9 @@
 		display:inline-block;
 		margin:0px;
 		}
-	
+	body{
+	text-align:justify;
+	}
     </style>
 </head>
 <body>
@@ -114,13 +116,13 @@
 </header>
     <div class="container">
 	
-        <div class="left"> 
+       <div class="left"> 
 		<h1>Topics</h1>
 		<table cellpadding="10px" border="1px" width="100%" class="b">
-		<a href="#"><tr><td><a href="#">Introduction</a></td></tr></a>
-			<tr><td><a href="#">Types of Tags in HTML</a></td></tr>
-				<tr><td><a href="#">HTML File Structure</a></td></tr>
-					<tr><td><a href="#">HTML Basic Tags</a></td></tr>
+		<a href="#"><tr><td><a href="#a1">Introduction</a></td></tr></a>
+			<tr><td><a href="#a6">Types of Tags in HTML</a></td></tr>
+				<tr><td><a href="#a7">Structure of HTML</a></td></tr>
+					<tr><td><a href="#a8">Structure of HTML5</a></td></tr>
 					<tr><td><a href="#">Formatting Tags</a></td></tr>
 					<tr><td><a href="#">Heading Tags</a></td></tr>
 					<tr><td><a href="#">Difference between Block Level and Inline Tags</a></td></tr>
@@ -254,42 +256,54 @@ This is bold Tag of HTML--->This is content
 <h3 id="a6">Types of HTML Tags :</h3>
 <ol>
 <li id="a6.1">Paired or container Tag<br/>
-<pre>
-ex:	&lt;html&gt; ---&lt;/html&gt;
-	&lt;head&gt; ---&lt;/head&gt;
-	&lt;body&gt; ---&lt;/body&gt;
+
+
+ex:	&lt;html&gt; ---&lt;/html&gt; <br>
+	&lt;head&gt; ---&lt;/head&gt;<br>
+	&lt;body&gt; ---&lt;/body&gt;<br>
 	&lt;b&gt; ---&lt;/b&gt;
-</pre>
+
 </li>
 <li id="a6.2">Empty or Singular Tag<br/>
-<pre>
-ex: &lt;img/&gt; --->Use to add images on webpage.
-	&lt;br/&gt; --->Use to Break Line
+
+ex: &lt;img/&gt; --->Use to add images on webpage.<br>
+	&lt;br/&gt; --->Use to Break Line<br>
 	&lt;hr/&gt;--->Use to add Horizontal Line
-</pre>
+
 </li>
 <li id="a6.3">Block Level Tag<br/>
 The Tag that produces line break itself are known as Block Level Tag<br/>
-<pre>
-ex:	The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break. 
- &lt;h1&gt;&lt;/h1&gt; ---->Use to add Biggest Heading.
+
+ex:	The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break. <br>
+ &lt;h1&gt;&lt;/h1&gt; ---->Use to add Biggest Heading.<br>
  &lt;div&gt;&lt;/div&gt;--->Use to create division in webpage. 
-</pre>
+
 </li>
 <li id="a6.4">Inline Level Tag<br/>
 The tag which doesn't produce line break are called Inline Level Tag.<br>
-<pre>
-	&lt;b&gt;---&lt;/b&gt; --->use to bold a text.
+
+	&lt;b&gt;---&lt;/b&gt; --->use to bold a text.<br>
 	&lt;img/&gt; --->Use to insert image in the webpage
-</pre>
+
 
 </li>
 </ol>
 </p>
+<style>
+p{
+font-size:100%;
+margin:0;
+padding:0;
+border:0;
+}
+f{
+font-size:100%
+}
+</style>
 
-<p>
+<p id="a7">
 <h3>Basic Structure of HTML</h3>
-<center><img src="images/one.png" alt="check path please" height="50%" width="50%"/></center>
+<center><img src="one.png" alt="check path please" sizes="(max-width: 800px) 90vw, 800px" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 <ul>
 <li>&lt;html&gt;--->It represents the root of an HTML document.</li>
 <li>&lt;head&gt;--->It is used to define the head portion of the document which contains information related to the document. 
@@ -298,12 +312,12 @@ In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> ele
 <li>&lt;body&gt;--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
 </ul>
 </p>
-<p>
+<p id="a8">
 <h3> Basic Structure of HTML 5</h3>
-<center><img src="images/two.png" alt="error" height="60%" width="60%"/></center>
+<center><img src="two.png" alt="error" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 
 <figcaption>Example 2:</figcaption>
-<center><img src="images/three.jpg" height="60%" width="60%"/></center>
+<center><img src="three.jpg" sizes="(max-width: 900px) 90vw,900px" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 
 <h3>HTML 5 Elements:</h3>
 <ul>
@@ -322,6 +336,76 @@ In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> ele
 <li>aside ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</li>
 </ul>
 </p>
+<p id="f">
+<h3>Formatting Tags in HTML5:</h3>
+<ol>
+<li><h3>&lt;strong&gt; and &lt;b&gt; tag:</h3><br>
+These tags are used to apply bold formatting on a text enclosed between strong or b tag.
+<br>
+Ex: As Shown in the figure below.<br>
+<img src="images/four.png" alt="error" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;" />
+<br>
+Output of the above code :<br>
+<img src="images/four1.png" alt="error" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+</li>
+
+<li><h3>&lt;i&gt; and &lt;em&gt;</h3><br>
+These tags are used to add italic and emphasized formatting on the text present between these tags.<br>
+<h3>Example of i and em tag in html.</h3>
+<img src="images/five.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<br>
+<h3>Output:</h3>
+<img src="images/five1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+</li>
+<li><h3>
+&lt;u&gt; and &lt;ins&gt;</h3><br>
+These tags are used to used to underline the content present between them,ins stands for inserted text.<br>
+<h3>Example:</h3>
+<br>
+<img src="images/six.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<br>
+Output:<br>
+<img src="images/six1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+
+</li>
+<li><h3>
+&lt;del&gt; and &lt;strike&gt;</h3><br>
+These tags are used to add a line in the middle of the text present between these tags.
+<h3>For Example:</h3>
+<br>
+<img src="images/seven.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;" /><br>
+Output is:<br>
+<img src="images/seven1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+
+</li>
+<li><h3>
+&lt;sup&gt; and &lt;sub&gt;</h3><br>
+sup tag is used to make text superscript,whereas sub tag is use to make text subscript.
+<h3>Example:</h3><br>
+<img src="images/eight.png"  sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"><br>
+Output:<br>
+<img src="images/eight1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+</li>
+<li><h3>
+&lt;big&gt; and &lt;small&gt;</h3><br>
+big tag is use to increase the font size of text one more than the remaining text.<br>
+small tag is use to decrease the font size of text one less than the remaining text.<br>
+<h3>Example:</h3><br>
+<img src="images/nine.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/><br>
+Output:<br>
+<img src="images/nine1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+</li>
+<li><h3>
+&lt;mark&gt; tag:</h3><br>
+This tag is used to highlight a text.<br>
+<h3>Example:</h3><br>
+<img src="images/ten.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/><br>
+Output:<br>
+<img src="images/ten1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+</li>
+</ol>
+
+</p>
 </div>
 
 </div>
@@ -335,7 +419,10 @@ text-align:center;
 
 #h{
 color:white;
-font-size:1em;
+font-size:100%;
+}
+.tbl{
+font-size:100%
 }
 
 </style>
