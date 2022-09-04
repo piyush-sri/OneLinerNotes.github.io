@@ -16,13 +16,13 @@
 		.footer{
 		flex-direction:column;
 		}
-        .left {
+       <!-- .left {
            height:70 vh;
             display: block;
             width: 20%;
             background-color:;
             overflow-y: scroll;
-        }
+        }-->
         .right {
              height:100vh;
             background-color:;
@@ -116,7 +116,7 @@
 </header>
     <div class="container">
 	
-       <div class="left"> 
+    <!--<div class="left"> 
 		<h1>Topics</h1>
 		<table cellpadding="10px" border="1px" width="100%" class="b">
 		<a href="#"><tr><td><a href="#a1">Introduction</a></td></tr></a>
@@ -136,7 +136,7 @@
 					<tr><td><a href="#">Iframe Tag</a></td></tr>
 		</table>
 		
-		</div>
+		</div>-->
         <div class="right">
 <head>
 	 <link rel="icon" type="image/png" href="C:\Users\piyus\OneDrive\Desktop\internshala web devleopment\HatchfulExport-All\logo.png"/>
@@ -207,7 +207,9 @@
   .footer{
   width:1 vw;
   }
-  
+  img{
+  align:center;
+  }
   </style> 
 <p>
 <h3 id="a1">What is HTML?</h3>
@@ -245,9 +247,9 @@
 <li>HTML tags are like keywords which defines that how web browser will format and display the content.</li>
 <li>With the help of tags, a web browser can distinguish between an HTML content and a simple content.</li>
 <li>HTML tags contain three main parts: opening tag, content and closing tag.</li>
-<li>Ex: &lt;b&gt; This is bold Tag of HTML &lt;/b&gt;<br/>
-&lt;b&gt; --->It is opening tag<br/>
-&lt;/b&gt; --->It is closing tag<br/>
+<li>Ex: <b>&lt;b&gt;</b> This is bold Tag of HTML &lt;/b&gt;<br/>
+<b>&lt;b&gt;</b> --->It is opening tag<br/>
+<b>&lt;/b&gt;</b> --->It is closing tag<br/>
 This is bold Tag of HTML--->This is content
 </li>
 </ul>
@@ -255,7 +257,7 @@ This is bold Tag of HTML--->This is content
 <p>
 <h3 id="a6">Types of HTML Tags :</h3>
 <ol>
-<li id="a6.1">Paired or container Tag<br/>
+<li id="a6.1"><b>Paired or container Tag</b><br/>
 
 
 ex:	&lt;html&gt; ---&lt;/html&gt; <br>
@@ -264,14 +266,14 @@ ex:	&lt;html&gt; ---&lt;/html&gt; <br>
 	&lt;b&gt; ---&lt;/b&gt;
 
 </li>
-<li id="a6.2">Empty or Singular Tag<br/>
+<li id="a6.2"><b>Empty or Singular Tag</b><br/>
 
 ex: &lt;img/&gt; --->Use to add images on webpage.<br>
 	&lt;br/&gt; --->Use to Break Line<br>
 	&lt;hr/&gt;--->Use to add Horizontal Line
 
 </li>
-<li id="a6.3">Block Level Tag<br/>
+<li id="a6.3"><b>Block Level Tag</b><br/>
 The Tag that produces line break itself are known as Block Level Tag<br/>
 
 ex:	The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break. <br>
@@ -279,7 +281,7 @@ ex:	The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break
  &lt;div&gt;&lt;/div&gt;--->Use to create division in webpage. 
 
 </li>
-<li id="a6.4">Inline Level Tag<br/>
+<li id="a6.4"><b>Inline Level Tag</b><br/>
 The tag which doesn't produce line break are called Inline Level Tag.<br>
 
 	&lt;b&gt;---&lt;/b&gt; --->use to bold a text.<br>
@@ -300,112 +302,168 @@ f{
 font-size:100%
 }
 </style>
-
+<hr/>
 <p id="a7">
 <h3>Basic Structure of HTML</h3>
-<center><img src="images/one.png" alt="check path please" sizes="(max-width: 800px) 90vw, 800px" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<center><img src="images/one.png" alt="check path please" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 <ul>
-<li>&lt;html&gt;--->It represents the root of an HTML document.</li>
-<li>&lt;head&gt;--->It is used to define the head portion of the document which contains information related to the document. 
-The &lt;head&gt; tag contains other head elements such as &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;style&gt; &lt;link&gt; etc. 
+<li><b>&lt;html&gt;</b>--->It represents the root of an HTML document.</li>
+<li><b>&lt;head&gt;</b>--->It is used to define the head portion of the document which contains information related to the document. 
+The <b>&lt;head&gt;</b> tag contains other head elements such as &lt;title&gt;, <b>&lt;meta&gt;</b>, &lt;link&gt;, &lt;style&gt; &lt;link&gt; etc. 
 In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> element can be omitted.</li>
-<li>&lt;body&gt;--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
+<li><b>&lt;body&gt;</b>--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
 </ul>
 </p>
+<hr/>
 <p id="a8">
 <h3> Basic Structure of HTML 5</h3>
-<center><img src="images/two.png" alt="error" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<center><img src="images/two.png" alt="error" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 
 <figcaption>Example 2:</figcaption>
-<center><img src="images/three.jpg" sizes="(max-width: 900px) 90vw,900px" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<center><img src="images/three.jpg" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 
 <h3>HTML 5 Elements:</h3>
 <ul>
-<li>html ---> It is the root element of our webpage.</li>
-<li>head ---> head tag is used to add title to our webpage and add fevicon icon .</li>
-<li>title ---> title tag is used to add title to our webpage and the title is shown in the tab bar.</li>
-<li>meta --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.</li>
-<li>link ---> Use to add external css file into our html file</li>
-<li>body ---> it contain all the content present in our webpage.</li>
-<li>header ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars
+<li><b>html</b> ---> It is the root element of our webpage.</li>
+<li><b>head</b> ---> head tag is used to add title to our webpage and add fevicon icon .</li>
+<li><b>title</b> ---> title tag is used to add title to our webpage and the title is shown in the tab bar.</li>
+<li><b>meta</b> --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.</li>
+<li><b>link </b>---> Use to add external css file into our html file</li>
+<li><b>body</b> ---> it contain all the content present in our webpage.</li>
+<li><b>header</b> ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars
 </li>
-<li>nav ---> nav tag is used to create navigation bars</li>
-<li>main --->this tag contain the main content of our webpage that is content between header and footer tag .</li>
-<li>section ---> section tag is use to divide webpage into different sections</li>
-<li>article ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.</li>
-<li>aside ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</li>
+<li><b>nav</b> ---> nav tag is used to create navigation bars</li>
+<li><b>main</b> --->this tag contain the main content of our webpage that is content between header and footer tag .</li>
+<li><b>section</b> ---> section tag is use to divide webpage into different sections</li>
+<li><b>article</b> ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.</li>
+<li><b>aside</b> ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</li>
 </ul>
 </p>
+<hr/>
 <p id="f">
 <h3>Formatting Tags in HTML5:</h3>
 <ol>
-<li><h3>&lt;strong&gt; and &lt;b&gt; tag:</h3><br>
+<li><h3>&lt;strong&gt; Tag and &lt;b&gt; Tag:</h3><br>
 These tags are used to apply bold formatting on a text enclosed between strong or b tag.
 <br>
 Ex: As Shown in the figure below.<br>
-<img src="images/four.png" alt="error" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;" />
+<center><img src="images/four.png" alt="error" width="800vw" title="Click to enlarge" style="cursor: zoom-in;" /></center>
 <br>
 Output of the above code :<br>
-<img src="images/four1.png" alt="error" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<center><img src="images/four1.png" alt="error" width="600vw"title="Click to enlarge" style="cursor: zoom-in;"/></center>
 </li>
 
-<li><h3>&lt;i&gt; and &lt;em&gt;</h3><br>
+<li><h3>&lt;i&gt; Tag and &lt;em&gt; Tag</h3><br>
 These tags are used to add italic and emphasized formatting on the text present between these tags.<br>
 <h3>Example of i and em tag in html.</h3>
-<img src="images/five.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<center><img src="images/five.png" height="350vh" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 <br>
 <h3>Output:</h3>
-<img src="images/five1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<center><img src="images/five1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 </li>
 <li><h3>
-&lt;u&gt; and &lt;ins&gt;</h3><br>
+&lt;u&gt; Tag and &lt;ins&gt; Tag</h3><br>
 These tags are used to used to underline the content present between them,ins stands for inserted text.<br>
 <h3>Example:</h3>
 <br>
-<img src="images/six.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<center><img src="images/six.png" height="400vh" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 <br>
 Output:<br>
-<img src="images/six1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+<center><img src="images/six1.png"  height="130vh" width="500vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
 
 </li>
 <li><h3>
-&lt;del&gt; and &lt;strike&gt;</h3><br>
+&lt;del&gt; Tag and &lt;strike&gt; Tag</h3><br>
 These tags are used to add a line in the middle of the text present between these tags.
 <h3>For Example:</h3>
 <br>
-<img src="images/seven.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;" /><br>
+<center><img src="images/seven.png" width="800vw" title="Click to enlarge" style="cursor: zoom-in;" /><br></center>
 Output is:<br>
-<img src="images/seven1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+<center><img src="images/seven1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
 
 </li>
 <li><h3>
-&lt;sup&gt; and &lt;sub&gt;</h3><br>
+&lt;sup&gt;Tag and &lt;sub&gt;Tag</h3><br>
 sup tag is used to make text superscript,whereas sub tag is use to make text subscript.
 <h3>Example:</h3><br>
-<img src="images/eight.png"  sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"><br>
+<center><img src="images/eight.png"  width="800vw" title="Click to enlarge" style="cursor: zoom-in;"><br></center>
 Output:<br>
-<img src="images/eight1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+
+<center><img src="images/eight1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
 </li>
 <li><h3>
-&lt;big&gt; and &lt;small&gt;</h3><br>
+&lt;big&gt;Tag and &lt;small&gt;Tag</h3><br>
 big tag is use to increase the font size of text one more than the remaining text.<br>
 small tag is use to decrease the font size of text one less than the remaining text.<br>
 <h3>Example:</h3><br>
-<img src="images/nine.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/><br>
+<center><img src="images/nine.png" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/><br></center>
 Output:<br>
-<img src="images/nine1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/>
+<center><img src="images/nine1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 </li>
 <li><h3>
-&lt;mark&gt; tag:</h3><br>
+&lt;mark&gt; Tag:<br></h3>
 This tag is used to highlight a text.<br>
-<h3>Example:</h3><br>
-<img src="images/ten.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;"/><br>
+<h3>Example:<br>
+<center><img src="images/ten.png" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/><br></center>
 Output:<br>
-<img src="images/ten1.png" sizes="(max-width: 900px) 90vw, 900px" title="Click to enlarge" style="cursor: zoom-in;">
+<center><img src="images/ten1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
 </li>
 </ol>
-
 </p>
+
+<p>
+<h3>Heading Tags in HTML</h3>
+Heading Tags are used to create heading.<br/>
+<b>&lt;h1&gt;</b>-->Is used to create biggest heading.<br>
+<b>&lt;h6&gt;</b>-->Is used to create the smallest heading.<br>
+Example:<br>
+<center><img src="images/eleven.png" alt="oops" width="900vw" /></center><br>
+Output:<br>
+<center><img src="images/eleven1.png" alt="oops"  height="500vh" width="900vw"/></center>
+</p>
+
+<p>
+<h3>Understanding Block Level Tags</h3>
+A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.
+
+Example:<br>
+<center><img src="images/twelve.png" alt="oops" width="900vw"/></center>
+<br>
+Output:<br>
+<center><img src="images/twelve1.png" alt="oops" width="600vw"/></center>
+<br>
+<center>
+<h3>Examples of blocks level tags in HTML.</h3>
+<table border="1px" cellspacing="0" cellpadding="0" width="700vw">
+<tr><th>Block Level Tags</th><th>Usage</th></tr>
+<tr><td>Heading Tags(&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;)</td><td>Use to create heading.</td></tr>
+<tr><td>Paragraph Tag(&lt;p&gt;)</td><td>Use to create Paragraphs</td></tr>
+<tr><td>Div Tag(&lt;div&gt;)</td><td>Use as a Universal Tag.Use to create division or sections of your webpage.</td></tr>
+<tr><td>Other examples </td><td><b>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;canvas&gt;&lt;dd&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;-&lt;h6&gt;&lt;header&gt;&lt;hr&gt;&lt;li&gt;&lt;main&gt;&lt;nav&gt;&lt;noscript&gt;&lt;ol&gt;&lt;p&gt;&lt;pre&gt;&lt;section&gt;&lt;table&gt;&lt;tfoot&gt;&lt;ul&gt;&lt;video&gt;</b></td></tr>
+</table>
+</center>
+<br>
+</p>
+<p>
+<h3>Understanding inline level elements.</h3>
+An inline element does not cause a line break (start on a new line) and does not take up the full width of a page, only the space bounded by its opening and closing tag. It is usually used within other HTML elements.<br>
+Example:<br>
+<center><img src="images/thirteen.png" alt="error" height="440vh" width="550vw"/></center>
+<br>
+Output:<br>
+<center><img src="images/thirteen1.png" alt="error" height="440vh" width="550vw"/></center>
+<center>
+<h3>Examples of Inline Level Tags in HTML.</h3>
+<table border="1px" cellpadding="0" cellspacing="0" width="700vw">
+<tr><th>Inline Tag</th><th>Usage</th></tr>
+<tr><td>span Tag</td><td>span tag is used for grouping and applying styles to elements. It acts as a inline container.</td></tr>
+<tr><td>img Tag</td><td>Use to add Image on to our webpage</td></tr>
+<tr><td>mark Tag</td><td>Use to highlight a text.</td></tr>
+<tr><td>Other Tags:</td><td><b>&lt;a&gt;&lt;abbr&gt;&lt;acronym&gt;&lt;b&gt;&lt;bdo&gt;&lt;big&gt;&lt;br&gt;&lt;button&gt;&lt;cite&gt;&lt;code&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;img&gt;&lt;input&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;object&gt;&lt;output&gt;&lt;q&gt;&lt;samp&gt;&lt;script&gt;&lt;select&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;textarea&gt;&lt;time&gt;&lt;tt&gt;&lt;var&gt;</b></td></tr>
+</table>
+</center>
+</p>
+
 </div>
 
 </div>
