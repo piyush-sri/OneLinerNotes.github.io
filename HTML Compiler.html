@@ -1,0 +1,71 @@
+<html>
+<!--Learning Javascript DOM-->
+<head>
+<style>
+textarea,
+iframe {
+    border: 2px solid black;
+    height: 80vh;
+    width: 100%;
+}
+ 
+button {
+    padding: 12px 12px;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+}
+ 
+button:hover {
+    background-color: #ffe680;
+}
+#sr{
+height:80vh;
+}
+</style>
+</head>
+<body>
+ <div style="border :10px solid #ffe680;" height="78vh;">
+        <br>
+        <center>
+            <button onclick="run();"><b>Run</b></button>
+        </center>
+        <table width="100%" border="0" cellspacing="0" cellpadding="5" height="700vh">
+		<br>
+		 <tr>
+                <td width="50%"> </td>
+                <td width="50%"  align="left"></td>
+          </tr>
+           <tr id="sr">
+            <td>
+                <form>
+                    Code:<br>
+                    <textarea name="src" id="sourcecode">
+ 
+                    </textarea>
+                </form>
+            </td>
+            <td>Output :<br>
+                <iframe name="tc" id="targetcode"></iframe>
+            </td>
+			</tr>
+        </table>
+    </div>
+	<script>
+	 function run() {
+        var content = document.getElementById('sourcecode').value;
+		//console.log(content);
+        var iframe = document.getElementById('targetcode');
+     iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument) ?
+        iframe.contentDocument.document : iframe.contentDocument;
+ //learning document object and window object in javascript
+ //document.write(iframe.contentWindow);
+        iframe.document.open();
+        iframe.document.write(content);
+        iframe.document.close();
+        return false;
+    }
+run(); 
+</script>
+</body>
+</html>
