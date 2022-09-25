@@ -11,4 +11,5 @@ a)HTML5 Complete Notes and Assignments<br>
 b)HTML Mcqs<br>
 c)Computer Network Notes<br>
 d)LibreOfficeWriter Notes<br>
+e)FrontEnd Compiler added-->learned about Document object and Window Object.<br>
 Updating Day by Day...!!<br>
