@@ -8,8 +8,9 @@ Follow me :<br>
 <br><br>
 Content Added So Far:<br>
 a)HTML5 Complete Notes and Assignments<br>
-b)HTML Mcqs<br>
+b)HTML Beginners Mcqs<br>
 c)Computer Network Notes<br>
 d)LibreOfficeWriter Notes<br>
 e)FrontEnd Compiler added-->learned about Document object and Window Object.<br>
+f)HTML Intermediate MCQs<br>
 Updating Day by Day...!!<br>
