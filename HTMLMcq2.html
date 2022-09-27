@@ -1,0 +1,1006 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<title>OneLiner HTML MSQs</title>
+<style>
+	body{
+	background-color:#FEFEFA;
+	height:100vh;
+	width:100vw;
+	}
+        .container {
+            display: flex;
+            flex-direction:row;
+			
+        }
+		.footer{
+		flex-direction:column;
+		}
+     
+        .right {
+             height:100vh;
+            background-color:;
+            display: block;
+            width: 100%;
+            overflow-y: scroll;
+        }
+		.llist{
+		background:white;
+		}
+		.b a{
+		color:blue;
+		}
+		nav ul li{
+		height:10 vh;
+		width:10 vw;
+		font-size:1em;
+		text-align:center;
+		}
+		
+		img{
+		display:inline-block;
+		}
+		#g{
+		display:inline-block;
+		margin:0px;
+		}
+	    .container{
+	padding-right:10px;
+	padding-left:5px;
+	text-align:justify;
+	}
+	
+	 a{
+  color:white;
+  text-decoration:none;
+  font-family:consolas;
+  }
+   .hov li{
+  background:purple;
+  list-style-type:none;
+  display:inline-block;
+  positive:relative;
+  width:10vw;
+  text-align:center;
+  color:white;
+  
+  }
+  .hov li:hover{
+  background-color:#fdaff1;
+  }
+  .ol{
+  position:relative;
+  }
+   .il li:hover{
+  background-color:#fdaff1;
+  color:white;
+  }
+  .il{
+  display:none;
+  list-style-type:none;
+  position:absolute;
+  left:-2px;
+  }
+  .ol:hover .il{
+  display:block;
+  
+  list-style-type:none;
+ position:absolute;
+ padding:0;
+  }
+  .il li{
+  display:block;
+  }
+  .iil{
+  display:none;
+  position:absolute;
+  top:0;
+  left:100%;
+  padding:0;
+  }
+  .ool{
+  position:relative;
+  }
+  .ool:hover .iil{
+  display:block;
+  }
+  nav{
+  background-color:purple;
+  }
+  .footer{
+  width:1 vw;
+  }
+  img{
+  align:center;
+  }
+  .tbl tr td{
+ font-face: consolas;
+ color:white;
+width:1 em;
+text-align:center;
+}
+
+#h{
+color:white;
+font-size:100%;
+}
+.tbl{
+font-size:100%
+}
+	
+button{
+height:3vh;
+width:8vw;
+text:1.2em;
+}	
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+<!--main jquery for mcqs-->
+<!--first question-->
+	$(".ans").hide();
+	
+	 $(".but").click(function () {
+            $(this).text(function(i, v){
+               return v === 'View Answer' ? 'Hide Answer' : 'View Answer'
+            })
+        });
+	
+ 
+
+  });
+  function show(q){
+	var a = document.getElementsByTagName("p");
+	var toggle = a[q].style.display;
+	if(toggle == "none"){
+		a[q].style.display = "block";
+
+	}
+	else{
+		a[q].style.display = "none";
+	}
+  }
+  </script>
+</head>
+<body>
+<!--HTML mcq questions Chapter-4-->
+<header>
+<img src="images/logo.png" width="50vw" height="60vh"/>
+<h3 id="g">ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</h3>
+ <nav>
+	  <style>
+  #menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 110px;
+  left: 20px;
+  width: 20px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 170px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: purple;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+  </style>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#a7" style="color:white;">Structure of HTML and HTML5</a></li>
+      <li><a class="menu__item" href="#a6" style="color:white;">Types of tags in HTML</a></li>
+      <li><a class="menu__item" href="#f" style="color:white;">Formatting Tags in HTML</a></li>
+      <li><a class="menu__item" href="#ft" style="color:white;">Frame and Frameset Tags in HTML</a></li>
+      <li><a class="menu__item" href="#marquee" style="color:white;">Marquee Tag in html</a></li>
+	  <li><a class="menu__item" href="#Heading" style="color:white;">Heading Tag in html</a></li>
+	  <li><a class="menu__item" href="#inline" style="color:white;">Inline and Block Level Tags</a></li>
+	    <li><a class="menu__item" href="PDF/computernetwork.html" style="color:white;">Computer Network Notes.</a></li>
+    </ul>
+  </div>
+	 
+	 <ul class="hov">
+ <li><a href="#">Home</a></li>
+ <li class="ol"><a href="#">Courses</a>
+ <ul class="il">
+   <li class="ool">HTML
+  <ul class="iil">
+  <li>HTML Notes</li>
+   <li>Video Lectures</li>
+    <li>HTML Projects</li>
+	 <li>Practice Assignments</li>
+	  <li><a href="second.html">HTML MCQs</a></li>
+	   <li>Mock Test</li>
+  </ul>
+  </li>
+  <li class="ool">CSS
+  <ul class="iil">
+  <li>CSS Notes</li>
+   <li>Video Lectures</li>
+    <li>HTML and CSS Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>CSS MCQs</li>
+	   <li>Mock Test</li>
+  </ul>
+  </li>
+   <li class="ool">JavaScript
+   
+  <ul class="iil">
+  <li>JavaScript Notes</li>
+   <li>Video Lectures</li>
+    <li> Javascript Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>JavaScript MCQs</li>
+	   <li>Mock Test</li>
+  </ul></li>
+ 	    <li class="ool">Docker
+		<ul class="iil">
+  <li>Docker Notes</li>
+   <li>Video Lectures</li>
+    <li>Docker Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>Docker MCQs</li>
+	   <li>Mock Test</li>
+  </ul></li>
+  <li class="ool">
+  Libre Office Writer
+  <ul class="iil">
+  <li>Writer Notes</li>
+   <li>Video Lectures</li>
+    <li>Writer Projects</li>
+	 <li>Practice Assignments</li>
+	  <li>Writer MCQs</li>
+	   <li>Mock Test</li>
+  </ul>
+  </li>
+ </ul>
+ 
+ </li>
+ <li><a href="#">Blogs</a></li>
+ <li><a href="#">Projects</a></li>
+  <li><a href="computernetwork.html">Computer Network Notes</a></li>
+   <li><a href="#">Jobs</a></li>
+    <li><a href="#">About Us</a></li>
+ </ul>
+ 
+    </nav>
+</header>
+<center><h3>HTML Mcq: Level:- Intermediate</h3></center>
+<div class="parent">
+<center><div>
+<table cellpadding="0" cellspacing="0">
+<tr><td>
+<h3>1)Not adding closing tag in a container tag will hide the element:</h3>
+<ol type="A">
+<li>True </li>
+<li>False</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(0)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>2)If you want to format the following:<br>
+i)Hell!! <strong>Yeah</strong>  ii)Lucifer Morning<font color="red">*</font></h3>
+<ol type="A">
+<li>format and b tag</li>
+<li>Strong and mark tag</li>
+<li>Strong and font tag</li>
+<li>font tag and mark tag</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(1)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>3)what is use to modify the property of an element present in your webpage?</h3>
+<ol type="A">
+<li>Tags</li>
+<li>Colors</li>
+<li>Attributes </li>
+<li>Format Painter</li>
+</ol>
+<p class="ans">Correct answer :C</p>
+<button class="but" onclick="show(2)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>4)To view the source code of a published website we use?</h3>
+<ol type="A">
+<li>Inspect</li>
+<li>view page source</li>
+<li>both a and b</li>
+<li>Notepad++</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(3)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>5)suppose you want to display a HTML file anywhere in your webpage along with the content of the website,which tag will you use?</h3>
+<ol type="A">
+<li>Framaset tag</li>
+<li>Frame and Frameset Tag</li>
+<li>iframe tag</li>
+<li>div tag</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(4)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>6)How will you create a logo only using html5?</h3>
+<ol type="A">
+<li>table tag,tr tag, td tag,font tag,center tag</li>
+<li>table tag, th tag,font tag,center tag</li>
+<li>table tag,tr tag, font tag, th tag, center tag,td tag</li>
+<li>all of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(5)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>7)To create an image hyperlink what will you do?</h3>
+<ol type="A">
+<li>Put the anchor tag outside the img tag</li>
+<li>Put the link tag outside the img tag</li>
+<li>Put the src tag outside the img tag</li>
+<li>Put the img tag outside the anchor tag</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(6)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>8)which of the following is correct?</h3>
+<ol type="A">
+<li>article tag are use to contain the connected content with respect to webpages.</li>
+<li>article tag is use to contain the text independent of the webpage.</li>
+<li>section tag is a inline level tag</li>
+<li>All are correct</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(7)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>9)You can add floating text on your webpage using?</h3>
+<ol type="A">
+<li>iframe tag</li>
+<li>float tag</li>
+<li>frameset tag</li>
+<li>Marquee tag</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(8)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>10)The first line of every html5 file is ?</h3>
+<ol type="A">
+<li>&lt;html&gt;</li>
+<li>&lt;!doctype&gt;</li>
+<li>&lt;!doctype html&gt;</li>
+<li>&lt;html/&gt;</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(9)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>11)which tag will you use to insert comment in your webpage?</h3>
+<ol type="A">
+<li>&lt;-- --&gt;</li>
+<li>&lt;!!--!!&gt;</li>
+<li>&lt;!-- --&gt;</li>
+<li>&lt;-- --!&gt;</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(10)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>12)Mark tag and ins tag are same?</h3>
+<ol type="A">
+<li>True</li>
+<li>False</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(11)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>13)what is * in the following code:
+&lt;frameset rows=”30%,40%,*”&gt;</h3>
+<ol type="A">
+<li>* is known as asterisk</li>
+<li>*  is a wild card character</li>
+<li>* shows the remaining spaces</li>
+<li>*shows all frames</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(12)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>14)what will happen if you accidently clicked ctrl+D while coding in Notepad++?</h3>
+<ol type="A">
+<li>duplicate the line</li>
+<li>duplicate the cursor</li>
+<li>duplicate the tag only</li>
+<li>open a duplicate file</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(13)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>15)while learning many time you use style attributes,how the values inside the style attributes are given?</h3>
+<ol type="A">
+<li>property:value seperated by comma</li>
+<li>property;value seperated by colon</li>
+<li>property:value seperated by semicolon</li>
+<li>property:value seperatd by colon</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(14)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>16)cellspacing and cellpadding can be negative in table tag?</h3>
+<ol type="A">
+<li>True</li>
+<li>False</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(15)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>17)what will happen if you forgot to close the b tag?</h3>
+<ol type="A">
+<li>No change out content is safe.</li>
+<li>all the content of the webpage will be bold</li>
+<li>content after the b tag will be bold</li>
+<li>both b and c</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(16)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>18)We can use body tag and iframe tag together in our webpage to create sections in our webpage containing another content or webpage?</h3>
+<ol type="A">
+<li>True</li>
+<li>False</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(17)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>19)which tag are you going to use if you want to create a favicon icon?</h3>
+<ol type="A">
+<li>img </li>
+<li>link</li>
+<li>a</li>
+<li>icon</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(18)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>20)which attribute we use if we want to use inline css?</h3>
+<ol type="A">
+<li>inline</li>
+<li>style tag</li>
+<li>css </li>
+<li>style</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(19)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>21)which  of the following attribute doesn’t take any value?</h3>
+<ol type="A">
+<li>name</li>
+<li>for</li>
+<li>required</li>
+<li>placeholder</li>
+</ol>
+<p class="ans">Correct answer : C </p>
+<button class="but" onclick="show(20)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>22)A website is only made up of HTML?</h3>
+<ol type="A">
+<li>True</li>
+<li>False</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(21)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>23)which option will you use if you want to insert “>” symbol in your webpage?</h3>
+<ol type="A">
+<li>&amp;tl;</li>
+<li>&amp;gt;</li>
+<li>&amp;lt;</li>
+<li>&amp;amp;</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(22)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>24)Which of the following option is correct?
+</h3>
+<ol type="A">
+<li>image tag will display image along with the heading tag in one line.</li>
+<li>Image tag will display image along with the span tag in one line</li>
+<li>image tag will display image along with the paragraph tag in one line.</li>
+<li>Both b and c</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(23)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>25)What will happen if you press Ctrl+H in Notepad++?</h3>
+<ol type="A">
+<li>Find Dialog Box will open</li>
+<li>Replace Dialog Box will open</li>
+<li>Hyperlink is inserted</li>
+<li>Duplicate cursor created</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(24)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>26)To insert the characters not present in your keyboard we use?</h3>
+<ol type="A">
+<li>Hexcode</li>
+<li>RGB code</li>
+<li>Entities</li>
+<li>#ab;</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(25)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>27)HTML was developed in year?</h3>
+<ol type="A">
+<li>1990</li>
+<li>1991</li>
+<li>1992</li>
+<li>1993</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(26)">View Answer</button>
+</td>
+</tr>
+	</tr>
+<tr>
+<td>
+<h3>28)Which attribute is used inside frame tag to add any html webpage?</h3>
+<ol type="A">
+<li>href</li>
+<li>src</li>
+<li>link</li>
+<li>source</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(27)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>29)which of the following attribute is use in form to add textbox,radio button,checkbox.</h3>
+<ol type="A">
+<li>input</li>
+<li>type</li>
+<li>value</li>
+<li>for</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(28)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>30)In how many ways can we create a hyperlink?</h3>
+<ol type="A">
+<li>2</li>
+<li>1</li>
+<li>3</li>
+<li>4</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(29)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>31)what is the meaning of named anchor?</h3>
+<ol type="A">
+<li>Link to some external webpage</li>
+<li>Link within the same webpage</li>
+<li>Link to multiple webpage</li>
+<li>Both a and c</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(30)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>32)How many sizes of headers are available in HTML by default?</h3>
+<ol type="A">
+<li>5 </li>
+<li>1</li>
+<li>3</li>
+<li>6</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(31)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>33)We enclose HTML tags within? </h3>
+<ol type="A">
+<li>&lt; &gt;</li>
+<li>! !</li>
+<li>&lt;!--  --&gt;</li>
+<li>&lt;? ?&gt;</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(32)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>34)Which of the following is correct about HTML?</h3>
+<ol type="A">
+<li>HTML Uses user Defined Tags</li>
+<li>HTML Uses Tags Defined Within the Language.</li>
+<li>Both A and B</li>
+<li>None of the above.</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(33)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>35)Which of the following is true about HTML attributes?</h3>
+<ol type="A">
+<li>Are Case Sensitive</li>
+<li>Are not Case Sensitive</li>
+<li>Are in Uppercase</li>
+<li>Are in Lowercase</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(34)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>36)Which HTML Tag is used to embed YouTube videos?</h3>
+<ol type="A">
+<li>Frame  </li>
+<li>Frameset and Frame</li>
+<li>Iframe </li>
+<li>Src</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(35)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>37)Which of the following is not a value for type  attribute for input tag?</h3>
+<ol type="A">
+<li>day</li>
+<li>week</li>
+<li>month</li>
+<li>time</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(36)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>38)Which attribute defines the file-select field?</h3>
+<ol type="A">
+<li>Ctrl+Shift+V</li>
+<li>text</li>
+<li>file</li>
+<li>select</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(37)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>39)Month attribute defines only?</h3>
+<ol type="A">
+<li>Day and month</li>
+<li>Month only</li>
+<li>Month and year</li>
+<li>Day only</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(38)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>40)Which element is used to create multi-line text input?</h3>
+<ol type="A">
+<li>Textbox</li>
+<li>div tag</li>
+<li>Textarea </li>
+<li>article </li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(39)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>41)What is the work of controls?</h3>
+<ol type="A">
+<li>specify the path to an audio file</li>
+<li>audio starts playing automatically</li>
+<li>Displaying controls to the user</li>
+<li>Showing controls images.</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(40)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>42)What is the work of src?</h3>
+<ol type="A">
+<li>audio starts playing automatically</li>
+<li>play again after finishing the audio</li>
+<li>specify the path to an audio file</li>
+<li>insert more than one audio</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(41)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>43)To create a web page you need?</h3>
+<ol type="A">
+<li>Text Editor </li>
+<li>Web Browser</li>
+<li>Both a and b</li>
+<li>Macbook</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(42)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>44)Which html tag tells the browser where the page ends and starts?</h3>
+<ol type="A">
+<li>body </li>
+<li>html</li>
+<li>head </li>
+<li>container tag</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(43)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>45)HTML Tags are recognized by?</h3>
+<ol type="A">
+<li>attributes </li>
+<li>content </li>
+<li>angular brackets </li>
+<li>parenthesis</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(44)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>46)which tag will set the background color of your html webpage?</h3>
+<ol type="A">
+<li>head</li>
+<li>bgcolor</li>
+<li>style attribute</li>
+<li>body</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(45)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>47)What will be added by using td tag?</h3>
+<ol type="A">
+<li>Row</li>
+<li>Column</li>
+<li>Cell</li>
+<li>Steps</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(46)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>48)Image list will show a text label if you use?</h3>
+<ol type="A">
+<li>img tag</li>
+<li>alt attribute</li>
+<li>src attribute</li>
+<li>None of the above</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(47)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>49)To start the list at the count of 3 we use?</h3>
+<ol type="A">
+<li>&lt;ol list=3&gt;</li>
+<li>&lt; ol begin=3&gt; </li>
+<li> &lt;ol start=3 &gt;</li>
+<li>&lt; ol type=3&gt; </li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(48)">View Answer</button>
+</td>
+</tr>
+<tr>
+<td>
+<h3>50)which  of the following is the correct way to create internal link?</h3>
+<ol type="A">
+<li>&lt;a href="#"&gt;Link1&lt;/a&gt;</li>
+<li>&lt;a href="www.google.com"&gt;Link2&lt;/a&gt;</li>
+<li>&lt;a href="id1"&gt;Link3&lt;/a&gt;</li>
+<li>&lt;a href="#id"&gt;Link4&lt;/a&gt;</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(49)">View Answer</button>
+</td>
+</tr>
+</table>
+</div>
+
+</center>
+</div>
+<footer class="footer" style="background-color:purple; width:100%">
+<center><h3>Designed And Developed by Piyush Srivastava</h3>
+<p id="h">
+Founder:Piyush Srivastava<br>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p>
+<table class="tbl">
+<tr><td>Social Links</td><td>Learn</td><td>Interview Preperation</td><td>Languages</td><td>Certifications</td><td>Careers</td></tr>
+<tr><td>LinkedIn</td><td>FrontEnd</td><td>DSA SHEETS</td><td>Languages</td><td>Certifications</td><td>Remote Jobs</td></tr>
+<tr><td>Twitter</td><td>BackEnd</td><td>ROADMAPS</td><td>JavaScript</td><td>O Level,A level</td><td>Job Portals</td></tr>
+<tr><td>Github</td><td>Docker</td><td>Interview Experience</td><td>Python</td><td>B level</td><td>Personal Blogs</td></tr>
+<tr><td>EmailId</td><td>Linux</td><td>Internships</td><td>
+ava</td><td>Microsoft Python certification,Oracle Certifications</td><td>Join community</td></tr>
+</table>
+
+
+</center>
+</footer>
+                        
+<script type='text/javascript'>
+		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
+</script>
+                    
+
+</body>
+</html>
