@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>test</title>
+	 <link rel="icon" type="image/png" href="C:\Users\piyus\OneDrive\Desktop\internshala web devleopment\HatchfulExport-All\logo.png"/>
+	<title>OneLiner HTML McQs</title>
     <style>
 	body{
 	background-color:#FEFEFA;
@@ -16,27 +17,139 @@
             display: block;
             width: 20%;
             background-color:;
-            overflow-y: scroll;
+            overflow-y: none;
         }
         .right {
              height:670px;
             background-color:;
             display: block;
             width: 100%;
-            overflow-y: scroll;
+            overflow-y: none;
         }
 		.llist{
 		background:white;
 		}
 		
-    </style>
+		img{
+height:100px;
+width:100px;
+display:inline-block;
+}
+
+button{
+background-color:#E6E6FA;
+padding:0.4em;
+}
+
+p{
+color:Blue;
+}
+
+
+  a{
+  color:white;
+  text-decoration:none;
+  font-family:consolas;
+  }
+  .hov li{
+  background:purple;
+  list-style-type:none;
+  display:inline-block;
+  positive:relative;
+  width:100px;
+  text-align:center;
+  color:white;
+  
+  }
+  .ol{
+  position:relative;
+  }
+   .il li:hover{
+  background-color:#fdaff1;
+  color:white;
+  }
+  .il{
+  display:none;
+
+  list-style-type:none;
+  position:absolute;
+  left:-2px;
+  }
+  .ol:hover .il{
+  display:block;
+  
+  list-style-type:none;
+ position:absolute;
+ padding:0;
+  }
+  .il li{
+  display:block;
+  }
+  .iil{
+  display:none;
+  position:absolute;
+  top:0;
+  left:100%;
+  padding:0;
+  }
+  .ool{
+  position:relative;
+  }
+  .ool:hover .iil{
+  display:block;
+  }
+  nav{
+  background-color:purple;
+  }
+ div.container {
+  text-align: center;
+}
+
+ol{
+  display: inline-block;
+  text-align: left;
+}
+	
+.tbl tr td{
+ font-face: consolas;
+ color:white;
+width:1 em;
+text-align:center;
+}
+
+#xx{
+color:white;
+font-size:100%;
+}
+.tbl{
+font-size:100%
+} 
+</style>
 </head>
 <body>
 <div>
 <img src="images/logo.png"/>
 <font SIZE=20>ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</font>
  </div>
- <nav><ul class="hov">
+ <nav>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#a7" style="color:white;">Structure of HTML and HTML5</a></li>
+      <li><a class="menu__item" href="#a6" style="color:white;">Types of tags in HTML</a></li>
+      <li><a class="menu__item" href="#f" style="color:white;">Formatting Tags in HTML</a></li>
+      <li><a class="menu__item" href="#ft" style="color:white;">Frame and Frameset Tags in HTML</a></li>
+      <li><a class="menu__item" href="#marquee" style="color:white;">Marquee Tag in html</a></li>
+	  <li><a class="menu__item" href="#Heading" style="color:white;">Heading Tag in html</a></li>
+	  <li><a class="menu__item" href="#inline" style="color:white;">Inline and Block Level Tags</a></li>
+	    <li><a class="menu__item" href="PDF/computernetwork.html" style="color:white;">Computer Network Notes.</a></li>
+    </ul>
+  </div>
+ <ul class="hov">
  <li><a href="index.html">Home</a></li>
  <li class="ol"><a href="#">Courses</a>
  <ul class="il">
@@ -88,39 +201,86 @@
    <li><a href="#">Jobs</a></li>
     <li><a href="#">About Us</a></li>
  </ul>
+  <style>
+  #menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 155px;
+  left: 20px;
+  width: 20px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 120px;
+  left: -100%;
+  width: 150px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: purple;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+  </style>
  
-    </nav>
+   
+
+   </nav>
 </header>
     <div class="container">
-	
-        <div class="left"> 
-		<h1>Topics</h1>
-		<table cellpadding="10px" border="1px" width="100%">
-		<a href="#"><tr><td>HTML Mcqs</td></tr></a>
-			<tr><td>Beginner</td></tr>
-				<tr><td>Intermediate</td></tr>
-					<tr><td>Advanced</td></tr>
-					<tr><td>Formatting Tags</td></tr>
-					<tr><td>Heading Tags</td></tr>
-					<tr><td>Difference between Block Level and Inline Tags</td></tr>
-					<tr><td>Block Level Tags</td></tr>
-					<tr><td>Inline Tags</td></tr>
-					<tr><td>Marquee Tag</td></tr>
-					<tr><td>HTML List Tags</td></tr>
-					<tr><td>Table Tags</td></tr>
-					<tr><td>Form Tags</td></tr>
-					<tr><td>Frameset Tag</td></tr>
-					<tr><td>Iframe Tag</td></tr>
-		</table>
-		
-		</div>
         <div class="right">
-<head>
-	 <link rel="icon" type="image/png" href="C:\Users\piyus\OneDrive\Desktop\internshala web devleopment\HatchfulExport-All\logo.png"/>
-	<title>OneLiner HTML MSQs</title>
-	  
- 
-</head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -394,94 +554,19 @@ $(document).ready(function(){
 <!--$("*")--->Selects all elements,$(this)---selects the current elements,$(":button")---selects all the buttons element-->
 </script>
 <header>
-</head>
 <body>
-<style>
-img{
-height:100px;
-width:100px;
-display:inline-block;
-}
-
-button{
-background-color:#E6E6FA;
-padding:0.4em;
-}
-
-p{
-color:Blue;
-}
-
-
-  a{
-  color:white;
-  text-decoration:none;
-  font-family:consolas;
-  }
-  .hov li{
-  background:purple;
-  list-style-type:none;
-  display:inline-block;
-  positive:relative;
-  width:100px;
-  text-align:center;
-  color:white;
-  
-  }
-  li:hover{
-  background-color:#fdaff1;
-  }
-  .ol{
-  position:relative;
-  }
-   .il li:hover{
-  background-color:#fdaff1;
-  color:white;
-  }
-  .il{
-  display:none;
-
-  list-style-type:none;
-  position:absolute;
-  left:-2px;
-  }
-  .ol:hover .il{
-  display:block;
-  
-  list-style-type:none;
- position:absolute;
- padding:0;
-  }
-  .il li{
-  display:block;
-  }
-  .iil{
-  display:none;
-  position:absolute;
-  top:0;
-  left:100%;
-  padding:0;
-  }
-  .ool{
-  position:relative;
-  }
-  .ool:hover .iil{
-  display:block;
-  }
-  nav{
-  background-color:purple;
-  }
- div.container {
-  text-align: center;
-}
-
-ol{
-  display: inline-block;
-  text-align: left;
-}
-  
-  </style>
-
+<div>
+<center>
+<form>
+Select Your Current Level:
+<select size="1" name="links" onchange="window.location.href=this.value;"> 
+<option value="second.html">Beginner</option>
+<option value="HTMLMcq2.html">Intermediate</option>
+<option value="#">Advanced</option>
+</select>
+</form>
+</center>
+</div>
 
 <h3>1.HTML Stands for:</h3>
 <ol type="A">
@@ -822,7 +907,34 @@ ol{
 <button id="zz">show Answer</button>
  <br><br>
  </table>
+ 
+ <footer class="footer" style="background-color:purple; width:100%">
+<center><h3>Designed And Developed by Piyush Srivastava</h3>
+<p id="xx">
+Founder:Piyush Srivastava<br>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p>
+<table class="tbl">
+<tr><td>Social Links</td><td>Learn</td><td>Interview Preperation</td><td>Languages</td><td>Certifications</td><td>Careers</td></tr>
+<tr><td>LinkedIn</td><td>FrontEnd</td><td>DSA SHEETS</td><td>Languages</td><td>Certifications</td><td>Remote Jobs</td></tr>
+<tr><td>Twitter</td><td>BackEnd</td><td>ROADMAPS</td><td>JavaScript</td><td>O Level,A level</td><td>Job Portals</td></tr>
+<tr><td>Github</td><td>Docker</td><td>Interview Experience</td><td>Python</td><td>B level</td><td>Personal Blogs</td></tr>
+<tr><td>EmailId</td><td>Linux</td><td>Internships</td><td>
+ava</td><td>Microsoft Python certification,Oracle Certifications</td><td>Join community</td></tr>
+</table>
+
+
+</center>
+</footer>
+
+                        
+<script type='text/javascript'>
+		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
+</script>
+                    
+ 
  </div> 
+ 
+ </div>
 
 
 
