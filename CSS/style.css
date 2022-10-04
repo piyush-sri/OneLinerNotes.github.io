@@ -120,6 +120,7 @@ table td{
       display: block;
       width: 25px;
       height: 10px;
+	     right:20px;
       border-top: 2px solid #eee;
     }
     .nav > .nav-links {
