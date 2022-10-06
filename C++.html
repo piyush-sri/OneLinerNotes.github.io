@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/C++.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<div class="container">
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            OneLinerNotes
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+          <li><a href="#" target="_blank">Home</a></li>
+          <li><a href="#" target="_blank">HTML</a></li>
+          <li><a href="#" target="_blank">CSS</a></li>
+          <li><a href="#" target="_blank">Javascript</a></li>
+          <li><a href="#" target="_blank">C++</a></li>
+          <li><a href="#" target="_blank">Mcqs</a></li>
+          <a class="icon">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+
+          </a>
+            </ul>
+        </div>
+      </div><br><br><br>
+
+
+ <div class="links">
+ 
+	<h3>Programming Paradigm:</h3>
+<p>It is the methods which we use to solve problem or to do some task.<strong>A programming paradigm is a way, an approach, a style by which we write programs in a specific programming language to solve some problem.</strong> 
+You may be thinking what style or approach are we talking about. It is the approach creation of objects and creating programs in object oriented programming or solving problems with series of functions in functional programming or a style of creation of logic by series of symbols in logic programming.<br><br>
+<strong>Programming paradigms</strong> are approaches used to categorize or classify programming languages based on techniques and features they support. <br><br>
+
+For example:<br>
+
+1)Object-oriented programming is best suited for implementing real-world entities by hiding important data and finding methods with the entities. Example C++, Java, Python, etc.<br>
+
+2)Logical programming is best for creating logic by a complex structure of symbols. Example Prolog, F-logic, etc.<br><br>
+
+A good programming language should support multiple paradigms because different programming problems require a different way to approach. If a programing language support only one or two paradigms then it may not be sufficient or contains feature required. <br><br>
+
+Most modern languages support are multi-paradigm languages like C++, C#, Python, Go, etc. <br><br>
+
+<h3>Types Of Programming Paradigms:</h3>
+1)Imperative Programming Paradigm.<br><br>
+2)Declarative Programming Paradigm.<br><br>
+<h3>Understanding Imperative and Declarative:</h3>
+Let’s Take a simple Example,In C++ Language you learn about stack data structure, and also implemented each function of stack data structure step by step, like for push operation you declare and provide implementation of a push function , for pop operation  you declare and provide implementation of a pop function .<br><br>
+
+So, we learn stack data structure by first implementing every stack functions and understanding their functioning step by step.This approach is known as Imperative Programming Paradigm in this the code describes a step-by-step process for a program’s execution. Because of this, beginners often find it easier to reason with imperative code by following along with the steps in the process.<br><br>
+The step-by-step process contains individual statements, instructions, or function calls. In the programming world, this process is called the control flow.<br><br>
+
+On the other hand, you also learned about header files in C/C++ language,for stack data structure we already have a header file in C++  and we include it as  #include&lt;stack&gt;,this header file already have the implementation of the stack functions so when you are including stack header file you need not to provide implementation of stack functions you can just directly use them by calling and passing some value to them.  This is declarative Programming Paradigm, in this we only concern about the result we want and use the already implemented functions according to our use to get our desired output.<br><br>
+Example:1
+
+<pre>
+<code>
+//1) *Imperative approach to implement stack using arrays in C++
+#include &lt;iostream&gt;
+using namespace std;
+int stack[100], n=100, top=-1;
+void push(int val) {
+   if(top&gt;=n-1)
+   cout&lt;&lt;&quot;Stack Overflow&quot;&lt;&lt;endl;
+   else {
+      top++;
+      stack[top]=val;
+   }
+}
+void pop() {
+   if(top&lt;=-1)
+   cout&lt;&lt;&quot;Stack Underflow&quot;&lt;&lt;endl;
+   else {
+      cout&lt;&lt;&quot;The popped element is &quot;&lt;&lt; stack[top] &lt;&lt;endl;
+      top--;
+   }
+}
+void display() {
+   if(top&gt;=0) {
+      cout&lt;&lt;&quot;Stack elements are:&quot;;
+      for(int i=top; i&gt;=0; i--)
+      cout&lt;&lt;stack[i]&lt;&lt;&quot; &quot;;
+      cout&lt;&lt;endl;
+   } else
+   cout&lt;&lt;&quot;Stack is empty&quot;;
+}
+int main() {
+   int ch, val;
+   cout&lt;&lt;&quot;1) Push in stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;2) Pop from stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;3) Display stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;4) Exit&quot;&lt;&lt;endl;
+   do {
+      cout&lt;&lt;&quot;Enter choice: &quot;&lt;&lt;endl;
+      cin&gt;&gt;ch;
+      switch(ch) {
+         case 1: {
+            cout&lt;&lt;&quot;Enter value to be pushed:&quot;&lt;&lt;endl;
+            cin&gt;&gt;val;
+            push(val);
+            break;
+         }
+         case 2: {
+            pop();
+            break;
+         }
+         case 3: {
+            display();
+            break;
+         }
+         case 4: {
+            cout&lt;&lt;&quot;Exit&quot;&lt;&lt;endl;
+            break;
+         }
+         default: {
+            cout&lt;&lt;&quot;Invalid Choice&quot;&lt;&lt;endl;
+         }
+      }
+   }while(ch!=4);
+   return 0;
+}
+ 
+
+</code>
+
+</pre>
+
+Now, Converting the imperative approach to declarative approach.
+ex:
+<pre>
+<code>
+//declarative Approach implementing approach to use stack data structure.
+#include &lt;iostream&gt;
+#include &lt;stack&gt;
+
+using namespace std;
+
+class stack1
+{
+    stack&lt;int&gt; st;
+	public: 
+	
+	void isemt()
+	{
+		if(st.empty())
+			cout&lt;&lt;&quot;Stack is empty&quot;&lt;&lt;endl;
+		else
+			cout&lt;&lt;&quot;Stack is not empty&quot;&lt;&lt;endl;
+	}
+	
+	void stksize()
+	{
+		
+		cout&lt;&lt;&quot;Size of stack is:&quot;&lt;&lt;st.size()&lt;&lt;endl;	
+	}
+	
+    void stkpush(int val) 
+	{
+   		st.push(val);
+	}
+	void stkpop() 
+	{
+	    st.pop();
+      	cout&lt;&lt;&quot;The element is popped &quot;&lt;&lt;endl;
+	}	
+
+ 	void display() 
+	{
+   		while (!st.empty())
+		{
+			cout &lt;&lt; ' ' &lt;&lt; st.top();
+			st.pop();
+		}
+         cout &lt;&lt; endl;
+	}	
+};
+
+int main() {
+	
+   stack1 stk;
+   int ch, val;
+   cout&lt;&lt;&quot;1) Push in stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;2) Pop from stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;3) Display stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;4) Check stack is empty or not&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;5) Size of stack&quot;&lt;&lt;endl;
+   cout&lt;&lt;&quot;6) Exit&quot;&lt;&lt;endl;
+   do {
+      cout&lt;&lt;&quot;Enter choice: &quot;&lt;&lt;endl;
+      cin&gt;&gt;ch;
+      switch(ch) {
+         case 1: {
+            cout&lt;&lt;&quot;Enter value to be pushed:&quot;&lt;&lt;endl;
+            cin&gt;&gt;val;
+            stk.stkpush(val);
+            break;
+         }
+         case 2: {
+            stk.stkpop();
+            break;
+         }
+         case 3: {
+            stk.display();
+            break;
+         }
+         case 4: {
+            stk.isemt();
+            break;
+         }
+         case 5: {
+            stk.stksize();
+            break;
+         }
+         case 6: {
+            cout&lt;&lt;&quot;Exit&quot;&lt;&lt;endl;
+            break;
+         }
+         default: {
+            cout&lt;&lt;&quot;Invalid Choice&quot;&lt;&lt;endl;
+         }
+      }
+   }while(ch!=6);
+   return 0;
+}
+
+</code>
+</pre>
+You must be confused many of you haven’t read that big codes, so here is an simple example.<br><br>
+<strong>Q:C++ Program to raise x to the power of y.</strong><br>
+<strong>1.Imperative Approach.</strong><br>
+<pre>
+<code>
+#include
+using namespace std;
+
+int main(){
+   int x, y, ans = 1;
+
+   cout &lt;&lt; &quot;Enter the base value: n&quot;;
+   cin &gt;&gt; x;
+
+   cout &lt;&lt; &quot;Enter the exponent value: n&quot;;
+   cin &gt;&gt; y;
+
+   for(int i=0; i&lt;y; i++)
+   ans *= x;
+
+   cout &lt;&lt; x &lt;&lt;&quot; raised to the power &quot;&lt;&lt; y &lt;&lt;&quot; is &quot;&lt;&amp;;lt;ans;
+
+   return 0;
+}
+
+</code>
+</pre>
+
+<strong>2.Declarative Approach.</strong><br>
+<pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+int main() 
+{
+    float base, exponent, result;
+
+    cout &lt;&lt; &quot;Enter base and exponent respectively:  &quot;;
+    cin &gt;&gt; base &gt;&gt; exponent;
+
+    result = pow(base, exponent);
+
+    cout &lt;&lt; base &lt;&lt; &quot;^&quot; &lt;&lt; exponent &lt;&lt; &quot; = &quot; &lt;&lt; result;
+    
+    return 0;
+}
+
+</code>
+</pre>
+Now i hope that the meaning of imperative and declarative is clear to you guys!!!.<br><br>
+
+Languages which can be use both paradigm are :<br>
+<strong>Python</strong>- supports both imperative and declarative programming paradigm with the concept of python libraries and modules.<br>
+<strong>Java</strong>- Supports both imperatve and declarative programming paradigm with introduction of collections framework.<br>
+<strong>C++</strong> - Supports both imperative and declarative programming paradigm with introduction of STL(Standard Template Library) which introduced in its newer version.<br>
+<br><br>
+<table>
+<tr><th>Imperative programming paradigm(how to do)</th><th>Declarative programming paradigm(what to do)</th></tr>
+<tr><td>You describe the step-by-step instructions for how an executed program achieves the desired results.</td><td>You set the conditions that trigger the program execution to produce the desired results. </td></tr>
+<tr><td>With the emphasis on the control flow, you can often follow the step-by-step process fairly easily. However, as you add more features and code to your program, it can become longer and more complex, making it increasingly confusing and time-consuming to read.
+</td><td>This paradigm is less complex and requires less code, making it easier to read.</td></tr>
+<tr><td>Cutomizing the source code is easierCustomizing the source code is more difficult because of complicated syntax and the paradigm’s dependence on implementing a pre-configured algorithm.</td><td>Customizing the source code is difficult.Customizing the source code is more difficult because of complicated syntax and the paradigm’s dependence on implementing a pre-configured algorithm. </td></tr>
+<tr><td>Its main goal is to describe how to get it or accomplish it. </td><td>Its main goal is to describe the desired result without direct dictation on how to get it.  </td></tr>
+<tr><td>C,C++,Java,Python follows imperative programming.</td><td>Domain Specific ex: HTML,SQL,CSS,XML follows declarative Programming.</td></tr>
+</table>
+
+
+</p>
+
+</div>
+<div class="footer">
+	  <footer style="background-color:#1177ca; color:white;">
+	<div id="foot"> 
+<h3>Designed And Developed by Piyush Srivastava</h3> 
+<p>
+Founder:Piyush Srivastava<br>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p></div> 
+<div class="foot">
+<div>
+<ul>Social Links<hr><br>
+<li>LinkedIn</li>
+<li>Twitter</li>
+<li>Email</li>
+<li>Youtube</li>
+</ul></div>
+<div>
+<ul>Courses<hr><br>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>LibreOffice</li>
+<li>Java</li>
+</ul></div>
+<div>
+<ul>Roadmaps:<hr><br>
+<li>FrontEnd Development</li>
+<li>Backend Development</li>
+<li>Devops</li>
+</ul></div>
+<div>
+<ul>Jobs<hr><br>
+<li>Remote Jobs</li>
+<li>Government Jobs</li>
+<li>Internships</li>
+</ul></div>
+</div>
+
+</footer>
+</div>
+    </div>                    
+<script type='text/javascript'>
+		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
+</script>
+                    
+	  
+	  </div>
+	  </div>
+</body>
+</html>
