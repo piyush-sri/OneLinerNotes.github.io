@@ -6,6 +6,10 @@
     margin: 0px;
     font-family: 'segoe ui';
   }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
   
   .nav {
     height: 53px;
@@ -98,17 +102,20 @@
  }
 .links{
 	flex-direction:column;
-	width:100%;
-	text-align:justify;
-	padding:0px 120px;
+	width:80%;
+	margin:auto;
 }
 #foot{
 	padding:0px 0px;
-	text-align:justify;
+	text-align:center;
 	flex-direction:column;
 }
 pre,code{
 	font-size:1.2em;
+	 
+}
+pre{
+	  overflow-x: auto;
 }
 table,tr,th,td{
 	border:1px solid black;
