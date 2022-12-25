@@ -1,0 +1,1001 @@
+ <!doctype html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<title>OneLiner HTML MCQs</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        .container {
+            display: flex;
+            flex-direction:row;
+			
+        }
+		
+		.main{
+		 font-size: 1rem;
+		 padding:0px 10px;
+		}
+		 
+* {
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 53px;
+    width: 100%;
+    background-color: #1177ca;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+  }
+  /*to be appear in phones*/
+  .nav > .nav-btn {
+    display: none;
+  }
+  .nav{
+	  position:fixed;
+  }
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+	justify-content:right;
+    font-size: 18px;
+	height:50px;
+  }
+  .nav > .nav-links > ul li a{
+    display: block;
+    padding: 0 8px;
+    color: #fff;
+    line-height: 38px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+    
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+    background-color: #1177ca;
+    
+    
+  }
+  .nav > .nav-links > ul li:hover{
+      background-color: #0b65af;
+      border-radius: 5px;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+ .nav .nav-links ul a.icon{
+ margin-left: 80px;
+ margin-right: 10px;
+ }
+
+ .nav .nav-links ul a i{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+ }
+ .container{
+	 box-sizing:border-box;
+	 width:100%;
+ }
+ .container div{
+	 display:flex;
+	 justify-content:center;
+ }
+ .container div ul li{
+	 list-style:none;
+ }
+  @media (max-width:750px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+	  right:20px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > ul li a {
+      display: block;
+      width: 100%;
+    }
+
+      .nav > .nav-links > ul li{
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+         
+      }
+      .nav > .nav-links > ul li a{
+          margin-left: 40%;
+      }
+      .nav .nav-links ul a.icon{
+        margin-left: 33%;
+      }
+
+    /*   */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+	
+ .container div ul li{
+	 list-style:none;
+ }
+  }
+ 
+
+@media (max-width:480px){
+	.container div{
+	
+	flex-direction:column;
+	justify-content:center;
+	 
+ }
+}
+
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+<!--main jquery for mcqs-->
+<!--first question-->
+	$(".ans").hide();
+	
+	 $(".but").click(function () {
+            $(this).text(function(i, v){
+               return v === 'View Answer' ? 'Hide Answer' : 'View Answer'
+            })
+        });
+	
+ 
+
+  });
+  function show(q){
+	var a = document.getElementsByTagName("p");
+	var toggle = a[q].style.display;
+	if(toggle == "none"){
+		a[q].style.display = "block";
+
+	}
+	else{
+		a[q].style.display = "none";
+	}
+  }
+  </script>
+</head>
+<body>
+<div class="container">
+<div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            OneLinerNotes
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+          <li><a href="#" target="_blank">Home</a></li>
+          <li><a href="#" target="_blank">HTML</a></li>
+          <li><a href="#" target="_blank">CSS</a></li>
+          <li><a href="#" target="_blank">Javascript</a></li>
+          <li><a href="C++.html" target="_blank">C++</a></li>
+          <li><a href="#" target="_blank">Mcqs</a></li>
+          <a class="icon">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+
+          </a>
+            </ul>
+        </div>
+      </div>
+
+<center>
+<br><br><br>
+
+ <div id="google_translate_element"></div>
+<div class="main">
+<table cellpadding="0" cellspacing="0">
+<tr><td> 
+<h3>1)What does CSS stand for?</h3>
+<ol type="A">
+<li> Creative Style Sheets</li>
+<li> Cascading Style Sheets</li>
+<li>Computer Style Sheets</li>
+<li>Custom Style Sheets</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(0)">View Answer</button>
+</td>
+</tr>
+
+<tr> <td>
+<h3>2)Which of the following is the correct syntax for writing a CSS rule?</h3>
+<ol type="A">
+<li> element { property: value; }</li>
+<li> element: property: value;</li>
+<li>element { property = value; }</li>
+<li>element property: value;</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(1)">View Answer</button>
+</td>
+</tr>
+ 
+<tr> <td>
+<h3>3)How do you apply a style to a specific element on a webpage?</h3>
+<ol type="A">
+<li> By using the element's ID attribute</li>
+<li>  By using the element's class attribute</li>
+<li> By using the element's name attribute</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(2)">View Answer</button>
+</td>
+</tr>
+  
+<tr> <td>
+<h3>4)What is the default value for the position property in CSS?</h3>
+<ol type="A">
+<li> absolute</li>
+<li>  relative</li>
+<li>  fixed</li>
+<li>static</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(3)">View Answer</button>
+</td>
+</tr>
+
+ <tr> <td>
+<h3>5)How do you apply a style to all the paragraphs on a webpage?</h3>
+<ol type="A">
+<li> By using the p element as the selector</li>
+<li>  By using the #p as the selector</li>
+<li> By using the .p as the selector</li>
+<li>None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(4)">View Answer</button>
+</td>
+</tr> 
+
+
+<tr> <td>
+<h3>6)Which of the following is not a valid value for the display property in CSS?</h3>
+<ol type="A">
+<li>  block</li>
+<li>  inline</li>
+<li>  none</li>
+<li>list</li>
+</ol>
+<p class="ans">Correct answer : D<br>
+</p>
+<button class="but" onclick="show(5)">View Answer</button>
+</td>
+</tr> 
+
+<tr> <td>
+<h3>7)How do you specify a color in CSS?</h3>
+<ol type="A">
+<li>  By using the color name, such as "red"</li>
+<li>  By using the RGB value, such as "rgb(255,0,0)"</li>
+<li> By using the hexadecimal value, such as "#FF0000"</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(6)">View Answer</button>
+</td>
+</tr>   
+
+
+<tr> <td>
+<h3>8)What is a CSS class?</h3>
+<ol type="A">
+<li>  A group of elements that share the same style</li>
+<li>  A specific element that has a unique style</li>
+<li> A type of selector that is used to apply a style to a specific element</li>
+<li>None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(7)">View Answer</button>
+</td>
+</tr> 
+  
+<tr> <td>
+<h3>9)How do you specify the font size in CSS?</h3>
+<ol type="A">
+<li>  By using the font-size property and a number value, such as "12px"</li>
+<li>  By using the size property and a number value, such as "12"</li>
+<li> By using the font property and a size value, such as "12pt"</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(8)">View Answer</button>
+</td>
+</tr> 
+
+<tr> <td>
+<h3>10)What is the default value for the visibility property in CSS?</h3>
+<ol type="A">
+<li>  visible</li>
+<li>  hidden</li>
+<li>  transparent</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(9)">View Answer</button>
+</td>
+</tr> 
+
+<tr> <td>
+<h3>11)How do you create a CSS rule that only applies to a specific element when it is hovered over with the mouse?</h3>
+<ol type="A">
+<li>  By using the :hover pseudo-class</li>
+<li> By using the hover property</li>
+<li> By using the mouseover property</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(10)">View Answer</button>
+</td>
+</tr> 
+ 
+ <tr> <td>
+<h3>12)Which of the following is not a valid value for the overflow property in CSS?</h3>
+<ol type="A">
+<li>  visible</li>
+<li> hidden</li>
+<li> scroll</li>
+<li> overflow </li>
+</ol>
+<p class="ans">Correct answer :D </p>
+<button class="but" onclick="show(11)">View Answer</button>
+</td>
+</tr> 
+
+ <tr> <td>
+<h3>13)How do you specify the background color of an element in CSS?</h3>
+<ol type="A">
+<li>   By using the background-color property and a color value</li>
+<li>  By using the bg-color property and a color value </li>
+<li>  By using the color property and a background-color value </li>
+<li>  None of the above </li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(12)">View Answer</button>
+</td>
+</tr> 
+
+ <tr> <td>
+<h3>14)What is the default value for the float property in CSS?</h3>
+<ol type="A">
+<li>   left</li>
+<li>  right </li>
+<li>  none </li>
+<li>   Both a and b </li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(13)">View Answer</button>
+</td>
+</tr> 
+
+ <tr> <td>
+<h3>15)How do you specify the font family of an element in CSS?</h3>
+<ol type="A">
+<li>  By using the font-family property and a list of font names, such as "Arial, Helvetica, sans-serif"</li>
+<li>By using the font property and a list of font names, such as "Arial, Helvetica, sans-serif"</li>
+<li>By using the family property and a list of font names, such as "Arial, Helvetica, sans-serif"</li>
+<li>  All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(14)">View Answer</button>
+</td>
+</tr> 
+ 
+
+ <tr> <td>
+<h3>16)What is the default value for the z-index property in CSS?</h3>
+<ol type="A">
+<li> 0</li>
+<li> 1</li>
+<li> -1</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : D
+<br>
+Default value is : auto
+</p>
+<button class="but" onclick="show(15)">View Answer</button>
+</td>
+</tr> 
+
+<tr> <td>
+<h3>17)How do you specify the width of an element in CSS?</h3>
+<ol type="A">
+<li>By using the width property and a number value, such as "200px"</li>
+<li>By using the size property and a number value, such as "200"</li>
+<li> By using the width property and a percentage value, such as "50%"</li>
+<li>Both A and C</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(16)">View Answer</button>
+</td>
+</tr> 
+
+<tr> <td>
+<h3>18)What is a CSS pseudo-class?</h3>
+<ol type="A">
+<li>A special class that is used to apply a style to a specific element</li>
+<li>A class that is used to apply a style to a group of elements</li>
+<li> A class that is used to apply a style to an element when it is in a specific state or condition</li>
+<li>None of the above</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(17)">View Answer</button>
+</td>
+</tr> 
+ 
+<tr> <td>
+<h3>19)How do you specify the padding of an element in CSS?</h3>
+<ol type="A">
+<li>By using the padding property and a number value, such as "10px"</li>
+<li>By using the padding-top, padding-right, padding-bottom, and padding-left properties and a number value, such as "10px"</li>
+<li> By using the space property and a number value, such as "10"</li>
+<li>Both B and A</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(18)">View Answer</button>
+</td>
+</tr> 
+  
+
+<tr> <td>
+<h3>20)What is the default value for the cursor property in CSS?</h3>
+<ol type="A">
+<li>pointer</li>
+<li>default</li>
+<li> auto</li>
+<li>None of the above</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(19)">View Answer</button>
+</td>
+</tr> 
+ 
+<tr> <td>
+<h3>21)How do you specify the margin of an element in CSS?</h3>
+<ol type="A">
+<li>By using the margin property and a number value, such as "10px"</li>
+<li>By using the margin-top, margin-right, margin-bottom, and margin-left properties and a number value, such as "10px"</li>
+<li> By using the space property and a number value, such as "10"</li>
+<li>Both A and B</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(20)">View Answer</button>
+</td>
+</tr> 
+
+ <tr> <td>
+<h3>22)What is the default value for the display property of a list item in CSS?</h3>
+<ol type="A">
+<li>block</li>
+<li>inline</li>
+<li> list-item</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : C</p>
+<button class="but" onclick="show(21)">View Answer</button>
+</td>
+</tr>  
+
+ <tr> <td>
+<h3>23)How do you specify the border of an element in CSS?</h3>
+<ol type="A">
+<li>By using the border property and a number value, such as "1px solid #000000"</li>
+<li>By using the border-top, border-right, border-bottom, and border-left properties and a number value, such as "1px solid #000000"</li>
+<li> By using the border property and a color value, such as "#000000"</li>
+<li> Both A and B</li>
+</ol>
+<p class="ans">Correct answer : D</p>
+<button class="but" onclick="show(22)">View Answer</button>
+</td>
+</tr>
+
+ <tr> <td>
+<h3>24)What is the default value for the position property of a list item in CSS?</h3>
+<ol type="A">
+<li>static</li>
+<li>relative</li>
+<li> absolute</li>
+<li> fixed</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(23)">View Answer</button>
+</td>
+</tr>
+  
+ <tr> <td>
+<h3>25)How do you specify the font style of an element in CSS?</h3>
+<ol type="A">
+<li>By using the font-style property and a value such as "italic" or "oblique"</li>
+<li>By using the style property and a value such as "italic" or "oblique"</li>
+<li>By using the font property and a value such as "italic" or "oblique"</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(24)">View Answer</button>
+</td>
+</tr>
+ 
+ <tr> <td>
+<h3>26)What is the default value for the clear property in CSS?</h3>
+<ol type="A">
+<li> none</li>
+<li> left</li>
+<li>right</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(25)">View Answer</button>
+</td>
+</tr>
+ 
+
+ <tr> <td>
+<h3>27)How do you specify the font weight of an element in CSS?</h3>
+<ol type="A">
+<li>By using the font-weight property and a value such as "bold" or "normal"</li>
+<li>By using the weight property and a value such as "bold" or "normal"</li>
+<li>By using the font property and a value such as "bold" or "normal"</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(26)">View Answer</button>
+</td>
+</tr>
+ 
+ <tr> <td>
+<h3>28)What is the default value for the text-align property in CSS?</h3>
+<ol type="A">
+<li>left</li>
+<li> right</li>
+<li>center</li>
+<li> justify</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(27)">View Answer</button>
+</td>
+</tr>
+
+ <tr> <td>
+<h3>29)How do you specify the text decoration of an element in CSS?</h3>
+<ol type="A">
+<li>By using the text-decoration property and a value such as "underline" or "overline"</li>
+<li> By using the decoration property and a value such as "underline" or "overline"</li>
+<li>By using the text property and a value such as "underline" or "overline"</li>
+<li>  All of the above
+</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(28)">View Answer</button>
+</td>
+</tr>
+
+  <tr> <td>
+<h3>30)What is the default value for the visibility property of a list item in CSS?</h3>
+<ol type="A">
+<li>visible</li>
+<li>  hidden</li>
+<li>transparent</li>
+<li>  None of the above
+</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(29)">View Answer</button>
+</td>
+</tr>
+
+
+   <tr> <td>
+<h3>31)How do you specify the vertical alignment of an element in CSS?</h3>
+<ol type="A">
+<li>By using the vertical-align property and a value such as "top" or "bottom"</li>
+<li>By using the align property and a value such as "top" or "bottom"</li>
+<li> By using the valign property and a value such as "top" or "bottom"</li>
+<li> All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(30)">View Answer</button>
+</td>
+</tr>
+
+ 
+   <tr> <td>
+<h3>32)What is the default value for the list-style-type property in CSS?</h3>
+<ol type="A">
+<li>none</li>
+<li>disc</li>
+<li>circle</li>
+<li>  square</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(31)">View Answer</button>
+</td>
+</tr>
+
+   <tr> <td>
+<h3>33)How do you specify the text color of an element in CSS?</h3>
+<ol type="A">
+<li>By using the text-color property and a color value</li>
+<li>By using the color property and a text-color value</li>
+<li>By using the font-color property and a color value</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(32)">View Answer</button>
+</td>
+</tr>
+ 
+
+ <tr> <td>
+<h3>34)What is the default value for the list-style-position property in CSS?</h3>
+<ol type="A">
+<li>outside</li>
+<li>inside</li>
+<li>none</li>
+<li>Both a and b</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(33)">View Answer</button>
+</td>
+</tr>
+ 
+  <tr> <td>
+<h3>35)How do you specify the text transformation of an element in CSS?</h3>
+<ol type="A">
+<li> By using the text-transform property and a value such as "uppercase" or "lowercase"</li>
+<li>By using the transform property and a value such as "uppercase" or "lowercase"</li>
+<li> By using the text property and a value such as "uppercase" or "lowercase"</li>
+<li>All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(34)">View Answer</button>
+</td>
+</tr>
+ 
+  <tr> <td>
+<h3>36)What is the default value for the list-style-image property in CSS?</h3>
+<ol type="A">
+<li> none</li>
+<li>url("image.jpg")</li>
+<li>url("image.png")</li>
+<li> Both b and c</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(35)">View Answer</button>
+</td>
+</tr>
+
+ <tr> <td>
+<h3>37)How do you specify the vertical spacing between lines of text in CSS?</h3>
+<ol type="A">
+<li>  By using the line-spacing property and a number value, such as "1.5"</li>
+<li>By using the leading property and a number value, such as "1.5"</li>
+<li>By using the spacing property and a number value, such as "1.5"</li>
+<li>  All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(36)">View Answer</button>
+</td>
+</tr>
+
+  <tr> <td>
+<h3>38)What is the default value for the text-indent property in CSS?</h3>
+<ol type="A">
+<li>  0</li>
+<li>1</li>
+<li>-1</li>
+<li>None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(37)">View Answer</button>
+</td>
+</tr>
+
+<tr> <td>
+<h3>39)How do you specify the horizontal spacing between characters of text in CSS?</h3>
+<ol type="A">
+<li>By using the letter-spacing property and a number value, such as "1px"</li>
+<li>By using the kerning property and a number value, such as "1px"</li>
+<li>By using the spacing property and a number value, such as "1"</li>
+<li>All of the above
+</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(38)">View Answer</button>
+</td>
+</tr>
+
+ 
+<tr> <td>
+<h3>40)What is the default value for the text-transform property in CSS?</h3>
+<ol type="A">
+<li>none</li>
+<li>uppercase</li>
+<li>lowercase</li>
+<li> capitalize</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(39)">View Answer</button>
+</td>
+</tr>
+
+  
+<tr> <td>
+<h3>41)How do you specify the text shadow of an element in CSS?</h3>
+<ol type="A">
+<li>By using the text-shadow property and values for the horizontal offset, vertical offset, blur radius, and color, such as "2px 2px 5px #000000"</li>
+<li> By using the shadow property and values for the horizontal offset, vertical offset, blur radius, and color, such as "2px 2px 5px #000000"</li>
+<li> By using the text property and values for the horizontal offset, vertical offset, blur radius, and color, such as "2px 2px 5px #000000"</li>
+<li>  All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(40)">View Answer</button>
+</td>
+</tr>
+ 
+<tr> <td>
+<h3>42)What is the default value for the text-decoration property in CSS?</h3>
+<ol type="A">
+<li> none</li>
+<li> underline</li>
+<li>  overline</li>
+<li> line-through</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(41)">View Answer</button>
+</td>
+</tr>
+
+ 
+<tr> <td>
+<h3>43)How do you specify the text direction of an element in CSS?</h3>
+<ol type="A">
+<li>By using the text-direction property and a value such as "ltr" or "rtl"</li>
+<li> By using the direction property and a value such as "ltr" or "rtl"</li>
+<li> By using the text property and a value such as "ltr" or "rtl"</li>
+<li>  All of the above</li>
+</ol>
+<p class="ans">Correct answer : B</p>
+<button class="but" onclick="show(42)">View Answer</button>
+</td>
+</tr>
+ 
+<tr> <td>
+<h3>44)What is the default value for the text-align-last property in CSS?</h3>
+<ol type="A">
+<li> auto</li>
+<li> right</li>
+<li> center</li>
+<li> justify</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(43)">View Answer</button>
+</td>
+</tr>
+ 
+<tr> <td>
+<h3>45)How do you specify the word spacing of an element in CSS?</h3>
+<ol type="A">
+<li> By using the word-spacing property and a number value, such as "1px"</li>
+<li> By using the spacing property and a number value, such as "1"</li>
+<li>By using the words property and a number value, such as "1px"</li>
+<li> All of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(44)">View Answer</button>
+</td>
+</tr>
+
+<tr> <td>
+<h3>46)What is the default value for the text-overflow property in CSS?</h3>
+<ol type="A">
+<li> clip</li>
+<li>  ellipsis</li>
+<li>string</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(45)">View Answer</button>
+</td>
+</tr>
+ 
+
+ <tr> <td>
+<h3>47)How do you specify the white space handling of an element in CSS?</h3>
+<ol type="A">
+<li> By using the white-space property and a value such as "normal" or "pre"</li>
+<li> By using the space property and a value such as "normal" or "pre"</li>
+<li> By using the white property and a value such as "normal" or "pre"</li>
+<li>  All of the above
+</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(46)">View Answer</button>
+</td>
+</tr>
+ 
+<tr> <td>
+<h3>48)What is the default value for the white-space-collapse property in CSS?</h3>
+<ol type="A">
+<li> collapse</li>
+<li> separate</li>
+<li>discard</li>
+<li> None of the above</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(47)">View Answer</button>
+</td>
+</tr>
+ 
+ <tr> <td>
+<h3>49)How do you specify the word break handling of an element in CSS?</h3>
+<ol type="A">
+<li> By using the word-break property and a value such as "normal" or "break-all"</li>
+<li>By using the break property and a value such as "normal" or "break-all"</li>
+<li>By using the word property and a value such as "normal" or "break-all"</li>
+<li> All of the above
+</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(48)">View Answer</button>
+</td>
+</tr>
+ 
+
+ <tr> <td>
+<h3>50)What is the default value for the word-wrap property in CSS?</h3>
+<ol type="A">
+<li>normal</li>
+<li> break-word</li>
+<li>none</li>
+<li>Both a and b</li>
+</ol>
+<p class="ans">Correct answer : A</p>
+<button class="but" onclick="show(49)">View Answer</button>
+</td>
+</tr>
+</table>
+</div>
+
+
+                        
+  <div class="footer">
+	  <footer style="background-color:#1177ca; color:white;">
+	  <center>
+<h3>Designed And Developed by Piyush Srivastava</h3>
+<p>
+Founder:Piyush Srivastava<br>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p></center>
+<div class="foot">
+<div>
+<ul>Social Links<hr><br>
+<li>LinkedIn</li>
+<li>Twitter</li>
+<li>Email</li>
+<li>Youtube</li>
+</ul></div>
+<div>
+<ul>Courses<hr><br>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>LibreOffice</li>
+<li>Java</li>
+</ul></div>
+<div>
+<ul>Roadmaps:<hr><br>
+<li>FrontEnd Development</li>
+<li>Backend Development</li>
+<li>Devops</li>
+</ul></div>
+<div>
+<ul>Jobs<hr><br>
+<li>Remote Jobs</li>
+<li>Government Jobs</li>
+<li>Internships</li>
+</ul></div>
+</div>
+
+</footer>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+                     
+<script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+ 					 
+<script type='text/javascript'>
+		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
+</script>
+                    
+	  
+	  </div>          
+
+</body>
+</html>
