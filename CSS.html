@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/C++.css">
+	 
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.css">
+
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            OneLinerNotes
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+          <li><a href="#" target="_blank">Home</a></li>
+          <li><a href="#" target="_blank">HTML</a></li>
+          <li><a href="#" target="_blank">CSS</a></li>
+          <li><a href="#" target="_blank">Javascript</a></li>
+          <li><a href="#" target="_blank">C++</a></li>
+          <li><a href="#" target="_blank">Mcqs</a></li>
+          <a class="icon">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+
+          </a>
+            </ul>
+        </div>
+      </div><br><br><br>
+
+<div class="container">
+
+ <div class="links">
+	<h3>CSS and its History. </h3>
+<p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the look and formatting of a document written in HTML. It was developed in the early 1990s by the World Wide Web Consortium (W3C) as a way to add style and layout to web pages.
+<br><br>
+The first version of CSS, CSS1, was released in 1996 and provided a way to control the appearance of text, fonts, and colors on web pages. CSS2, released in 1998, added support for media types, positioning, and other features.
+<br><br>
+In the early 2000s, CSS became more widely used as web browsers improved their support for the language. The release of CSS2.1 in 2011 introduced new features such as the ability to apply styles to specific media types and devices, and the introduction of the CSS3 module system.
+<br><br>
+Today, CSS is an essential tool for web development and is used to style and layout almost all modern websites. The latest version of CSS, CSS3, has added many new features such as support for responsive design, animation, and 3D transforms.
+<br><br>
+ 
+
+<h3>What is CSS?</h3>
+ <ol>
+   <li>CSS stands for Cascading Style Sheets.</li>
+<li>It is a stylesheet language used for describing the look and formatting of a document written in HTML.</li>
+<li>CSS is used to control the style of a web page, including its layout, colors, and fonts.
+<li>It allows you to apply styles consistently across multiple pages of a website.</li>
+<li>CSS is used in conjunction with HTML to create the structure and content of a web page. HTML provides the structure and content, while CSS controls the styling and layout.</li>
+<li>You can use CSS to style specific elements on a web page, or you can use classes and IDs to apply styles to multiple elements.</li>
+<li>You can use CSS media queries to apply different styles based on the size of the screen or device.</li>
+<li>CSS has a wide range of properties that you can use to control the appearance of elements, including font size, color, margins, padding, and more.</li>
+<li>You can use CSS frameworks like Bootstrap to quickly apply a consistent style to your website.</li>
+<li>CSS allows you to create dynamic and responsive websites that work well on a variety of devices.</li>
+ </ol>
+ <br><br>
+ <h3>Css Syntax:</h3>
+ <pre>
+<code class="language-css">
+p { color: red; font-size: 18px; }
+</code>
+</pre>
+In this example, the p selector applies the style to all p elements (paragraphs) in the HTML document. The declaration block contains two declarations: one sets the color of the text to red, and the other sets the font size to 18 pixels.
+ <br><br>
+Each declaration consists of a property (such as color or font-size) and a value (such as red or 18px). The property and value are separated by a colon, and the declaration is terminated with a semicolon.
+ <br><br>
+Multiple declarations can be included in a single declaration block, separated by semicolons.
+ <br><br>
+ Here is an example of a simple CSS rule with multiple selectors, all on one line:
+<pre>
+<code class="language-css">
+h1, h2, h3 { color: blue; font-weight: bold; }
+</code>
+</pre>
+ <br><br>
+<h3>Types of CSS:</h3>
+ <br><br>
+ There are three types of CSS:
+ <ol type="1">
+   <li><strong>Inline CSS:</strong> Inline CSS is used to apply styles to a specific element. It is defined within the HTML element, using the style attribute. For example: <br><br>
+<pre>
+<code class="language-css">
+ &lt;p style="color: red; font-size: 18px;"&gt;This is a paragraph.&lt;/p&gt;
+</code>
+</pre> <br><br>
+In this example, the inline CSS applies the style to the p element, setting the color to red and the font size to 18 pixels.
+   </li>
+   <li><strong>Internal CSS:</strong> Internal CSS is used to style a specific HTML page. It is defined within the head element of the HTML document, using a style element. For example:<br><br>
+   <pre>
+<code class="language-css">
+ &lt;head&gt;
+ &lt;style&gt;
+    p {
+      color: red;
+      font-size: 18px;
+    }
+ &lt;/style&gt;
+&lt;/head&gt;
+</code>
+</pre>
+<br><br>
+   In this example, the internal CSS applies the style to all p elements in the HTML document, setting the color to red and the font size to 18 pixels.
+   </li>
+   <li>
+   <strong>External CSS:</strong> External CSS is used to style multiple HTML pages. It is defined in a separate CSS file, and is linked to the HTML documents using the link element in the head of the HTML document. For example:<br><br>
+     <pre>
+<code class="language-css">
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="/path/to/styles.css"&gt;
+&lt;/head&gt;
+</code>
+</pre>
+   
+   </li>
+ </ol>
+<br>
+ <h3>CSS Selectors</h3>
+ CSS selectors are used to specify which elements in an HTML document a style should be applied to. They allow you to target specific elements on a page and apply styles to them, making it easier to control the layout and appearance of your website.<br>
+
+There are many different types of CSS selectors, and they can be combined to create more specific and powerful selectors. Here is a summary of some of the most common CSS selectors:
+<br>
+<ol>
+<li><strong>Element selectors:</strong> These selectors target elements based on their type, such as p for paragraphs or div for divisions. For example, the following CSS rule selects all p elements and sets the font size to 18 pixels:
+     <pre>
+<code class="language-css">
+p {
+  font-size: 18px;
+}
+</code><br>
+</pre>
+    <pre>
+<code class="language-html">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</code>
+</pre>
+</li>
+
+<li>
+<strong>ID selectors:</strong> These selectors target an element based on its unique ID. IDs are specified in the HTML using the id attribute, and they must be unique within the document. For example, the following CSS rule selects an element with the ID main and sets the background color to yellow:
+    <pre>
+<code class="language-css">
+#main {
+  background-color: yellow;
+}
+</code>
+</pre><br>
+   <pre>
+<code class="language-html">
+&lt;div id="main"&gt;This is the main content.&lt;/div&gt;
+</code>
+</pre>
+</li>
+<li><strong>Class selectors:</strong> These selectors target elements based on their class. Classes are specified in the HTML using the class attribute, and an element can have multiple classes. For example, the following CSS rule selects all elements with the class error and sets the color to red:
+    <pre>
+<code class="language-css">
+.error {
+  color: red;
+}
+</code>
+</pre>
+
+    <pre>
+<code class="language-html">
+&lt;p class="error"&gt;This is an error message.&lt;/p&gt;
+&lt;div class="error"&gt;This is another error message.&lt;/div&gt;
+</code>
+</pre>
+</li>
+<li>
+<strong>element element:</strong> Selects all elements of the specified type that are descendants of the first element. For example, the following CSS rule selects all p elements that are descendants of a div element:
+    <pre>
+<code class="language-css">
+div p {
+  color: red;
+}
+
+</code>
+</pre>
+
+    <pre>
+<code class="language-html">
+&lt;div&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p&gt;This is another paragraph.&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+</li>
+
+<li>
+
+<strong>Descendant selectors:</strong> These selectors target elements that are descendants of another element. For example, the following CSS rule selects all p elements that are descendants of a div element and sets the font weight to bold:
+    <pre>
+<code class="language-css">
+div p {
+  font-weight: bold;
+}
+</code>
+</pre>
+</li>
+
+<li>
+<strong>Child selectors:</strong> These selectors target elements that are direct children of another element. For example, the following CSS rule selects all li elements that are children of a ul element and sets the list style to none:
+    <pre>
+<code class="language-css">
+ul > li {
+  list-style: none;
+}
+</code>
+</pre>
+</li>
+</ol>
+CSS selectors are an essential part of web development, and they allow you to apply styles to specific elements on your web pages. There are many different types of CSS selectors, and you can use them to create powerful and specific styles for your website.
+<br>
+Here are some additional CSS selectors that you might find useful:
+<br>
+<ol start="7">
+<li><strong>Attribute selectors:</strong> These selectors target elements based on their attributes and attribute values. For example, the following CSS rule selects all a elements with a target attribute set to _blank and sets the color to red:
+     <pre>
+<code class="language-css">
+a[target="_blank"] {
+  color: red;
+}
+</code>
+</pre>
+</li>
+
+<li>
+<strong>Pseudo-class selectors:</strong> These selectors target elements based on their state or position in the document. For example, the following CSS rule selects all a elements that are being hovered over by the mouse and sets the color to purple:
+  <pre>
+<code class="language-css">
+a:hover {
+  color: purple;
+}
+</code>
+</pre>
+</li>
+
+<li>
+<strong>Pseudo-element selectors:</strong> These selectors target specific parts of an element, such as the first letter or line of a paragraph. For example, the following CSS rule selects the first letter of all p elements and sets the font size to 36 pixels:
+<pre>
+<code class="language-css">
+p::first-letter {
+  font-size: 36px;
+}
+</code>
+</pre>
+</li>
+</ol>
+You can also combine CSS selectors to create more specific and powerful styles. For example, you can use a combination of element, class, and attribute selectors to target a specific element with a specific class and attribute value.
+<br>
+CSS selectors are an important part of web development, and they allow you to apply styles to specific elements on your web pages. By using different types of CSS selectors and combining them in different ways, you can create powerful and specific styles for your website.
+<br>
+
+
+<ol>
+<h3>Css Selectors One liner:</h3>
+<li>CSS selectors are used to specify which elements in an HTML document a style should be applied to.</li>
+<li>There are many different types of CSS selectors, including element, ID, class, descendant, child, attribute, pseudo-class, and pseudo-element selectors.</li>
+<li>You can combine CSS selectors to create more specific and powerful styles.</li>
+<li>CSS selectors are case-sensitive and must be written correctly in order to work properly.</li>
+<li>The specificity of a CSS selector determines which style will be applied to an element if there are multiple conflicting styles.</li>
+<li>You can use the !important declaration to override the specificity of a CSS rule and make it take precedence over other styles.</li>
+<li>Element selectors target elements based on their type, such as p for paragraphs or div for divisions.</li>
+<li>ID selectors target an element based on its unique ID, specified in the HTML using the id attribute.</li>
+<li>Class selectors target elements based on their class, specified in the HTML using the class attribute.</li>
+<li>Descendant selectors target elements that are descendants of another element.</li>
+<li>Child selectors target elements that are direct children of another element.</li>
+<li>Attribute selectors target elements based on their attributes and attribute values.</li>
+<li>Pseudo-class selectors target elements based on their state or position in the document.</li>
+<li>Pseudo-element selectors target specific parts of an element, such as the first letter or line of a paragraph.</li>
+</ol>
+
+<h3>Types of CSS Units:</h3>
+CSS units can be classified into two main categories: absolute units and relative units.
+<br>
+<ol>
+<li>
+<strong>Absolute units</strong> are units that are fixed and do not change based on the size or dimensions of the element or its parent. Examples of absolute units include pixels (px), centimeters (cm), millimeters (mm), inches (in), points (pt), and picas (pc). These units are useful for specifying sizes and dimensions that are consistent across all devices and screens, but they may not be as flexible as relative units.
+<ol>
+<li><strong>px (pixels):</strong> Pixels are used to specify the size of an element or its properties in terms of pixels on the screen.
+
+</li>
+<li><strong>cm (centimeters):</strong> Centimeters are used to specify the size of an element or its properties in terms of centimeters.
+
+</li>
+<li><strong>mm (millimeters):</strong> Millimeters are used to specify the size of an element or its properties in terms of millimeters.
+
+</li>
+<li><strong>in (inches)</strong>: Inches are used to specify the size of an element or its properties in terms of inches.
+
+</li>
+<li><strong>pt (points):</strong> Points are used to specify the size of an element or its properties in terms of points.
+
+</li>
+<li><strong>pc (picas):</strong> Picas are used to specify the size of an element or its properties in terms of picas.</li>
+</ol>
+
+
+
+</li><br>
+<li>
+<strong>Relative units</strong>, on the other hand, are units that are based on the size or dimensions of the element or its parent. Examples of relative units include ems (em), root ems (rem), percentages (%), viewport width (vw), and viewport height (vh). These units are useful for creating responsive designs that adjust to the size of the screen or the font size of the element.<br>
+ <ol>
+   <li><strong>em (ems):</strong> Ems are used to specify the size of an element or its properties in terms of the font size of the element.
+
+</li>
+   <li><strong>rem (root ems):</strong> Root ems are similar to ems, but they are based on the font size of the root element (usually the html element) rather than the parent element.
+
+</li>
+   <li><strong>% (percentages):</strong> Percentages are used to specify the size of an element or its properties in terms of a percentage of its parent element.
+
+</li>
+   <li><strong>vw (viewport width):</strong> Viewport width units are used to specify the size of an element or its properties in terms of a percentage of the viewport width.
+
+</li>
+   <li><strong>vh (viewport height):</strong> Viewport height units are used to specify the size of an element or its properties in terms of a percentage of the viewport height.</li><br>
+ </ol>
+
+
+
+</li>
+</ol>
+<pre>
+<code class="language-css">
+/* Absolute units */
+p {
+  font-size: 16px; /* 16 pixels */
+  width: 300px; /* 300 pixels */
+  height: 100mm; /* 100 millimeters */
+}
+
+/* Relative units */
+h1 {
+  font-size: 2em; /* 2 times the font size of the parent element */
+  margin: 10%; /* 10% of the width of the parent element */
+  padding: 1rem; /* 1 times the font size of the root element (usually the html element) */
+}
+</code>
+</pre>
+In general, it is a good idea to use a mix of absolute and relative units in your style sheets. Absolute units are useful for specifying sizes and dimensions that are consistent across all devices and screens, while relative units are useful for creating flexible and responsive designs that adjust to the size of the screen or the font size of the element.
+<br>
+By using a combination of absolute and relative units in your style sheets, you can create websites that look great and work well on all devices and screens.
+<br>
+
+<h3>CSS border Property:</h3>
+CSS border properties are used to specify the style, width, and color of an element's border. Here are some common border properties in CSS, along with examples:<br>
+<ol>
+ <li><strong>border-style:</strong> Specifies the style of the border. Possible values include solid, dotted, dashed, double, groove, ridge, inset, and outset. For example:
+   <pre>
+<code class="language-css">
+div {
+  border-style: solid;
+}
+</code>
+</pre>
+ </li>
+ <li>
+ <strong>border-width:</strong> Specifies the width of the border. Possible values include thin, medium, thick, and specific pixel or relative values. For example:
+    <pre>
+<code class="language-css">
+div {
+  border-width: 5px;
+}
+</code>
+</pre>
+ </li>
+ <li>
+<strong> border-color:</strong> Specifies the color of the border. Possible values include color names, hex codes, RGB values, and more. For example:
+    <pre>
+<code class="language-css">
+div {
+  border-color: red;
+}
+</code>
+</pre>
+ </li>
+ <li>
+ You can also use the border shorthand property to set all the border properties in one line. For example: <strong>Border Short Hand Property:</strong>
+    <pre>
+<code class="language-css">
+div {
+  border: solid 5px red;
+}
+</code>
+</pre>
+ </li>
+ <li><strong>border-top-style, border-right-style, border-bottom-style, border-left-style:</strong> These properties allow you to specify different border styles for the top, right, bottom, and left sides of an element. For example:
+  <pre>
+<code class="language-css">
+div {
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: dashed;
+  border-left-style: double;
+}
+</code>
+</pre>
+ </li>
+ <li>
+ <strong>border-top-width, border-right-width, border-bottom-width, border-left-width:</strong> These properties allow you to specify different border widths for the top, right, bottom, and left sides of an element. For example:
+  <pre>
+<code class="language-css">
+div {
+  border-top-width: 2px;
+  border-right-width: 3px;
+  border-bottom-width: 4px;
+  border-left-width: 5px;
+}
+</code>
+</pre>
+ </li>
+ <li>
+ <strong>border-top-color, border-right-color, border-bottom-color, border-left-color:</strong> These properties allow you to specify different border colors for the top, right, bottom, and left sides of an element. For example:
+  <pre>
+<code class="language-css">
+div {
+  border-top-color: green;
+  border-right-color: yellow;
+  border-bottom-color: orange;
+  border-left-color: purple;
+}
+</code>
+</pre>
+ </li>
+ 
+ CSS border properties allow you to add borders to elements on your web pages and customize their appearance. By using different border styles, widths, and colors, you can create borders that match the design and style of your website.
+</ol>
+<h3>CSS Color Property</h3>
+The color property in CSS is used to specify the color of an element's text or other content. Here is an example of how to use the color property:
+  <pre>
+<code class="language-css">
+p {
+  color: blue;
+}
+</code>
+</pre>
+This CSS rule sets the color of all p elements to blue. You can use color names, hex codes, RGB values, and other color formats to specify the color. For example:
+  <pre>
+<code class="language-css">
+p {
+  color: #0000ff; /* blue (hex code) */
+}
+
+p {
+  color: rgb(0, 0, 255); /* blue (RGB value) */
+}
+
+</code>
+</pre><br>
+You can also use the color property to specify the color of an element's background using the background-color property. For example:<br>
+ <pre>
+<code class="language-css">
+div {
+  background-color: yellow;
+}
+</code>
+</pre>
+This CSS rule sets the background color of all div elements to yellow.
+<br>
+The color property is an important part of web design, as it allows you to control the appearance of text and other content on your web pages. By using different colors, you can create a visual hierarchy, highlight important information, and create a cohesive design.
+
+<h3>CSS text Property </h3>
+The text property in CSS is used to control the appearance of text on a web page. Here are some examples of common text properties in CSS, along with brief descriptions and examples:
+<ol>
+<li><strong>font-family:</strong> Specifies the font family to use for the text. Possible values include font names or a list of font names. For example:
+ <pre>
+<code class="language-css">
+p {
+  font-family: Arial, sans-serif;
+}
+</code>
+</pre>
+This CSS rule sets the font family for all p elements to Arial, and falls back to a sans-serif font if Arial is not available.
+</li>
+<li><strong>font-size:</strong> Specifies the font size to use for the text. Possible values include absolute and relative units, such as pixels (px), ems (em), and percentages (%). For example:
+ <pre>
+<code class="language-css">
+p {
+  font-size: 16px;
+}
+</code>
+</pre>
+This CSS rule sets the font size for all p elements to 16 pixels.
+</li>
+<li>
+<strong>font-style:</strong> Specifies the font style to use for the text. Possible values include normal, italic, and oblique. For example:
+<pre>
+<code class="language-css">
+p {
+  font-style: italic;
+}
+</code>
+</pre>
+This CSS rule sets the font style for all p elements to italic.
+</li>
+<li><strong>font-weight:</strong> Specifies the font weight to use for the text. Possible values include normal, bold, bolder, and specific numeric values. For example:
+<pre>
+<code class="language-css">
+p {
+  font-weight: bold;
+}
+</code>
+</pre>
+</li>
+</ol>
+This CSS rule sets the font weight for all p elements to bold.
+<br>
+By using the text properties in CSS, you can control the appearance of text on your web pages and create a cohesive and visually appealing design.
+<br>
+Here are some examples of how the text properties I listed above can be used in a CSS rule, along with some additional text properties:<br>
+<pre>
+<code class="language-css">
+h1 {
+  color: blue;  /* sets the color of the text to blue */
+  font-family: Georgia, serif;  /* sets the font family to Georgia */
+  font-size: 24px;  /* sets the font size to 24 pixels */
+  font-style: italic;  /* sets the font style to italic */
+  font-weight: bold;  /* sets the font weight to bold */
+  letter-spacing: 2px;  /* adds 2 pixels of space between each letter */
+  line-height: 1.5;  /* sets the line height to 1.5 times the font size */
+  text-align: center;  /* centers the text */
+  text-decoration: underline;  /* adds an underline to the text */
+  text-transform: uppercase;  /* transforms the text to uppercase */
+}
+
+p {
+  color: #333;  /* sets the color of the text to a dark gray */
+  font-family: Arial, sans-serif;  /* sets the font family to Arial */
+  font-size: 16px;  /* sets the font size to 16 pixels */
+  font-style: normal;  /* sets the font style to normal (no italic or oblique) */
+  font-weight: normal;  /* sets the font weight to normal (not bold) */
+  text-align: justify;  /* justifies the text */
+  text-decoration: none;  /* removes any text decorations */
+  text-transform: none;  /* does not transform the text */
+}
+</code>
+</pre>
+These rules would apply the specified text properties to h1 and p elements on the page. You can also use class or ID selectors to apply these styles to specific elements, or use the style attribute to apply them directly to an individual element.<br>
+<h3>CSS Display Properties</h3>
+In CSS (Cascading Style Sheets), the display property determines how an element is displayed on the web page. The display property can take on a variety of values, each of which specifies a different way that the element should be displayed.<br>
+Some common values for the display property include:<br>
+<ol>
+<li><strong>block:</strong> The element is displayed as a block-level element, which means that it takes up the full width of its parent element and creates a new line after it. Examples of block-level elements include div, h1, and p.
+</li>
+<li><strong>inline:</strong> The element is displayed as an inline element, which means that it only takes up as much space as its content requires and does not create a new line after it. Examples of inline elements include span, a, and strong.</li>
+<li><strong>inline-block:</strong> The element is displayed as an inline-level block element, which means that it behaves like an inline element but can have dimensions (such as width and height) set on it.</li>
+<li><strong>none:</strong> The element is not displayed at all. This can be used to hide an element from view without deleting it from the HTML code.</li>
+</ol>
+<pre>
+<code class="language-css">
+div {
+  display: block;  /* displays the div element as a block-level element */
+}
+
+span {
+  display: inline;  /* displays the span element as an inline element */
+}
+
+.hidden {
+  display: none;  /* hides elements with the "hidden" class from view */
+}
+
+</code>
+</pre>
+You can also use the display property to change the way an element is displayed based on the size of the screen or other conditions. For example, you might use a media query to change the display of an element from block to none when the screen size is smaller than a certain width.
+<br>
+<h3>CSS Background Property</h3>
+In CSS (Cascading Style Sheets), the background property is used to set the background of an element. The background property can be used to set a variety of different background styles, including the background color, image, and repeat behavior.
+<br>
+Here is an example of how the <strong>background property</strong> can be used to set the background color of an element:<br>
+<pre>
+<code class="language-css">
+body {
+  background: red;  /* sets the background color to red */
+}
+</code>
+</pre><br>
+You can also use the <strong>background-color property</strong> to set the background color of an element:<br>
+<pre>
+<code class="language-css">
+body {
+  background-color: red;  /* sets the background color to red */
+}
+</code>
+</pre><br>
+To set a <strong>background-image</strong> for an element, you can use the background-image property:
+<br>
+<pre>
+<code class="language-css">
+body {
+  background-image: url('image.jpg');  /* sets the background image to the file image.jpg */
+}
+</code>
+</pre><br>
+You can also use the <strong>background-repeat property</strong> to control how the background image is repeated (if at all):<br>
+<pre>
+<code class="language-css">
+body {
+  background-image: url('image.jpg');  /* sets the background image to the file image.jpg */
+  background-repeat: repeat-x;  /* repeats the image horizontally */
+}
+</code>
+</pre>
+Here is a list of some of the other background properties that you can use in CSS to customize the appearance of an element's background:
+<ol>
+<li><strong>background-attachment:</strong> Specifies whether the background image scrolls with the page or is fixed in place.</li>
+<li><strong>background-clip:</strong> Specifies the area of an element's background that should be visible.</li>
+<li><strong>background-origin:</strong> Specifies the positioning area of the background image</li>
+<li><strong>background-position:</strong> Specifies the position of the background image.</li>
+<li><strong>background-repeat:</strong> Specifies how the background image should be repeated (if at all).</li>
+<li><strong>background-size:</strong> Specifies the size of the background image.</li>
+Here is an example of how some of these properties can be used in a CSS rule:
+<pre>
+<code class="language-css">
+body {
+  background-image: url('image.jpg');  /* sets the background image to the file image.jpg */
+  background-repeat: no-repeat;  /* does not repeat the image */
+  background-position: center;  /* positions the image in the center of the element */
+  background-attachment: fixed;  /* fixes the image in place */
+  background-size: cover;  /* scales the image to cover the entire element */
+}
+</code>
+</pre>
+You can use these properties together or separately to customize the appearance of the element's background to your liking.
+</ol>
+
+</p>
+</div>
+
+<div class="footer">
+	  <footer style="background-color:#1177ca; color:white;">
+	<div id="foot"> 
+<h3>Designed And Developed by Piyush Srivastava</h3> 
+<p>
+Founder:Piyush Srivastava<br>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p></div> 
+<div class="foot">
+<div>
+<ul>Social Links<hr><br>
+<li>LinkedIn</li>
+<li>Twitter</li>
+<li>Email</li>
+<li>Youtube</li>
+</ul></div>
+<div>
+<ul>Courses<hr><br>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>LibreOffice</li>
+<li>Java</li>
+</ul></div>
+<div>
+<ul>Roadmaps:<hr><br>
+<li>FrontEnd Development</li>
+<li>Backend Development</li>
+<li>Devops</li>
+</ul></div>
+<div>
+<ul>Jobs<hr><br>
+<li>Remote Jobs</li>
+<li>Government Jobs</li>
+<li>Internships</li>
+</ul></div>
+</div>
+
+</footer>
+</div>
+    </div>                    
+<script type='text/javascript'>
+		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
+</script>	
+ <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.js"></script>
+ </body>
+</html>
