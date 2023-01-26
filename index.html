@@ -1,310 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>test</title> 
-    <style>
-	body{
-	background-color:#FEFEFA;
-	height:100vh;
-	width:100vw;
-	}
-        .container {
-            display: flex;
-            flex-direction:row;
-			
-        }
-		.footer{
-		flex-direction:column;
-		}
-     
-        .right {
-             height:100vh;
-            background-color:;
-            display: block;
-            width: 100%;
-            overflow-y: scroll;
-        }
-		.llist{
-		background:white;
-		}
-		.b a{
-		color:blue;
-		}
-		nav ul li{
-		height:10 vh;
-		width:10 vw;
-		font-size:1em;
-		text-align:center;
-		}
-		
-		img{
-		display:inline-block;
-		}
-		#g{
-		display:inline-block;
-		margin:0px;
-		}
-	    .container{
-	padding-right:10px;
-	padding-left:5px;
-	text-align:justify;
-	}
-    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/C++.css">
 </head>
 <body>
-<header>
-<img src="images/logo.png" width="50vw" height="60vh"/>
-<h3 id="g">ONE LINER (A WEBSITE TO GET SHORT AND CRISP NOTES)</h3>
- <nav>
-	  <style>
-  #menu__toggle {
-  opacity: 0;
-}
-#menu__toggle:checked + .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked + .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0deg);
-}
-#menu__toggle:checked + .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  left: 0 !important;
-}
-.menu__btn {
-  position: fixed;
-  top: 110px;
-  left: 20px;
-  width: 20px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: yellow;
-  transition-duration: .25s;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-.menu__box {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 170px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: purple;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
-}
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: .25s;
-}
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-  </style>
-  <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
-    <ul class="menu__box">
-      <li><a class="menu__item" href="#a7" style="color:white;">Structure of HTML and HTML5</a></li>
-      <li><a class="menu__item" href="#a6" style="color:white;">Types of tags in HTML</a></li>
-      <li><a class="menu__item" href="#f" style="color:white;">Formatting Tags in HTML</a></li>
-      <li><a class="menu__item" href="#ft" style="color:white;">Frame and Frameset Tags in HTML</a></li>
-      <li><a class="menu__item" href="#marquee" style="color:white;">Marquee Tag in html</a></li>
-	  <li><a class="menu__item" href="#Heading" style="color:white;">Heading Tag in html</a></li>
-	  <li><a class="menu__item" href="#inline" style="color:white;">Inline and Block Level Tags</a></li>
-	    <li><a class="menu__item" href="PDF/computernetwork.html" style="color:white;">Computer Network Notes.</a></li>
-    </ul>
-  </div>
-	 
-	 <ul class="hov">
- <li><a href="#">Home</a></li>
- <li class="ol"><a href="#">Courses</a>
- <ul class="il">
-   <li class="ool">HTML
-  <ul class="iil">
-  <li>HTML Notes</li>
-   <li>Video Lectures</li>
-    <li>HTML Projects</li>
-	 <li>Practice Assignments</li>
-	  <li><a href="MCQ.html">HTML MCQs</a></li>
-	   <li>Mock Test</li>
-  </ul>
-  </li>
-  <li class="ool">CSS
-  <ul class="iil">
-  <li>CSS Notes</li>
-   <li>Video Lectures</li>
-    <li>HTML and CSS Projects</li>
-	 <li>Practice Assignments</li>
-	  <li>CSS MCQs</li>
-	   <li>Mock Test</li>
-  </ul>
-  </li>
-   <li class="ool">JavaScript
-   
-  <ul class="iil">
-  <li>JavaScript Notes</li>
-   <li>Video Lectures</li>
-    <li> Javascript Projects</li>
-	 <li>Practice Assignments</li>
-	  <li>JavaScript MCQs</li>
-	   <li>Mock Test</li>
-  </ul></li>
- 	    <li class="ool">Docker
-		<ul class="iil">
-  <li>Docker Notes</li>
-   <li>Video Lectures</li>
-    <li>Docker Projects</li>
-	 <li>Practice Assignments</li>
-	  <li>Docker MCQs</li>
-	   <li>Mock Test</li>
-  </ul></li>
-	 <li class="ool">
-  Libre Office Writer
-  <ul class="iil">
-  <li>Writer Notes</li>
-   <li>Video Lectures</li>
-    <li>Writer Projects</li>
-	 <li>Practice Assignments</li>
-	  <li><a href="writermcq.html">Writer MCQs</a></li>
-	   <li>Mock Test</li>
- </ul>
-  </li>
- </ul>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            OneLinerNotes
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+          <li><a href="#" target="_blank">Home</a></li>
+          <li><a href="index.html" target="_blank">HTML</a></li>
+          <li><a href="CSS.html" target="_blank">CSS</a></li>
+          <li><a href="#" target="_blank">Javascript</a></li>
+          <li><a href="C++.html" target="_blank">C++</a></li>
+          <li><a href="HTMLMcq2.html" target="_blank">Mcqs</a></li>
+          <a class="icon">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+
+          </a>
+            </ul>
+        </div>
+      </div><br><br><br>
+
+<div class="container">
+ <div class="links">
  
- </li>
-  <li class="ool">Online Compiler
-	 <ul class="iil">
-		 <li><a href="HTML Compiler.html">FrontEnd Compiler</a></li>
-		 <li><a>Backend Compiler</a></li>
-		 </ul>
-	 </li>
- <li><a href="C++.html">C++</a></li>
- <li><a href="#">Projects</a></li>
-  <li><a href="computernetwork.html">Computer Network Notes</a></li>
-   <li><a href="#">Jobs</a></li>
-    <li><a href="C++.html">C++</a></li>
- </ul>
- 
-    </nav>
-</header>
-    <div class="container">
-	
-        <div class="right">
-<head>
-	 <link rel="icon" type="image/png" href="images/logo.png"/>
-	<title>OneLiner HTML MSQs</title>
-	  
-
-</head>
-
-
-<style>
- a{
-  color:white;
-  text-decoration:none;
-  font-family:consolas;
-  }
-   .hov li{
-  background:purple;
-  list-style-type:none;
-  display:inline-block;
-  positive:relative;
-  width:10vw;
-  text-align:center;
-  color:white;
-  
-  }
-  .hov li:hover{
-  background-color:#fdaff1;
-  }
-  .ol{
-  position:relative;
-  }
-   .il li:hover{
-  background-color:#fdaff1;
-  color:white;
-  }
-  .il{
-  display:none;
-  list-style-type:none;
-  position:absolute;
-  left:-2px;
-  }
-  .ol:hover .il{
-  display:block;
-  
-  list-style-type:none;
- position:absolute;
- padding:0;
-  }
-  .il li{
-  display:block;
-  }
-  .iil{
-  display:none;
-  position:absolute;
-  top:0;
-  left:100%;
-  padding:0;
-  }
-  .ool{
-  position:relative;
-  }
-  .ool:hover .iil{
-  display:block;
-  }
-  nav{
-  background-color:purple;
-  }
-  .footer{
-  width:1 vw;
-  }
-  img{
-  align:center;
-  }
-  </style> 
-<p>
+	<p>
 <h3 id="a1">What is HTML?</h3>
 <ul>
 <li>HTML Stands For Hypertext Markup Language.</li>
 <li>HTML is a Markup Language which is use to create Web Pages.</li>
 <li>HTML was Developed by Tim Berners Lee in 1991.</li>
 </ul>
-</p>
-
-<p>
 <h3 id="a2">What is Markup?</h3>
 <ul>
 <li>Markup means it uses tags to define elements and add information.</li>
@@ -312,8 +60,6 @@
 <li>Ex: <strong>This is Strong Tag of HTML</strong> </li>
 </ul>
 </p>
-
-
 <p>
 <h3 id="a3">History of HTML.</h3>
 <ul>
@@ -341,7 +87,7 @@ This is bold Tag of HTML--->This is content
 <p>
 <h3 id="a6">Types of HTML Tags :</h3>
 <ol>
-<li id="a6.1"><b>Paired or container Tag</b><br/>
+<li id="a6.1"><b>Paired or container Tag</b> 
 
 
 ex:	&lt;html&gt; ---&lt;/html&gt; <br>
@@ -375,18 +121,6 @@ The tag which doesn't produce line break are called Inline Level Tag.<br>
 </li>
 </ol>
 </p>
-<style>
-p{
-font-size:100%;
-margin:0;
-padding:0;
-border:0;
-}
-f{
-font-size:100%
-}
-</style>
-<hr/>
 <p id="a7">
 <h3>Basic Structure of HTML</h3>
 <center><img src="images/one.png" alt="check path please" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
@@ -405,24 +139,21 @@ In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> ele
 
 <figcaption>Example 2:</figcaption>
 <center><img src="images/three.jpg" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
-
 <h3>HTML 5 Elements:</h3>
-<div style="text-align:justify;">
-<p>1) <b>html</b> ---> It is the root element of our webpage.</p>
-<p>2) <b>head</b> ---> head tag is used to add title to our webpage and add fevicon icon .</p>
-<p>3) <b>title</b> ---> title tag is used to add title to our webpage and the title is shown in the tab bar.</p>
-<p>4) <b>meta</b> --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.</p>
-<p>5) <b>link </b>---> Use to add external css file into our html file</p>
-<p>6) <b>body</b> ---> it contain all the content present in our webpage.</p>
-<p>7) <b>header</b> ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars
-</p>
-<p>8) <b>nav</b> ---> nav tag is used to create navigation bars</p>
-<p>9) <b>main</b> --->this tag contain the main content of our webpage that is content between header and footer tag .</p>
-<p>10) <b>section</b> ---> section tag is use to divide webpage into different sections</p>
-<p>11) <b>article</b> ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.</p>
-<p>12) <b>aside</b> ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</p>
-</div>
-</p>
+<p>1) <b>html</b> ---> It is the root element of our webpage. <br>
+2) <b>head</b> ---> head tag is used to add title to our webpage and add fevicon icon .<br>
+3) <b>title</b> ---> title tag is used to add title to our webpage and the title is shown in the tab bar.<br>
+4) <b>meta</b> --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.<br>
+5) <b>link </b>---> Use to add external css file into our html file<br>
+6) <b>body</b> ---> it contain all the content present in our webpage.<br>
+7) <b>header</b> ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars<br>
+
+8) <b>nav</b> ---> nav tag is used to create navigation bars<br>
+9) <b>main</b> --->this tag contain the main content of our webpage that is content between header and footer tag .<br>
+10) <b>section</b> ---> section tag is use to divide webpage into different sections<br>
+11) <b>article</b> ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.<br>
+12) <b>aside</b> ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</p>
+
 <hr/>
 <p id="f">
 <h3>Formatting Tags in HTML5:</h3>
@@ -548,40 +279,38 @@ Output:<br>
 </table>
 </center>
 </p>
-<div id="ft">
+<p>
 <center><h3>Frame and Frameset Tag:</h3></center>
-<div style="text-align:justify;">
-
-<p>1) Frameset is a collection of frames.</p>
-<p>2) Frames are separate sections of your browser window where different html files will load.</p>
-<p>3) If we want to display more than one html file on a single webpage in that case we must use Frame and Frameset Tag.</p>
-<p>4) Note: We never use body tag along with Frameset Tag</p>
-<p>5) "*" --->wildcard Character--->representing remaining spaces(for example: rows="40%,40%,*"--->*(Remaining Space=20%)</p>
-</div>
-	
+ 
+<p>1) Frameset is a collection of frames.<br>
+2) Frames are separate sections of your browser window where different html files will load.<br>
+3) If we want to display more than one html file on a single webpage in that case we must use Frame and Frameset Tag.<br>
+4) Note: We never use body tag along with Frameset Tag<br>
+5) "*" --->wildcard Character--->representing remaining spaces(for example: rows="40%,40%,*"--->*(Remaining Space=20%)</p>
+	<br>
 <h3>Example of Frameset Tag:</h3>
-<div><center><h3>1)Dividing Our webpage into two frames Vertically:(using <span style="color:red;">cols</span> attribute)</h3></center>
+<center><h3>1)Dividing Our webpage into two frames Vertically:(using <span style="color:red;">cols</span> attribute)</h3></center>
 <center><img src="images/fourteen.png" alt="error" height="440vh" width="550vw"/></center>
 <br>
 OUTPUT:
 <br>
 <center>
 <img src="images/fourteen1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center><br>
-</div>
-<div>
+
+
 <center><h3>2)Dividing Our webpage into two frames horizontally.(Using <span style="color:red;">rows</span> attribute)</h3></center>
 <center><img src="images/fifteen.png" alt="error" height="440vh" width="550vw"/></center><br>
 OUTPUT:<br>
 <center><img src="images/fifteen1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center>
-</div>
-<div>
+
+
 <center><h3>3)Divide your webpage into two rows where the second row is again divided into three columns.</h3></center>
 <center><img src="images/sixteen.png" alt="error" height="440vh" width="590vw" /></center><br>
 OUTPUT:<br>
 <center><img src="images/sixteen1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center>
-</div>
+</p>
 <h3>Try To Create these Frames:</h3>
-<div>
+<p>
 <ul>
 <li>Assignment 1<br><br>
 <center><img src="images/16.1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center>
@@ -589,14 +318,13 @@ OUTPUT:<br>
 <li>Assignment 2<br><br><center><img src="images/16.2.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center></li>
 <li>Assignment 3<br><br><center><img src="images/16.3.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center></li>
 </ul>
-</div>
-</div>
-<div id="marquee">
+
+
 <h3>Marquee Tag in html.</h3>
-<div style="text-align:justify;">
+ 
 <p>1) Marquee tag is used toused to create a scrolling text or an image.</p>
 <p>2) It was used to make the text/image scroll horizontally across or vertically down the web page.</p>
-</div>
+ 
 Example:
 <center>
 <img src="images/marquee1.png" alt="error" height="440vh" width="590vw"/><br>
@@ -627,8 +355,8 @@ OUTPUT:
 <center>Changing Direction of the content of the marquee tag using <span style="color:red;">direction attribute</span></center><br><br>
 <center><img src="images/marquee4.png" alt="error" height="440vh" width="590vw"/></center>
 <center><iframe src="videos/marquee4.mp4" width="500vw" height="400vh"></iframe></center>
-</div>
-<div>
+</p>
+ 
 <h3>Table tag in HTML.</h3>
 <p>Table tag is used to create a Table in html.<br>
 <center>
@@ -734,48 +462,48 @@ Solution:<br><br>
 </center>
 </div>
 
-</div>
-
-</div>
-<style>
-.tbl tr td{
- font-face: consolas;
- color:white;
-width:1 em;
-text-align:center;
-}
-
-#h{
-color:white;
-font-size:100%;
-}
-.tbl{
-font-size:100%
-}
-
-</style>
-<footer class="footer" style="background-color:purple; width:100%">
-<center><h3>Designed And Developed by Piyush Srivastava</h3>
-<p id="h">
+<div class="footer">
+	  <footer style="background-color:#1177ca; color:white;">
+	<div id="foot"> 
+<h3>Designed And Developed by Piyush Srivastava</h3> 
+<p>
 Founder:Piyush Srivastava<br>
-Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p>
-<table class="tbl">
-<tr><td>Social Links</td><td>Learn</td><td>Interview Preperation</td><td>Languages</td><td>Certifications</td><td>Careers</td></tr>
-<tr><td>LinkedIn</td><td>FrontEnd</td><td>DSA SHEETS</td><td>Languages</td><td>Certifications</td><td>Remote Jobs</td></tr>
-<tr><td>Twitter</td><td>BackEnd</td><td>ROADMAPS</td><td>JavaScript</td><td>O Level,A level</td><td>Job Portals</td></tr>
-<tr><td>Github</td><td>Docker</td><td>Interview Experience</td><td>Python</td><td>B level</td><td>Personal Blogs</td></tr>
-<tr><td>EmailId</td><td>Linux</td><td>Internships</td><td>
-ava</td><td>Microsoft Python certification,Oracle Certifications</td><td>Join community</td></tr>
-</table>
+Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p></div> 
+<div class="foot">
+<div>
+<ul>Social Links<hr><br>
+<li>LinkedIn</li>
+<li>Twitter</li>
+<li>Email</li>
+<li>Youtube</li>
+</ul></div>
+<div>
+<ul>Courses<hr><br>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>LibreOffice</li>
+<li>Java</li>
+</ul></div>
+<div>
+<ul>Roadmaps:<hr><br>
+<li>FrontEnd Development</li>
+<li>Backend Development</li>
+<li>Devops</li>
+</ul></div>
+<div>
+<ul>Jobs<hr><br>
+<li>Remote Jobs</li>
+<li>Government Jobs</li>
+<li>Internships</li>
+</ul></div>
+</div>
 
-
-</center>
 </footer>
-                        
+</div>
+    </div>                    
 <script type='text/javascript'>
 		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
-</script>
-                    
-
+</script>	 
 </body>
 </html>
