@@ -94,6 +94,10 @@ git push -u origin <your_branch_name>
 
 **15.** Voila :exclamation: You have made a PR to the OneLinerNotes project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand, at times the time taken to review a PR can vary from a few hours to a few days.
 
+## Code Of Conduct<br><br>
+<p align="center"><a href="CODE_OF_CONDUCT.md"><img src="https://img-blog.csdnimg.cn/c7d3d798ec9c4b048dd6636bd1814368.gif#pic_center" alt="piyush-sri"/></a></p>
+<p align="center"> Click to read </p>
+
 Follow me :<br>
 <a href="https://www.linkedin.com/in/piyush-srivastava-395841192" ><img src="https://th.bing.com/th/id/R.abdb36b128f0cfcee1329ddb1365a99b?rik=Q8UtGzuevu7ZBw&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f04%2flinkedin_logo.jpg&ehk=WX0fSjGgisCu4YfNc2IBnr7nLADE%2f06resHyt%2fqG1pg%3d&risl=&pid=ImgRaw&r=0" alt="LinkedIN" width="50px" height="50px"/></a>
  
