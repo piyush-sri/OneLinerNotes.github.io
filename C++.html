@@ -28,11 +28,11 @@
         <div class="nav-links">
             <ul>
           <li><a href="#" target="_blank">Home</a></li>
-          <li><a href="#" target="_blank">HTML</a></li>
-          <li><a href="#" target="_blank">CSS</a></li>
+          <li><a href="index.html" target="_blank">HTML</a></li>
+          <li><a href="CSS.html" target="_blank">CSS</a></li>
           <li><a href="#" target="_blank">Javascript</a></li>
-          <li><a href="#" target="_blank">C++</a></li>
-          <li><a href="#" target="_blank">Mcqs</a></li>
+          <li><a href="C++.html" target="_blank">C++</a></li>
+          <li><a href="HTMLMcq2.html" target="_blank">Mcqs</a></li>
           <a class="icon">
             <i class="fa fa-twitter"></i>
             <i class="fa fa-linkedin"></i>
@@ -46,493 +46,420 @@
 <div class="container">
  <div class="links">
  
-	<h3>Programming Paradigm:</h3>
-<p>It is the methods which we use to solve problem or to do some task.<strong>A programming paradigm is a way, an approach, a style by which we write programs in a specific programming language to solve some problem.</strong> 
-You may be thinking what style or approach are we talking about. It is the approach creation of objects and creating programs in object oriented programming or solving problems with series of functions in functional programming or a style of creation of logic by series of symbols in logic programming.<br><br>
-<strong>Programming paradigms</strong> are approaches used to categorize or classify programming languages based on techniques and features they support. <br><br>
+	<p>
+<h3 id="a1">What is HTML?</h3>
+<ul>
+<li>HTML Stands For Hypertext Markup Language.</li>
+<li>HTML is a Markup Language which is use to create Web Pages.</li>
+<li>HTML was Developed by Tim Berners Lee in 1991.</li>
+</ul>
+<h3 id="a2">What is Markup?</h3>
+<ul>
+<li>Markup means it uses tags to define elements and add information.</li>
+<li>A typical markup language contains the text within the tags.</li>
+<li>Ex: <strong>This is Strong Tag of HTML</strong> </li>
+</ul>
+</p>
+<p>
+<h3 id="a3">History of HTML.</h3>
+<ul>
+<li>HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and accessible via web browsers</li>
+<li>Then comes HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with that few additional features</li>
+<li>Then comes HTML 3.0, where Dave Raggett introduced a fresh paper or draft on HTML. It included improved new features of HTML, giving more powerful characteristics for webmasters in designing web pages</li>
+<li>Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which is currently released and used worldwide.</li>
+<li>HTML 5 can be said for an extended version of HTML 4.01, which was published in the year 2012.</li>
+</ul>
+</p>
 
-For example:<br>
+<p>
+<h3 id="a4">What is Tag?</h3>
+<ul>
+<li>HTML tags are like keywords which defines that how web browser will format and display the content.</li>
+<li>With the help of tags, a web browser can distinguish between an HTML content and a simple content.</li>
+<li>HTML tags contain three main parts: opening tag, content and closing tag.</li>
+<li>Ex: <b>&lt;b&gt;</b> This is bold Tag of HTML &lt;/b&gt;<br/>
+<b>&lt;b&gt;</b> --->It is opening tag<br/>
+<b>&lt;/b&gt;</b> --->It is closing tag<br/>
+This is bold Tag of HTML--->This is content
+</li>
+</ul>
+</p>
+<p>
+<h3 id="a6">Types of HTML Tags :</h3>
+<ol>
+<li id="a6.1"><b>Paired or container Tag</b> 
 
-1)Object-oriented programming is best suited for implementing real-world entities by hiding important data and finding methods with the entities. Example C++, Java, Python, etc.<br>
 
-2)Logical programming is best for creating logic by a complex structure of symbols. Example Prolog, F-logic, etc.<br><br>
+ex:	&lt;html&gt; ---&lt;/html&gt; <br>
+	&lt;head&gt; ---&lt;/head&gt;<br>
+	&lt;body&gt; ---&lt;/body&gt;<br>
+	&lt;b&gt; ---&lt;/b&gt;
 
-A good programming language should support multiple paradigms because different programming problems require a different way to approach. If a programing language support only one or two paradigms then it may not be sufficient or contains feature required. <br><br>
+</li>
+<li id="a6.2"><b>Empty or Singular Tag</b><br/>
 
-Most modern languages support are multi-paradigm languages like C++, C#, Python, Go, etc. <br><br>
+ex: &lt;img/&gt; --->Use to add images on webpage.<br>
+	&lt;br/&gt; --->Use to Break Line<br>
+	&lt;hr/&gt;--->Use to add Horizontal Line
 
-<h3>Types Of Programming Paradigms:</h3>
-<img src="images/Prog.png" alt="error"/><br><br>
-1)Imperative Programming Paradigm.<br><br>
-2)Declarative Programming Paradigm.<br><br>
-<h3>Understanding Imperative and Declarative:</h3>
-Let’s Take a simple Example,In C++ Language you learn about stack data structure, and also implemented each function of stack data structure step by step, like for push operation you declare and provide implementation of a push function , for pop operation  you declare and provide implementation of a pop function .<br><br>
+</li>
+<li id="a6.3"><b>Block Level Tag</b><br/>
+The Tag that produces line break itself are known as Block Level Tag<br/>
 
-So, we learn stack data structure by first implementing every stack functions and understanding their functioning step by step.This approach is known as Imperative Programming Paradigm in this the code describes a step-by-step process for a program’s execution. Because of this, beginners often find it easier to reason with imperative code by following along with the steps in the process.<br><br>
-The step-by-step process contains individual statements, instructions, or function calls. In the programming world, this process is called the control flow.<br><br>
+ex:	The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break. <br>
+ &lt;h1&gt;&lt;/h1&gt; ---->Use to add Biggest Heading.<br>
+ &lt;div&gt;&lt;/div&gt;--->Use to create division in webpage. 
 
-On the other hand, you also learned about header files in C/C++ language,for stack data structure we already have a header file in C++  and we include it as  #include&lt;stack&gt;,this header file already have the implementation of the stack functions so when you are including stack header file you need not to provide implementation of stack functions you can just directly use them by calling and passing some value to them.  This is declarative Programming Paradigm, in this we only concern about the result we want and use the already implemented functions according to our use to get our desired output.<br><br>
-Example:1
+</li>
+<li id="a6.4"><b>Inline Level Tag</b><br/>
+The tag which doesn't produce line break are called Inline Level Tag.<br>
 
-<pre>
-<code>
-//1) *Imperative approach to implement stack using arrays in C++
-#include &lt;iostream&gt;
-using namespace std;
-int stack[100], n=100, top=-1;
-void push(int val) {
-   if(top&gt;=n-1)
-   cout&lt;&lt;&quot;Stack Overflow&quot;&lt;&lt;endl;
-   else {
-      top++;
-      stack[top]=val;
-   }
-}
-void pop() {
-   if(top&lt;=-1)
-   cout&lt;&lt;&quot;Stack Underflow&quot;&lt;&lt;endl;
-   else {
-      cout&lt;&lt;&quot;The popped element is &quot;&lt;&lt; stack[top] &lt;&lt;endl;
-      top--;
-   }
-}
-void display() {
-   if(top&gt;=0) {
-      cout&lt;&lt;&quot;Stack elements are:&quot;;
-      for(int i=top; i&gt;=0; i--)
-      cout&lt;&lt;stack[i]&lt;&lt;&quot; &quot;;
-      cout&lt;&lt;endl;
-   } else
-   cout&lt;&lt;&quot;Stack is empty&quot;;
-}
-int main() {
-   int ch, val;
-   cout&lt;&lt;&quot;1) Push in stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;2) Pop from stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;3) Display stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;4) Exit&quot;&lt;&lt;endl;
-   do {
-      cout&lt;&lt;&quot;Enter choice: &quot;&lt;&lt;endl;
-      cin&gt;&gt;ch;
-      switch(ch) {
-         case 1: {
-            cout&lt;&lt;&quot;Enter value to be pushed:&quot;&lt;&lt;endl;
-            cin&gt;&gt;val;
-            push(val);
-            break;
-         }
-         case 2: {
-            pop();
-            break;
-         }
-         case 3: {
-            display();
-            break;
-         }
-         case 4: {
-            cout&lt;&lt;&quot;Exit&quot;&lt;&lt;endl;
-            break;
-         }
-         default: {
-            cout&lt;&lt;&quot;Invalid Choice&quot;&lt;&lt;endl;
-         }
-      }
-   }while(ch!=4);
-   return 0;
-}
- 
+	&lt;b&gt;---&lt;/b&gt; --->use to bold a text.<br>
+	&lt;img/&gt; --->Use to insert image in the webpage
 
-</code>
 
-</pre>
+</li>
+</ol>
+</p>
+<p id="a7">
+<h3>Basic Structure of HTML</h3>
+<center><img src="images/one.png" alt="check path please" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<ul>
+<li><b>&lt;html&gt;</b>--->It represents the root of an HTML document.</li>
+<li><b>&lt;head&gt;</b>--->It is used to define the head portion of the document which contains information related to the document. 
+The <b>&lt;head&gt;</b> tag contains other head elements such as &lt;title&gt;, <b>&lt;meta&gt;</b>, &lt;link&gt;, &lt;style&gt; &lt;link&gt; etc. 
+In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> element can be omitted.</li>
+<li><b>&lt;body&gt;</b>--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
+</ul>
+</p>
+<hr/>
+<p id="a8">
+<h3> Basic Structure of HTML 5</h3>
+<center><img src="images/two.png" alt="error" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
 
-Now, Converting the imperative approach to declarative approach.
-ex:
-<pre>
-<code>
-//Declarative Approach using stack data structure.
-#include &lt;iostream&gt;
-#include &lt;stack&gt;
+<figcaption>Example 2:</figcaption>
+<center><img src="images/three.jpg" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<h3>HTML 5 Elements:</h3>
+<p>1) <b>html</b> ---> It is the root element of our webpage. <br>
+2) <b>head</b> ---> head tag is used to add title to our webpage and add fevicon icon .<br>
+3) <b>title</b> ---> title tag is used to add title to our webpage and the title is shown in the tab bar.<br>
+4) <b>meta</b> --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.<br>
+5) <b>link </b>---> Use to add external css file into our html file<br>
+6) <b>body</b> ---> it contain all the content present in our webpage.<br>
+7) <b>header</b> ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars<br>
 
-using namespace std;
+8) <b>nav</b> ---> nav tag is used to create navigation bars<br>
+9) <b>main</b> --->this tag contain the main content of our webpage that is content between header and footer tag .<br>
+10) <b>section</b> ---> section tag is use to divide webpage into different sections<br>
+11) <b>article</b> ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.<br>
+12) <b>aside</b> ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</p>
 
-class stack1
-{
-    stack&lt;int&gt; st;
-	public: 
-	
-	void isemt()
-	{
-		if(st.empty())
-			cout&lt;&lt;&quot;Stack is empty&quot;&lt;&lt;endl;
-		else
-			cout&lt;&lt;&quot;Stack is not empty&quot;&lt;&lt;endl;
-	}
-	
-	void stksize()
-	{
-		
-		cout&lt;&lt;&quot;Size of stack is:&quot;&lt;&lt;st.size()&lt;&lt;endl;	
-	}
-	
-    void stkpush(int val) 
-	{
-   		st.push(val);
-	}
-	void stkpop() 
-	{
-	    st.pop();
-      	cout&lt;&lt;&quot;The element is popped &quot;&lt;&lt;endl;
-	}	
+<hr/>
+<p id="f">
+<h3>Formatting Tags in HTML5:</h3>
+<ol>
+<li><h3>&lt;strong&gt; Tag and &lt;b&gt; Tag:</h3><br>
+These tags are used to apply bold formatting on a text enclosed between strong or b tag.
+<br>
+Ex: As Shown in the figure below.<br>
+<center><img src="images/four.png" alt="error" width="800vw" title="Click to enlarge" style="cursor: zoom-in;" /></center>
+<br>
+Output of the above code :<br>
+<center><img src="images/four1.png" alt="error" width="600vw"title="Click to enlarge" style="cursor: zoom-in;"/></center>
+</li>
 
- 	void display() 
-	{
-   		while (!st.empty())
-		{
-			cout &lt;&lt; ' ' &lt;&lt; st.top();
-			st.pop();
-		}
-         cout &lt;&lt; endl;
-	}	
-};
+<li><h3>&lt;i&gt; Tag and &lt;em&gt; Tag</h3><br>
+These tags are used to add italic and emphasized formatting on the text present between these tags.<br>
+<h3>Example of i and em tag in html.</h3>
+<center><img src="images/five.png" height="350vh" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<br>
+<h3>Output:</h3>
+<center><img src="images/five1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+</li>
+<li><h3>
+&lt;u&gt; Tag and &lt;ins&gt; Tag</h3><br>
+These tags are used to used to underline the content present between them,ins stands for inserted text.<br>
+<h3>Example:</h3>
+<br>
+<center><img src="images/six.png" height="400vh" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+<br>
+Output:<br>
+<center><img src="images/six1.png"  height="130vh" width="500vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
 
-int main() {
-	
-   stack1 stk;
-   int ch, val;
-   cout&lt;&lt;&quot;1) Push in stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;2) Pop from stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;3) Display stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;4) Check stack is empty or not&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;5) Size of stack&quot;&lt;&lt;endl;
-   cout&lt;&lt;&quot;6) Exit&quot;&lt;&lt;endl;
-   do {
-      cout&lt;&lt;&quot;Enter choice: &quot;&lt;&lt;endl;
-      cin&gt;&gt;ch;
-      switch(ch) {
-         case 1: {
-            cout&lt;&lt;&quot;Enter value to be pushed:&quot;&lt;&lt;endl;
-            cin&gt;&gt;val;
-            stk.stkpush(val);
-            break;
-         }
-         case 2: {
-            stk.stkpop();
-            break;
-         }
-         case 3: {
-            stk.display();
-            break;
-         }
-         case 4: {
-            stk.isemt();
-            break;
-         }
-         case 5: {
-            stk.stksize();
-            break;
-         }
-         case 6: {
-            cout&lt;&lt;&quot;Exit&quot;&lt;&lt;endl;
-            break;
-         }
-         default: {
-            cout&lt;&lt;&quot;Invalid Choice&quot;&lt;&lt;endl;
-         }
-      }
-   }while(ch!=6);
-   return 0;
-}
+</li>
+<li><h3>
+&lt;del&gt; Tag and &lt;strike&gt; Tag</h3><br>
+These tags are used to add a line in the middle of the text present between these tags.
+<h3>For Example:</h3>
+<br>
+<center><img src="images/seven.png" width="800vw" title="Click to enlarge" style="cursor: zoom-in;" /><br></center>
+Output is:<br>
+<center><img src="images/seven1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
 
-</code>
-</pre>
-You must be confused many of you haven’t read that big codes, so here is an simple example.<br><br>
-<strong>Q:C++ Program to raise x to the power of y.</strong><br>
-<strong>1.Imperative Approach.</strong><br>
-<pre>
-<code>
-#include
-using namespace std;
+</li>
+<li><h3>
+&lt;sup&gt;Tag and &lt;sub&gt;Tag</h3><br>
+sup tag is used to make text superscript,whereas sub tag is use to make text subscript.
+<h3>Example:</h3><br>
+<center><img src="images/eight.png"  width="800vw" title="Click to enlarge" style="cursor: zoom-in;"><br></center>
+Output:<br>
 
-int main(){
-   int x, y, ans = 1;
+<center><img src="images/eight1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
+</li>
+<li><h3>
+&lt;big&gt;Tag and &lt;small&gt;Tag</h3><br>
+big tag is use to increase the font size of text one more than the remaining text.<br>
+small tag is use to decrease the font size of text one less than the remaining text.<br>
+<h3>Example:</h3><br>
+<center><img src="images/nine.png" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/><br></center>
+Output:<br>
+<center><img src="images/nine1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"/></center>
+</li>
+<li><h3>
+&lt;mark&gt; Tag:<br></h3>
+This tag is used to highlight a text.<br>
+<h3>Example:<br>
+<center><img src="images/ten.png" width="800vw" title="Click to enlarge" style="cursor: zoom-in;"/><br></center>
+Output:<br>
+<center><img src="images/ten1.png" width="600vw" title="Click to enlarge" style="cursor: zoom-in;"></center>
+</li>
+</ol>
+</p>
 
-   cout &lt;&lt; &quot;Enter the base value: n&quot;;
-   cin &gt;&gt; x;
+<p id="Heading">
+<h3>Heading Tags in HTML</h3>
+<div style="text-align:justify;">Heading Tags are used to create heading.<br/>
+<b>&lt;h1&gt;</b>-->Is used to create biggest heading.<br>
+<b>&lt;h6&gt;</b>-->Is used to create the smallest heading.<br>
+Example:<br>
+<center><img src="images/eleven.png" alt="oops" width="900vw" /></center><br>
+Output:<br>
+<center><img src="images/eleven1.png" alt="oops"  height="500vh" width="900vw"/></center>
+</div>
+	</p>
 
-   cout &lt;&lt; &quot;Enter the exponent value: n&quot;;
-   cin &gt;&gt; y;
+<p id="inline">
+<h3>Understanding Block Level Tags</h3>
+<div style="text-align:justify;">A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.</div>
 
-   for(int i=0; i&lt;y; i++)
-   ans *= x;
-
-   cout &lt;&lt; x &lt;&lt;&quot; raised to the power &quot;&lt;&lt; y &lt;&lt;&quot; is &quot;&lt;&amp;;lt;ans;
-
-   return 0;
-}
-
-</code>
-</pre>
-
-<strong>2.Declarative Approach.</strong><br>
-<pre>
-<code>
-#include &lt;iostream&gt;
-#include &lt;cmath&gt;
-using namespace std;
-int main() 
-{
-    float base, exponent, result;
-
-    cout &lt;&lt; &quot;Enter base and exponent respectively:  &quot;;
-    cin &gt;&gt; base &gt;&gt; exponent;
-
-    result = pow(base, exponent);
-
-    cout &lt;&lt; base &lt;&lt; &quot;^&quot; &lt;&lt; exponent &lt;&lt; &quot; = &quot; &lt;&lt; result;
-    
-    return 0;
-}
-
-</code>
-</pre>
-Now i hope that the meaning of imperative and declarative is clear to you guys!!!.<br><br>
-
-Languages which can be use both paradigm are :<br>
-<strong>Python</strong>- supports both imperative and declarative programming paradigm with the concept of python libraries and modules.<br>
-<strong>Java</strong>- Supports both imperatve and declarative programming paradigm with introduction of collections framework.<br>
-<strong>C++</strong> - Supports both imperative and declarative programming paradigm with introduction of STL(Standard Template Library) which introduced in its newer version.<br>
-<br><br>
-<table>
-<tr><th>Imperative programming paradigm(how to do)</th><th>Declarative programming paradigm(what to do)</th></tr>
-<tr><td>You describe the step-by-step instructions for how an executed program achieves the desired results.</td><td>You set the conditions that trigger the program execution to produce the desired results. </td></tr>
-<tr><td>With the emphasis on the control flow, you can often follow the step-by-step process fairly easily. However, as you add more features and code to your program, it can become longer and more complex, making it increasingly confusing and time-consuming to read.
-</td><td>This paradigm is less complex and requires less code, making it easier to read.</td></tr>
-<tr><td>Cutomizing the source code is easierCustomizing the source code is more difficult because of complicated syntax and the paradigm’s dependence on implementing a pre-configured algorithm.</td><td>Customizing the source code is difficult.Customizing the source code is more difficult because of complicated syntax and the paradigm’s dependence on implementing a pre-configured algorithm. </td></tr>
-<tr><td>Its main goal is to describe how to get it or accomplish it. </td><td>Its main goal is to describe the desired result without direct dictation on how to get it.  </td></tr>
-<tr><td>C,C++,Java,Python follows imperative programming.</td><td>Domain Specific ex: HTML,SQL,CSS,XML follows declarative Programming.</td></tr>
+Example:<br>
+<center><img src="images/twelve.png" alt="oops" width="900vw"/></center>
+<br>
+Output:<br>
+<center><img src="images/twelve1.png" alt="oops" width="600vw"/></center>
+<br>
+<center>
+<h3>Examples of blocks level tags in HTML.</h3>
+<table border="1px" cellspacing="0" cellpadding="0" width="700vw">
+<tr><th>Block Level Tags</th><th>Usage</th></tr>
+<tr><td>Heading Tags(&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;)</td><td>Use to create heading.</td></tr>
+<tr><td>Paragraph Tag(&lt;p&gt;)</td><td>Use to create Paragraphs</td></tr>
+<tr><td>Div Tag(&lt;div&gt;)</td><td>Use as a Universal Tag.Use to create division or sections of your webpage.</td></tr>
+<tr><td>Other examples </td><td><b>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;canvas&gt;&lt;dd&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;-&lt;h6&gt;&lt;header&gt;&lt;hr&gt;&lt;li&gt;&lt;main&gt;&lt;nav&gt;&lt;noscript&gt;&lt;ol&gt;&lt;p&gt;&lt;pre&gt;&lt;section&gt;&lt;table&gt;&lt;tfoot&gt;&lt;ul&gt;&lt;video&gt;</b></td></tr>
 </table>
-<h3>Types of Imperative Paradigms.</h3>
-<h3>1.1)Procedural Programming Language</h3>
- Procedural Programming Language is same as Imperative approach of Programming in which you define implementation which a system follow step by steps to complete a task. 
-
- In this you use Procedures, Sub routines, Functions you implement it and call it wherever you need it.
- 
-  User has to specify  “what to do”  and also  “how to do”(step by step procedure). These instructions are executed in the sequential order.
-  <br><br>
-  <h3>1.2)Object Oriented Programming Language</h3>
-Object-oriented programming, or OOP, is an approach to problem solving where all computations are carried out using objects. An object is a component of a program that knows how to perform certain actions and how to interact with other elements of the program. Objects are the basic units of object-oriented programming. A simple example of an object would be a person. Logically, you would expect a person to have a name. This would be considered a property of the person. You could also expect a person to be able to do something, such as walking or driving. This would be considered a method of the person.
-<br><br>
-Code in object-oriented programming is organized around objects. Once you have your objects, they can interact with each other to make something happen. Let's say you want to have a program where a person gets into a car and drives it from A to B. You would start by describing the objects, such as a person and car. That includes methods: a person knows how to drive a car, and a car knows what it is like to be driven. Once you have your objects, you bring them together so the person can get into the car and drive.
-<br><br>
-<strong>Classes and Objects</strong>
-A class is a blueprint of an object. You can think of a class as a concept, and the object is the embodiment of that concept. You need to have a class before you can create an object. So, let's say you want to use a person in your program. You want to be able to describe the person and have the person do something. A class called 'person' would provide a blueprint for what a person looks like and what a person can do. To actually use a person in your program, you need to create an object. You use the person class to create an object of the type 'person.' Now you can describe this person and have it do something.
+</center>
 <br>
-Classes are very useful in programming. Consider the example of where you don't want to use just one person but 100 people. Rather than describing each one in detail from scratch, you can use the same person class to create 100 objects of the type 'person.' You still have to give each one a name and other properties, but the basic structure of what a person looks like is the same.
-<br><br>
-<h3>1.3)Structured Programming Languages</h3>
-In the process of coding,the lines of code keep multiplying,thus,size of the software increases. Gradually, it becomes next to impossible to remember the flow of program. if one forgets how software and its underlying programs,files,procedures are constructed, it then becomes very difficult to share ,debug, and modify the program. The solution to this is structured programming. It encourages the developer to use subroutines and loops instead of using simple jumps in the code, thereby bringing clarity in the code and improving its efficiency Structured Programming also helps programmer to reduce coding time and organize code properly.
-
-<br><br>
-<h3>Types of Declarative Paradigms</h3>
-<h3>2.1)Logical Programming</h3>
-Logic programming is a programming paradigm that is based on logic. This means logic programming languages have statements that follow logic by expressing facts and rules.<br>
-An algorithm is a logical programming paradigm that is a combination of a control component and a logic component. A program is usually broken down into these two components. While the control component is optional, the logic component is the essence of the algorithm.
-
-In purely logic-based programs (i.e., the programs that do not use control components), the logic component alone decides the solution. In a program where both the components are employed, the control component determines the ways by which the solution is produced.
-
-<h3>2.2)Functional Programming</h3>
- FP is a style of programming in which the main program building blocks are functions as opposed to objects and procedures. A program written in the functional style doesn’t specify the commands that should be performed to achieve the result, but rather defines what the result is.
-
-Consider a small example: calculating the sum of a list of numbers. In the imperative world, you implement this by iterating over the list and adding the numbers to the accumulator variable. You explain the step-by-step process of how to sum a list of numbers. On the other hand, in the functional style, you need to define only what a sum of a list of numbers is. The computer knows what to do when it’s required to calculate a sum. One way you can do this is to say that the sum of a list of numbers equals the first element of the list added to the sum of the rest of the list, and that the sum is zero if the list is empty. You define what the sum is without explaining how to calculate it.
-<H3>Difference between Functional Programming and Object Oriented Programming</H3>
-<table>
-<tr><th>Functional Programming</th><th>Object Oriented Programming</th></tr>
-<tr><td>This programming paradigm emphasizes on the use of functions where each function performs a specific task.</td><td>This programming paradigm is based on object oriented concept. Classes are used where instance of objects are created</td></tr>
-<tr><td>In Functional programming, recursion is used for iterative data.</td><td>In OOPs, loops are used for iterative data.</td></tr>
-<tr><td>The basic elements of functional programming are Variables and Functions.</td><td>The basic elements of object-oriented programming are objects and methods.</td></tr>
-<tr><td>Functional programming is used only when there are few things with more operations.</td><td>Object-oriented programming is used when there are many things with few operations.</td></tr>
-<tr><td>In functional programming, the main focus of programming is what are we doing</td><td>In object-oriented programming, the main focus of programming is how are we doing.</td></tr>
+</p>
+<p>
+<h3>Understanding inline level elements.</h3>
+<div style="text-align:justify;">An inline element does not cause a line break (start on a new line) and does not take up the full width of a page, only the space bounded by its opening and closing tag. It is usually used within other HTML elements.<br></div>
+Example:<br>
+<center><img src="images/thirteen.png" alt="error" height="440vh" width="550vw"/></center>
+<br>
+Output:<br>
+<center><img src="images/thirteen1.png" alt="error" height="440vh" width="550vw"/></center>
+<center>
+<h3>Examples of Inline Level Tags in HTML.</h3>
+<table border="1px" cellpadding="0" cellspacing="0" width="700vw">
+<tr><th>Inline Tag</th><th>Usage</th></tr>
+<tr><td>span Tag</td><td>span tag is used for grouping and applying styles to elements. It acts as a inline container.</td></tr>
+<tr><td>img Tag</td><td>Use to add Image on to our webpage</td></tr>
+<tr><td>mark Tag</td><td>Use to highlight a text.</td></tr>
+<tr><td>Other Tags:</td><td><b>&lt;a&gt;&lt;abbr&gt;&lt;acronym&gt;&lt;b&gt;&lt;bdo&gt;&lt;big&gt;&lt;br&gt;&lt;button&gt;&lt;cite&gt;&lt;code&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;img&gt;&lt;input&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;object&gt;&lt;output&gt;&lt;q&gt;&lt;samp&gt;&lt;script&gt;&lt;select&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;textarea&gt;&lt;time&gt;&lt;tt&gt;&lt;var&gt;</b></td></tr>
 </table>
+</center>
+</p>
+<p>
+<center><h3>Frame and Frameset Tag:</h3></center>
+ 
+<p>1) Frameset is a collection of frames.<br>
+2) Frames are separate sections of your browser window where different html files will load.<br>
+3) If we want to display more than one html file on a single webpage in that case we must use Frame and Frameset Tag.<br>
+4) Note: We never use body tag along with Frameset Tag<br>
+5) "*" --->wildcard Character--->representing remaining spaces(for example: rows="40%,40%,*"--->*(Remaining Space=20%)</p>
+	<br>
+<h3>Example of Frameset Tag:</h3>
+<center><h3>1)Dividing Our webpage into two frames Vertically:(using <span style="color:red;">cols</span> attribute)</h3></center>
+<center><img src="images/fourteen.png" alt="error" height="440vh" width="550vw"/></center>
+<br>
+OUTPUT:
+<br>
+<center>
+<img src="images/fourteen1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center><br>
+
+
+<center><h3>2)Dividing Our webpage into two frames horizontally.(Using <span style="color:red;">rows</span> attribute)</h3></center>
+<center><img src="images/fifteen.png" alt="error" height="440vh" width="550vw"/></center><br>
+OUTPUT:<br>
+<center><img src="images/fifteen1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center>
+
+
+<center><h3>3)Divide your webpage into two rows where the second row is again divided into three columns.</h3></center>
+<center><img src="images/sixteen.png" alt="error" height="440vh" width="590vw" /></center><br>
+OUTPUT:<br>
+<center><img src="images/sixteen1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center>
+</p>
+<h3>Try To Create these Frames:</h3>
+<p>
+<ul>
+<li>Assignment 1<br><br>
+<center><img src="images/16.1.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center>
+</li><br><br>
+<li>Assignment 2<br><br><center><img src="images/16.2.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center></li>
+<li>Assignment 3<br><br><center><img src="images/16.3.png" alt="error" height="440vh" width="590vw" style="border:1px solid red;"/></center></li>
+</ul>
+
+
+<h3>Marquee Tag in html.</h3>
+ 
+<p>1) Marquee tag is used toused to create a scrolling text or an image.</p>
+<p>2) It was used to make the text/image scroll horizontally across or vertically down the web page.</p>
+ 
+Example:
+<center>
+<img src="images/marquee1.png" alt="error" height="440vh" width="590vw"/><br>
+OUTPUT:
 <br><br>
-<h3>Pillars of Object Oriented Programming</h3>
-<h3>1)Abstraction</h3>
-Data abstraction means hiding of data.
-Abstraction is implemented automatically while writing the code in the form of class and object.
-It shows only important things to the user and hides the internal details.
-Abstraction (from the Latin abs, meaning away from and trahere , meaning to draw) is the process of taking away or removing characteristics from something in order to reduce it to a set of essential characteristics. Abstraction is related to both encapsulation and data hiding.
-he goal of “abstracting” data is to reduce complexity by removing unnecessary information. 
-<br>
-<b>Realtime Examples of Abstraction:</b>
-<br> We all use an ATM machine for cash withdrawal, money transfer, retrieve min-statement, etc in our daily life. But we don’t know internally what things are happening inside ATM machine when you insert an ATM card for performing any kind of operation.
-<h4>Example:</h4>
-<pre>
-	<code>
-#include&lt;iostream&gt;
-using namespace std;
-class Addition
-{
-    private: int a=10,b=10,c;  // Hidden data from outside world
-        public:
-            int add()
-            {
-                 c=a+b;
-                 cout&lt;&lt;&quot;Addition is : &quot;&lt;&lt;c;
-            }
-};
-int main()
-{
-     Addition a;
-     a.add();
-     return 0;
-}
-	</code>
-</pre>
-<b>Output:
-Addition is : 20</b><br>
+<iframe width="550vw" height="100vh" src="videos/marquee1.mp4"></iframe></center>
+	<br><br>
+<center><h3>Behaviour of Marquee tags:</h3></center>
+<center><p>By Default the behavior of Marquee Tag is <span style="color:red;">Scroll</span><br>
+<center>
+<table border="1px" cellspacing="0" cellpadding="0" width="700vw">
+<tr><th>Behavior attribute value</th><th>Working</th></tr>
+<tr><td>Scroll(By Default)</td><td>The element inside the marquee tag keeps on moving in a continuous loop.</td></tr>
+<tr><td>Slide</td><td>The element inside the marquee tag slide and stop when it reaches the end of the web page.(Right to left)</td></tr>
+<tr><td>alternate</td><td>The element inside the marquee tag move from left to right and then from right to left and this continuos.</td></tr>
+</table>
 
-a)In the above example, class Addition adds numbers together and returns the addition or sum. The public member add() function is the interface to the outside world and a user needs to know to use the class. The private member int a,b,c are something that the user does not need to know about, but is needed for the class to operate properly.<br><br>
-b)Abstraction provides security for the data from the unauthorized methods and can be achieved by using class<br>
-<h3>Abstraction can be achieved in two ways:</h3>
-<b>Abstraction using classes:</b> An abstraction can be achieved using classes. A class is used to group all the data members and member functions into a single unit by using the access specifiers. A class has the responsibility to determine which data member is to be visible outside and which is not.
-
-<b>Abstraction in header files:</b> An another type of abstraction is header file. For example, pow() function available is used to calculate the power of a number without actually knowing which algorithm function uses to calculate the power. Thus, we can say that header files hides all the implementation details from the user.
-
-<h3>Access Specifiers Implement Abstraction:</h3>
-
-<b>Public specifier:</b> When the members are declared as public, members can be accessed anywhere from the program.
-<b>Private specifier:</b> When the members are declared as private, members can only be accessed only by the member functions of the class.
-Let's see a simple example of abstraction in header files.
-
-<br>
-Ex: Program to calculate the power of a number.
-<pre>
-	<code>
-#include &lt;iostream&gt;
-#include&lt;math.h&gt;
-using namespace std;
-int main()
-{  
- int n = 4;
-   int power = 3;
-   int result = pow(n,power);         // pow(n,power) is the  power function
-   std::cout &lt;&lt; &quot;Cube of n is : &quot; &lt;&lt;result&lt;&lt; std::endl;
-   return 0;
-}
-	</code>
-</pre>
-<b>Output:
-Cube of n is : 64</b>
-In the above example, pow() function is used to calculate 4 raised to the power 3. The pow() function is present in the math.h header file in which all the implementation details of the pow() function is hidden.
-
-<b>Let's see a simple example of data abstraction using classes.</b>
-<pre>
-	<code>
-#include &lt;iostream&gt;  
-using namespace std;  
- class Sum  
-{  
-private: int x, y, z; // private variables
-public:  
-void add()  
-{  
-cout&lt;&lt;&quot;Enter two numbers: &quot;;  
-cin&gt;&gt;x&gt;&gt;y;  
-z= x+y;  
-cout&lt;&lt;&quot;Sum of two number is: &quot;&lt;&lt;z&lt;&lt;endl;  
-}  
-};  
-int main()  
-{  
-Sum sm;  
-sm.add();  
-return 0;  
-}  
-	</code>
-</pre>
-
-<b>Output:
-
-Enter two numbers:
-3
-6
-Sum of two number is: 9</b>
-In the above example, abstraction is achieved using classes. A class 'Sum' contains the private members x, y and z are only accessible by the member functions of the class.
-<br>
-<h3> Advantage of Abstraction:</h3>
-
- 1)Abstraction increases the reusability of the code because of the proper partitioning.<br>
-2)It reduces the complexity as well as the redundancy of the code, hence increasing the readability.<br>
-3)Using classes and objects increases the security of the code. We can declare the parts of the code as private to keep them secure.<br>
-4)Due to abstraction, the important parts of the code are secure as only the essential features are provided to the user and they don’t know the background details.<br>
-5)Abstraction allows changing internal implementations without affecting its user-level code.
-
- <br><br>
- <h3>2)Encapsulation:</h3>
- Encapsulation is one of the important properties of an object-oriented programming language and is defined as wrapping up data and functions into a single unit (e.g. class).<br>
-
-For example, when we create a class and declare variables and functions inside it, we are basically binding them together with the help of the class, thus implementing encapsulation.<br>
-
-But creating a class with properties (attributes) and behaviors (methods) does not always implement encapsulation.
-
-The core concept of encapsulation in OOP is to hide the state (attributes) of an object or class from the outside so that our application is secure and modularised.
-<br>
-How Exactly can we Implement Encapsulation in OOP?<br>
-To implement Encapsulation, we restrict the accessibility of the attributes and make the attributes and functions work together.
-One of its most implemented example is the getter and setter of a variable.
-
-We create a private variable and write a getter and setter function for it. In doing so no other class can directly access the variable from outside and it can only be done through getter and setter.
-
-That’s why it is said that encapsulation in a way to implement abstraction.
-<h3>Example of Encapsulation in C++</h3>
-<pre>
-	<code>
-#include &lt;iostream&gt;
-using namespace std;
+</center>
+</p></center>
+<center>Example:</center>
+<center><img src="images/marquee2.png" alt="error" height="440vh" width="590vw"/></center><br><br>
+<center>OUTPUT:</center>
+<center><iframe src="videos/marquee2.mp4" width="550vw" height="100vh"></iframe></center>
+<br><br>
+<center><h3>Controlling the speed of the moving content of marquee tag using<span style="color:red;"> scrollamount attribute.</span></h3></center><br><br>
+<center><img src="images/marquee3.png" alt="error" height="440vh" width="590vw"/></center><br><br>
+<center><iframe src="videos/marquee3.mp4" width="550vw" height="100vh"></iframe></center><br><br>
+<center>Changing Direction of the content of the marquee tag using <span style="color:red;">direction attribute</span></center><br><br>
+<center><img src="images/marquee4.png" alt="error" height="440vh" width="590vw"/></center>
+<center><iframe src="videos/marquee4.mp4" width="500vw" height="400vh"></iframe></center>
+</p>
  
-class Math{
-private:
-    int sum;   //Can't be accessed from the main method.
-    
-public:
-    //setter for sum
-    void add(int a, int b){
-        this-&gt;sum = a + b;
-    }
-    
-    //getter for sum
-    int getSum(){
-        return this-&gt;sum;
-    }
-};
- 
-int main()
-{
-    //Single unit i.e. object of a class
-    Math math;
-    
-    //add two number
-    math.add(5,4);
-    
-    //get the sum using getter method
-    cout &lt;&lt; &quot;Sum: &quot;&lt;&lt; math.getSum() &lt;&lt; endl;
-    return 0;
-}
-	</code>
-</pre>
-
-<b> Output: Sum:9</b>
-<h3>Advantage of encapsulation:</h3>
-1)In C++, encapsulation helps to combine the related members into a single class, making the code look cleaner and increasing readability. 
+<h3>Table tag in HTML.</h3>
+<p>Table tag is used to create a Table in html.<br>
+<center>
+<table border="1px" cellspacing="0" cellpadding="0" width="700vw">
+<tr><th>Table Tags</th><th>Uses</th></tr>
+<tr><td>&lt;tr&gt;</td><td>use to create a row in a table.</td></tr>
+<tr><td>&lt;th&gt;</td><td>use to create table heading.</td></tr>
+<tr><td>&lt;td&gt;</td><td>use to create table data.</td></tr>
+<tr><td>&lt;thead&gt;</td><td>use to create a section which holds the table heading tags.</td></tr>
+<tr><td>&lt;tbody&gt;</td><td>use to create a section holding the table body other than the header and footer of a table.</td></tr>
+<tr><td>&lt;tfoot&gt;</td><td>use to create a section to hold the content of the footer part of the table.</td></tr>
+</table>
 <br>
-2)The get() and set() functions provide read-only and write-only accessibility to the user. Hence, keeping the data secure. <br>
-3)The bundling of the data eases out the development in general. The testing, debugging, and execution of these bundles can be done individually, which will not affect the other parts. <br>
-4)Data hiding is a good way to keep the data secure from the outside world. Hence, improving the security of the code even further. <br>
-5)Encapsulation provides us with efficient control of the data as we can alter one part of the code without affecting the other. 
+<h3>Creating a Simple Table having 2 rows and 2 columns.</h3>
+<br>
+Step1:<br>
+<img src="images/step1.png" alt="error" height="400vh" width="590vw"/><br><br>
+Step2:<br>
+<img src="images/step2.png" alt="error" height="440vh" width="590vw"/><br><br>
+Step3:<br>
+<img src="images/step3.png" alt="error" height="440vh" width="590vw"/><br><br>
+Output after step3:<br>
+<img src="images/step3output.png" alt="error" height="440vh" width="590vw"/><br><br>
+Step4:<br>
+<img src="images/step4.png" alt="error" height="440vh" width="590vw"/><br><br>
+Output after step4:<br>
+<img src="images/step4output.png" alt="error" height="440vh" width="590vw"/>
+<h3>CellSpacing: <span style="color:red;">It is the Spaces present between the cells.</span></h3>
+<h3>Cellpadding: <span style="color:Red;">It is the Space present between the text and cell border.</span></h3>
+<h3>Figure illustrating Cellpadding and Cellspacing in a table.</h3>
+<img src="images/cellspacing.png" alt="error" height="440vh" width="590vw"/>
+</p></center>
 
+<p>Example1:<br><br>
+Q.write html code to draw the following table using html and then modify the code into html 5.<br><br>
+<center><img src="images/q1.png" alt="error" height="340vh" width="590vw"/></center><br><br>
+<center><h3>HTML code:<br><br>
+<img src="images/q11.png" alt="error" height="340vh" width="590vw" /><br><br><br><br>
+<h3>HTML 5 code:</h3>
+<img src="images/q11html5.png" alt="error" height="340vh" width="590vw"/>
+</h3></center>
 </p>
 
 
+<h3>NOTE: In html three new table tags were introduced they are, thead,tbody,tfoot.
+<br>
+1)<font color="red">&lt;thead&gt; &lt;/thead&gt; </font> : thead is a container tag which is use to hold the heading section of the table.<br>
+2)<font color="red">&lt;tbody&gt;  &lt;/tbody&gt;</font>: tbody is a container tag which is use to hold the body section of the table containing data other than the heading and footer.<br>
+3)<font color="red">&lt;tfoot&gt;  &lt;/tfoot&gt;</font>: tfoot is a container tag which is use to hold the footer section of the table if needed.<br>
+</h3>
+<center>Figure illustrating the newly added table tags in html 5.<br>
+<img src="images/q11example.png" alt="error" height="340vh" width="590vw" style="cursor: zoom-out;"/></center>
+
+<center>
+<h3>Phase 2:Working with <font color="red">rowspan</font> attribute of table tag</h3>
+<p>
+rowspan attribute is use to merge rows in a table.<br>
+Lets understand it with the help of a basic example:<br>
+Follow these steps to understand rowspan and freely use it to create tables.<br>
+<img src="images/rspan.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br><br>
+HTML code solution for the above table:<br><br>
+<img src="images/rspan1.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br><br>
+<h3>Lets look another example to understand rowspan:</h3>
+<img src="images/rspan2.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;" /><br><br>
+HTML Source code for the above table.<br><br>
+<img src="images/rspan2code.png" alt="error" height="510vh" width="650vw" style="cursor: zoom-in;" /><br><br>
+
+<h3>Practice Assignments:</h3>
+1) <br><img src="images/rspan3.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;" /><br>
+<br>
+2)<br><img src="images/rspan4.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br><br>
+</p>
+<h3>Understanding <font color="red">colspan</font> attribute of table tag in html</h3>
+colspan attribute is use to combine or merge columns.<br>
+Let's understand colspan attributes with the help of an example.
+<br>
+<img src="images/colspan.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;" /><br><br>
+Code Solution<br>
+<img src="images/colspan1.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br><br>
+<br><br>
+Example 2:
+<br><img src="images/colspan2.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;" /><br><br>
+Solution:<br><br>
+<img src="images/colspan22.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br><br>
+<h3>Practice Assignments on colspan:</h3>
+1)<br>
+<img src="images/cspan.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br>
+<br>
+2)<br>
+<img src="images/cspana.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/>
+<br><br>
+<h3>Now lets Practice both rowspan and colspan.</h3>
+<img src="images/rac.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br><br>
+Solution:<br><br>
+<img src="images/rac1.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/>
+
+<h3>Practice Assignments to get better at creating Tables.</h3>
+1)<br>
+<img src="images/ass1.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/><br>
+<br><br>
+2)<br>
+<img src="images/ass2.png" alt="error" height="440vh" width="600vw" style="cursor: zoom-in;"/>
+</center>
 </div>
 
 <div class="footer">
@@ -543,38 +470,37 @@ int main()
 Founder:Piyush Srivastava<br>
 Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p></div> 
 <div class="foot">
-<div>
+
 <ul>Social Links<hr><br>
 <li>LinkedIn</li>
 <li>Twitter</li>
 <li>Email</li>
 <li>Youtube</li>
-</ul></div>
-<div>
+</ul> 
+ 
 <ul>Courses<hr><br>
 <li>HTML</li>
 <li>CSS</li>
 <li>Javascript</li>
 <li>LibreOffice</li>
 <li>Java</li>
-</ul></div>
-<div>
+</ul> 
+ 
 <ul>Roadmaps:<hr><br>
 <li>FrontEnd Development</li>
 <li>Backend Development</li>
 <li>Devops</li>
-</ul></div>
-<div>
+</ul> 
+ 
 <ul>Jobs<hr><br>
 <li>Remote Jobs</li>
 <li>Government Jobs</li>
 <li>Internships</li>
-</ul></div>
-</div>
-
+</ul> </div>
 </footer>
 </div>
-    </div>                    
+</div>
+      
 <script type='text/javascript'>
 		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
 </script>	 
