@@ -1,509 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/C++.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/C++.css">
 </head>
+
 <body>
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <div id="preloader">
+    <div>
+      <img src="./images/preloader.gif">
+    </div>
+  </div>
 
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            OneLinerNotes
-          </div>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        OneLinerNotes
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="#" target="_blank">Home</a></li>
+        <li><a href="index.html" target="_blank">HTML</a></li>
+        <li><a href="CSS.html" target="_blank">CSS</a></li>
+        <li><a href="#" target="_blank">Javascript</a></li>
+        <li><a href="C++.html" target="_blank">C++</a></li>
+        <li><a href="MCQ.html" target="_blank">Mcqs</a></li>
+        <a class="icon">
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-youtube"></i>
+
+        </a>
+      </ul>
+    </div>
+  </div><br><br><br>
+
+  <div class="container">
+    <div class="links">
+
+      <p>
+      <h3 id="a1">What is HTML?</h3>
+      <ul>
+        <li>HTML Stands For Hypertext Markup Language.</li>
+        <li>HTML is a Markup Language which is use to create Web Pages.</li>
+        <li>HTML was Developed by Tim Berners Lee in 1991.</li>
+      </ul>
+      <h3 id="a2">What is Markup?</h3>
+      <ul>
+        <li>Markup means it uses tags to define elements and add information.</li>
+        <li>A typical markup language contains the text within the tags.</li>
+        <li>Ex: <strong>This is Strong Tag of HTML</strong> </li>
+      </ul>
+      </p>
+      <p>
+      <h3 id="a3">History of HTML.</h3>
+      <ul>
+        <li>HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and accessible
+          via web browsers</li>
+        <li>Then comes HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with that few
+          additional features</li>
+        <li>Then comes HTML 3.0, where Dave Raggett introduced a fresh paper or draft on HTML. It included improved new
+          features of HTML, giving more powerful characteristics for webmasters in designing web pages</li>
+        <li>Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which is
+          currently released and used worldwide.</li>
+        <li>HTML 5 can be said for an extended version of HTML 4.01, which was published in the year 2012.</li>
+      </ul>
+      </p>
+
+      <p>
+      <h3 id="a4">What is Tag?</h3>
+      <ul>
+        <li>HTML tags are like keywords which defines that how web browser will format and display the content.</li>
+        <li>With the help of tags, a web browser can distinguish between an HTML content and a simple content.</li>
+        <li>HTML tags contain three main parts: opening tag, content and closing tag.</li>
+        <li>Ex: <b>&lt;b&gt;</b> This is bold Tag of HTML &lt;/b&gt;<br />
+          <b>&lt;b&gt;</b> --->It is opening tag<br />
+          <b>&lt;/b&gt;</b> --->It is closing tag<br />
+          This is bold Tag of HTML--->This is content
+        </li>
+      </ul>
+      </p>
+      <p>
+      <h3 id="a6">Types of HTML Tags :</h3>
+      <ol>
+        <li id="a6.1"><b>Paired or container Tag</b>
+
+
+          ex: &lt;html&gt; ---&lt;/html&gt; <br>
+          &lt;head&gt; ---&lt;/head&gt;<br>
+          &lt;body&gt; ---&lt;/body&gt;<br>
+          &lt;b&gt; ---&lt;/b&gt;
+
+        </li>
+        <li id="a6.2"><b>Empty or Singular Tag</b><br />
+
+          ex: &lt;img/&gt; --->Use to add images on webpage.<br>
+          &lt;br/&gt; --->Use to Break Line<br>
+          &lt;hr/&gt;--->Use to add Horizontal Line
+
+        </li>
+        <li id="a6.3"><b>Block Level Tag</b><br />
+          The Tag that produces line break itself are known as Block Level Tag<br />
+
+          ex: The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break. <br>
+          &lt;h1&gt;&lt;/h1&gt; ---->Use to add Biggest Heading.<br>
+          &lt;div&gt;&lt;/div&gt;--->Use to create division in webpage.
+
+        </li>
+        <li id="a6.4"><b>Inline Level Tag</b><br />
+          The tag which doesn't produce line break are called Inline Level Tag.<br>
+
+          &lt;b&gt;---&lt;/b&gt; --->use to bold a text.<br>
+          &lt;img/&gt; --->Use to insert image in the webpage
+
+
+        </li>
+      </ol>
+      </p>
+      <p id="a7">
+      <h3>Basic Structure of HTML</h3>
+      <center><img src="images/one.png" alt="check path please" title="Click to enlarge" style="width:100%;" /></center>
+      <ul>
+        <li><b>&lt;html&gt;</b>--->It represents the root of an HTML document.</li>
+        <li><b>&lt;head&gt;</b>--->It is used to define the head portion of the document which contains information
+          related to the document.
+          The <b>&lt;head&gt;</b> tag contains other head elements such as &lt;title&gt;, <b>&lt;meta&gt;</b>,
+          &lt;link&gt;, &lt;style&gt; &lt;link&gt; etc.
+          In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the
+
+          <head> element can be omitted.
+        </li>
+        <li><b>&lt;body&gt;</b>--->It acts as the body of the webpage. All components of the webpage is written within
+          body tag.</li>
+      </ul>
+      </p>
+      <hr />
+      <p id="a8">
+      <h3> Basic Structure of HTML 5</h3>
+      <center><img src="images/two.png" alt="error" title="Click to enlarge" style="width:100%;" /></center>
+
+      <figcaption>Example 2:</figcaption>
+      <center><img src="images/three.jpg" title="Click to enlarge" style="width:100%;" /></center>
+      <h3>HTML 5 Elements:</h3>
+      <p>1) <b>html</b> ---> It is the root element of our webpage. <br>
+        2) <b>head</b> ---> head tag is used to add title to our webpage and add fevicon icon .<br>
+        3) <b>title</b> ---> title tag is used to add title to our webpage and the title is shown in the tab bar.<br>
+        4) <b>meta</b> --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on
+        the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that
+        help tell search engines what a web page is about.<br>
+        5) <b>link </b>---> Use to add external css file into our html file<br>
+        6) <b>body</b> ---> it contain all the content present in our webpage.<br>
+        7) <b>header</b> ---> use to prepare header of our webpage which consist of companies logo and Companies name
+        and Navigation bars<br>
+
+        8) <b>nav</b> ---> nav tag is used to create navigation bars<br>
+        9) <b>main</b> --->this tag contain the main content of our webpage that is content between header and footer
+        tag .<br>
+        10) <b>section</b> ---> section tag is use to divide webpage into different sections<br>
+        11) <b>article</b> ---> article tag is used to add text which is totally independent from the rest of the
+        content on the webpage,example news forums, blogs etc.<br>
+        12) <b>aside</b> ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a
+        highlighter to focus on the main things from the webpage</p>
+
+      <hr />
+      <p id="f">
+      <h3>Formatting Tags in HTML5:</h3>
+      <ol>
+        <li>
+          <h3>&lt;strong&gt; Tag and &lt;b&gt; Tag:</h3><br>
+          These tags are used to apply bold formatting on a text enclosed between strong or b tag.
+          <br>
+          Ex: As Shown in the figure below.<br>
+          <center><img src="images/four.png" alt="error" title="Click to enlarge" style="width:100%;" /></center>
+          <br>
+          Output of the above code :<br>
+          <center><img src="images/four1.png" alt="error" title="Click to enlarge" style="width:100%;" /></center>
+        </li>
+
+        <li>
+          <h3>&lt;i&gt; Tag and &lt;em&gt; Tag</h3><br>
+          These tags are used to add italic and emphasized formatting on the text present between these tags.<br>
+          <h3>Example of i and em tag in html.</h3>
+          <center><img src="images/five.png" height="350vh" width="800vw" title="Click to enlarge"
+              style="width:100%;" /></center>
+          <br>
+          <h3>Output:</h3>
+          <center><img src="images/five1.png" width="600vw" title="Click to enlarge" style="width:100%;" /></center>
+        </li>
+        <li>
+          <h3>
+            &lt;u&gt; Tag and &lt;ins&gt; Tag</h3><br>
+          These tags are used to used to underline the content present between them,ins stands for inserted text.<br>
+          <h3>Example:</h3>
+          <br>
+          <center><img src="images/six.png" height="400vh" width="800vw" title="Click to enlarge" style="width:100%;" />
+          </center>
+          <br>
+          Output:<br>
+          <center><img src="images/six1.png" height="130vh" width="500vw" title="Click to enlarge" style="width:100%;">
+          </center>
+
+        </li>
+        <li>
+          <h3>
+            &lt;del&gt; Tag and &lt;strike&gt; Tag</h3><br>
+          These tags are used to add a line in the middle of the text present between these tags.
+          <h3>For Example:</h3>
+          <br>
+          <center><img src="images/seven.png" width="800vw" title="Click to enlarge" style="width:100%;" /><br></center>
+          Output is:<br>
+          <center><img src="images/seven1.png" width="600vw" title="Click to enlarge" style="width:100%;"></center>
+
+        </li>
+        <li>
+          <h3>
+            &lt;sup&gt;Tag and &lt;sub&gt;Tag</h3><br>
+          sup tag is used to make text superscript,whereas sub tag is use to make text subscript.
+          <h3>Example:</h3><br>
+          <center><img src="images/eight.png" width="800vw" title="Click to enlarge" style="width:100%;"><br></center>
+          Output:<br>
+
+          <center><img src="images/eight1.png" width="600vw" title="Click to enlarge" style="width:100%;"></center>
+        </li>
+        <li>
+          <h3>
+            &lt;big&gt;Tag and &lt;small&gt;Tag</h3><br>
+          big tag is use to increase the font size of text one more than the remaining text.<br>
+          small tag is use to decrease the font size of text one less than the remaining text.<br>
+          <h3>Example:</h3><br>
+          <center><img src="images/nine.png" width="800vw" title="Click to enlarge" style="width:100%;" /><br></center>
+          Output:<br>
+          <center><img src="images/nine1.png" width="600vw" title="Click to enlarge" style="width:100%;" /></center>
+        </li>
+        <li>
+          <h3>
+            &lt;mark&gt; Tag:<br></h3>
+          This tag is used to highlight a text.<br>
+          <h3>Example:<br>
+            <center><img src="images/ten.png" width="800vw" title="Click to enlarge" style="width:100%;" /><br></center>
+            Output:<br>
+            <center><img src="images/ten1.png" width="600vw" title="Click to enlarge" style="width:100%;"></center>
+        </li>
+      </ol>
+      </p>
+
+      <p id="Heading">
+      <h3>Heading Tags in HTML</h3>
+      Heading Tags are used to create heading.<br />
+      <b>&lt;h1&gt;</b>-->Is used to create biggest heading.<br>
+      <b>&lt;h6&gt;</b>-->Is used to create the smallest heading.<br>
+      Example:<br>
+      <center><img src="images/eleven.png" alt="oops" style="width:100%;" /></center><br>
+      Output:<br>
+      <center><img src="images/eleven1.png" alt="oops" style="width:100%;" /></center>
+
+      </p>
+
+      <p id="inline">
+      <h3>Understanding Block Level Tags</h3>
+      <div style="text-align:justify;">A block-level element always starts on a new line and takes up the full width of
+        a page, from left to right. A block-level element can take up one line or multiple lines and has a line break
+        before and after the element.</div>
+
+      Example:<br>
+      <center><img src="images/twelve.png" alt="oops" style="width:100%;" /></center>
+      <br>
+      Output:<br>
+      <center><img src="images/twelve1.png" alt="oops" style="width:100%;" /></center>
+      <br>
+      <center>
+        <h3>Examples of blocks level tags in HTML.</h3>
+        <table border="1px" cellspacing="0" cellpadding="0">
+          <tr>
+            <th>Block Level Tags</th>
+            <th>Usage</th>
+          </tr>
+          <tr>
+            <td>Heading Tags(&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;)</td>
+            <td>Use to create heading.</td>
+          </tr>
+          <tr>
+            <td>Paragraph Tag(&lt;p&gt;)</td>
+            <td>Use to create Paragraphs</td>
+          </tr>
+          <tr>
+            <td>Div Tag(&lt;div&gt;)</td>
+            <td>Use as a Universal Tag.Use to create division or sections of your webpage.</td>
+          </tr>
+          <tr>
+            <td>Other examples </td>
+            <td>
+              <b>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;canvas&gt;&lt;dd&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;-&lt;h6&gt;&lt;header&gt;&lt;hr&gt;&lt;li&gt;&lt;main&gt;&lt;nav&gt;&lt;noscript&gt;&lt;ol&gt;&lt;p&gt;&lt;pre&gt;&lt;section&gt;&lt;table&gt;&lt;tfoot&gt;&lt;ul&gt;&lt;video&gt;</b>
+            </td>
+          </tr>
+        </table>
+      </center>
+      <br>
+      </p>
+      <p>
+      <h3>Understanding inline level elements.</h3>
+      <div style="text-align:justify;">An inline element does not cause a line break (start on a new line) and does not
+        take up the full width of a page, only the space bounded by its opening and closing tag. It is usually used
+        within other HTML elements.<br></div>
+      Example:<br>
+      <center><img src="images/thirteen.png" alt="error" style="width:100%;" /></center>
+      <br>
+      Output:<br>
+      <center><img src="images/thirteen1.png" alt="error" style="width:100%;" /></center>
+      <center>
+        <h3>Examples of Inline Level Tags in HTML.</h3>
+        <table border="1px" cellpadding="0" cellspacing="0">
+          <tr>
+            <th>Inline Tag</th>
+            <th>Usage</th>
+          </tr>
+          <tr>
+            <td>span Tag</td>
+            <td>span tag is used for grouping and applying styles to elements. It acts as a inline container.</td>
+          </tr>
+          <tr>
+            <td>img Tag</td>
+            <td>Use to add Image on to our webpage</td>
+          </tr>
+          <tr>
+            <td>mark Tag</td>
+            <td>Use to highlight a text.</td>
+          </tr>
+          <tr>
+            <td>Other Tags:</td>
+            <td>
+              <b>&lt;a&gt;&lt;abbr&gt;&lt;acronym&gt;&lt;b&gt;&lt;bdo&gt;&lt;big&gt;&lt;br&gt;&lt;button&gt;&lt;cite&gt;&lt;code&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;img&gt;&lt;input&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;object&gt;&lt;output&gt;&lt;q&gt;&lt;samp&gt;&lt;script&gt;&lt;select&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;textarea&gt;&lt;time&gt;&lt;tt&gt;&lt;var&gt;</b>
+            </td>
+          </tr>
+        </table>
+      </center>
+      </p>
+      <p>
+        <center>
+          <h3>Frame and Frameset Tag:</h3>
+        </center>
+
+      <p>1) Frameset is a collection of frames.<br>
+        2) Frames are separate sections of your browser window where different html files will load.<br>
+        3) If we want to display more than one html file on a single webpage in that case we must use Frame and Frameset
+        Tag.<br>
+        4) Note: We never use body tag along with Frameset Tag<br>
+        5) "*" --->wildcard Character--->representing remaining spaces(for example: rows="40%,40%,*"--->*(Remaining
+        Space=20%)</p>
+      <br>
+      <h3>Example of Frameset Tag:</h3>
+      <center>
+        <h3>1)Dividing Our webpage into two frames Vertically:(using <span style="color:red;">cols</span> attribute)
+        </h3>
+      </center>
+      <center><img src="images/fourteen.png" alt="error" style="width:100%;" /></center>
+      <br>
+      OUTPUT:
+      <br>
+      <center>
+        <img src="images/fourteen1.png" alt="error" style="width:100%;" style="border:1px solid red;" />
+      </center><br>
+
+
+      <center>
+        <h3>2)Dividing Our webpage into two frames horizontally.(Using <span style="color:red;">rows</span> attribute)
+        </h3>
+      </center>
+      <center><img src="images/fifteen.png" alt="error" style="width:100%;" /></center><br>
+      OUTPUT:<br>
+      <center><img src="images/fifteen1.png" alt="error" style="width:100%;" style="border:1px solid red;" /></center>
+
+
+      <center>
+        <h3>3)Divide your webpage into two rows where the second row is again divided into three columns.</h3>
+      </center>
+      <center><img src="images/sixteen.png" alt="error" style="width:100%;" /></center><br>
+      OUTPUT:<br>
+      <center><img src="images/sixteen1.png" alt="error" style="width:100%;" style="border:1px solid red;" /></center>
+      </p>
+      <h3>Try To Create these Frames:</h3>
+      <p>
+      <ul>
+        <li>Assignment 1<br><br>
+          <center><img src="images/16.1.png" alt="error" style="width:100%;" style="border:1px solid red;" /></center>
+        </li><br><br>
+        <li>Assignment 2<br><br>
+          <center><img src="images/16.2.png" alt="error" style="width:100%;" style="border:1px solid red;" /></center>
+        </li>
+        <li>Assignment 3<br><br>
+          <center><img src="images/16.3.png" alt="error" style="width:100%;" style="border:1px solid red;" /></center>
+        </li>
+      </ul>
+
+
+      <h3>Marquee Tag in html.</h3>
+
+      <p>1) Marquee tag is used toused to create a scrolling text or an image.</p>
+      <p>2) It was used to make the text/image scroll horizontally across or vertically down the web page.</p>
+
+      Example:
+      <center>
+        <img src="images/marquee1.png" alt="error" style="width:100%;" /><br>
+        OUTPUT:
+        <br><br>
+        <iframe style="width:100%;" src="videos/marquee1.mp4"></iframe>
+      </center>
+      <br><br>
+      <center>
+        <h3>Behaviour of Marquee tags:</h3>
+      </center>
+      <center>
+        <p>By Default the behavior of Marquee Tag is <span style="color:red;">Scroll</span><br>
+          <center>
+            <table border="1px" cellspacing="0" cellpadding="0">
+              <tr>
+                <th>Behavior attribute value</th>
+                <th>Working</th>
+              </tr>
+              <tr>
+                <td>Scroll(By Default)</td>
+                <td>The element inside the marquee tag keeps on moving in a continuous loop.</td>
+              </tr>
+              <tr>
+                <td>Slide</td>
+                <td>The element inside the marquee tag slide and stop when it reaches the end of the web page.(Right to
+                  left)</td>
+              </tr>
+              <tr>
+                <td>alternate</td>
+                <td>The element inside the marquee tag move from left to right and then from right to left and this
+                  continuos.</td>
+              </tr>
+            </table>
+
+          </center>
+        </p>
+      </center>
+      <center>Example:</center>
+      <center><img src="images/marquee2.png" alt="error" style="width:100%;" /></center><br><br>
+      <center>OUTPUT:</center>
+      <center><iframe src="videos/marquee2.mp4" style="width:100%;"></iframe></center>
+      <br><br>
+      <center>
+        <h3>Controlling the speed of the moving content of marquee tag using<span style="color:red;"> scrollamount
+            attribute.</span></h3>
+      </center><br><br>
+      <center><img src="images/marquee3.png" alt="error" style="width:100%;" /></center><br><br>
+      <center><iframe src="videos/marquee3.mp4" style="width:100%;"></iframe></center><br><br>
+      <center>Changing Direction of the content of the marquee tag using <span style="color:red;">direction
+          attribute</span></center><br><br>
+      <center><img src="images/marquee4.png" alt="error" style="width:100%;" /></center>
+      <center><iframe src="videos/marquee4.mp4" style="width:100%;"></iframe></center>
+      </p>
+
+      <h3>Table tag in HTML.</h3>
+      <p>Table tag is used to create a Table in html.<br>
+        <center>
+          <table border="1px" cellspacing="0" cellpadding="0">
+            <tr>
+              <th>Table Tags</th>
+              <th>Uses</th>
+            </tr>
+            <tr>
+              <td>&lt;tr&gt;</td>
+              <td>use to create a row in a table.</td>
+            </tr>
+            <tr>
+              <td>&lt;th&gt;</td>
+              <td>use to create table heading.</td>
+            </tr>
+            <tr>
+              <td>&lt;td&gt;</td>
+              <td>use to create table data.</td>
+            </tr>
+            <tr>
+              <td>&lt;thead&gt;</td>
+              <td>use to create a section which holds the table heading tags.</td>
+            </tr>
+            <tr>
+              <td>&lt;tbody&gt;</td>
+              <td>use to create a section holding the table body other than the header and footer of a table.</td>
+            </tr>
+            <tr>
+              <td>&lt;tfoot&gt;</td>
+              <td>use to create a section to hold the content of the footer part of the table.</td>
+            </tr>
+          </table>
+          <br>
+          <h3>Creating a Simple Table having 2 rows and 2 columns.</h3>
+          <br>
+          Step1:<br>
+          <img src="images/step1.png" alt="error" style="width:100%;" /><br><br>
+          Step2:<br>
+          <img src="images/step2.png" alt="error" style="width:100%;" /><br><br>
+          Step3:<br>
+          <img src="images/step3.png" alt="error" style="width:100%;" /><br><br>
+          Output after step3:<br>
+          <img src="images/step3output.png" alt="error" style="width:100%;" /><br><br>
+          Step4:<br>
+          <img src="images/step4.png" alt="error" style="width:100%;" /><br><br>
+          Output after step4:<br>
+          <img src="images/step4output.png" alt="error" style="width:100%;" />
+          <h3>CellSpacing: <span style="color:red;">It is the Spaces present between the cells.</span></h3>
+          <h3>Cellpadding: <span style="color:Red;">It is the Space present between the text and cell border.</span>
+          </h3>
+          <h3>Figure illustrating Cellpadding and Cellspacing in a table.</h3>
+          <img src="images/cellspacing.png" alt="error" style="width:100%;" />
+      </p>
+      </center>
+
+      <p>Example1:<br><br>
+        Q.write html code to draw the following table using html and then modify the code into html 5.<br><br>
+        <center><img src="images/q1.png" alt="error" style="width:100%;" /></center><br><br>
+        <center>
+          <h3>HTML code:<br><br>
+            <img src="images/q11.png" alt="error" style="width:100%;" /><br><br><br><br>
+            <h3>HTML 5 code:</h3>
+            <img src="images/q11html5.png" alt="error" style="width:100%;" />
+          </h3>
+        </center>
+      </p>
+
+
+      <h3>NOTE: In html three new table tags were introduced they are, thead,tbody,tfoot.
+        <br>
+        1)<font color="red">&lt;thead&gt; &lt;/thead&gt; </font> : thead is a container tag which is use to hold the
+        heading section of the table.<br>
+        2)<font color="red">&lt;tbody&gt; &lt;/tbody&gt;</font>: tbody is a container tag which is use to hold the body
+        section of the table containing data other than the heading and footer.<br>
+        3)<font color="red">&lt;tfoot&gt; &lt;/tfoot&gt;</font>: tfoot is a container tag which is use to hold the
+        footer section of the table if needed.<br>
+      </h3>
+      <center>Figure illustrating the newly added table tags in html 5.<br>
+        <img src="images/q11example.png" alt="error" style="width:100%;" style="cursor: zoom-out;" />
+      </center>
+    </div>
+    <center>
+      <h3>Phase 2:Working with <font color="red">rowspan</font> attribute of table tag</h3>
+      <p>
+        rowspan attribute is use to merge rows in a table.<br>
+        Lets understand it with the help of a basic example:<br>
+        Follow these steps to understand rowspan and freely use it to create tables.<br>
+        <img src="images/rspan.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+        HTML code solution for the above table:<br><br>
+        <img src="images/rspan1.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      <h3>Lets look another example to understand rowspan:</h3>
+      <img src="images/rspan2.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      HTML Source code for the above table.<br><br>
+      <img src="images/rspan2code.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+
+      <h3>Practice Assignments:</h3>
+      1) <br><img src="images/rspan3.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br>
+      <br>
+      2)<br><img src="images/rspan4.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      </p>
+      <h3>Understanding <font color="red">colspan</font> attribute of table tag in html</h3>
+      colspan attribute is use to combine or merge columns.<br>
+      Let's understand colspan attributes with the help of an example.
+      <br>
+      <img src="images/colspan.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      Code Solution<br>
+      <img src="images/colspan1.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      <br><br>
+      Example 2:
+      <br><img src="images/colspan2.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      Solution:<br><br>
+      <img src="images/colspan22.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      <h3>Practice Assignments on colspan:</h3>
+      1)<br>
+      <img src="images/cspan.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br>
+      <br>
+      2)<br>
+      <img src="images/cspana.png" alt="error" style="width:100%;" style="cursor: zoom-in;" />
+      <br><br>
+      <h3>Now lets Practice both rowspan and colspan.</h3>
+      <img src="images/rac.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
+      Solution:<br><br>
+      <img src="images/rac1.png" alt="error" style="width:100%;" style="cursor: zoom-in;" />
+
+      <h3>Practice Assignments to get better at creating Tables.</h3>
+      1)<br>
+      <img src="images/ass1.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br>
+      <br><br>
+      2)<br>
+      <img src="images/ass2.png" alt="error" style="width:100%;" style="cursor: zoom-in;" />
+    </center>
+  </div>
+
+  <div class="footer">
+    <footer style="background-color:#1177ca; color:white;">
+      <div id="foot">
+        <h3>Designed And Developed by Piyush Srivastava</h3>
+        <p>
+          Founder:Piyush Srivastava<br>
+          Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development
+          and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with
+          clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p>
+      </div>
+      <div class="foot">
+        <div>
+          <ul>Social Links
+            <hr><br>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+            <li>Email</li>
+            <li>Youtube</li>
+          </ul>
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <div>
+          <ul>Courses
+            <hr><br>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>LibreOffice</li>
+            <li>Java</li>
+          </ul>
         </div>
-        
-        <div class="nav-links">
-            <ul>
-          <li><a href="#" target="_blank">Home</a></li>
-          <li><a href="index.html" target="_blank">HTML</a></li>
-          <li><a href="CSS.html" target="_blank">CSS</a></li>
-          <li><a href="#" target="_blank">Javascript</a></li>
-          <li><a href="C++.html" target="_blank">C++</a></li>
-          <li><a href="MCQ.html" target="_blank">Mcqs</a></li>
-          <a class="icon">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-youtube"></i>
-
-          </a>
-            </ul>
+        <div>
+          <ul>Roadmaps:
+            <hr><br>
+            <li>FrontEnd Development</li>
+            <li>Backend Development</li>
+            <li>Devops</li>
+          </ul>
         </div>
-      </div><br><br><br>
+        <div>
+          <ul>Jobs
+            <hr><br>
+            <li>Remote Jobs</li>
+            <li>Government Jobs</li>
+            <li>Internships</li>
+          </ul>
+        </div>
+      </div>
 
-<div class="container">
- <div class="links">
- 
-	<p>
-<h3 id="a1">What is HTML?</h3>
-<ul>
-<li>HTML Stands For Hypertext Markup Language.</li>
-<li>HTML is a Markup Language which is use to create Web Pages.</li>
-<li>HTML was Developed by Tim Berners Lee in 1991.</li>
-</ul>
-<h3 id="a2">What is Markup?</h3>
-<ul>
-<li>Markup means it uses tags to define elements and add information.</li>
-<li>A typical markup language contains the text within the tags.</li>
-<li>Ex: <strong>This is Strong Tag of HTML</strong> </li>
-</ul>
-</p>
-<p>
-<h3 id="a3">History of HTML.</h3>
-<ul>
-<li>HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and accessible via web browsers</li>
-<li>Then comes HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with that few additional features</li>
-<li>Then comes HTML 3.0, where Dave Raggett introduced a fresh paper or draft on HTML. It included improved new features of HTML, giving more powerful characteristics for webmasters in designing web pages</li>
-<li>Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which is currently released and used worldwide.</li>
-<li>HTML 5 can be said for an extended version of HTML 4.01, which was published in the year 2012.</li>
-</ul>
-</p>
+    </footer>
+  </div>
+  </div>
+  <script type='text/javascript'>
+    (function (I, L, T, i, c, k, s) { if (I.iticks) return; I.iticks = { host: c, settings: s, clientId: k, cdn: L, queue: [] }; var h = T.head || T.documentElement; var e = T.createElement(i); var l = I.location; e.async = true; e.src = (L || c) + '/client/inject-v2.min.js'; h.insertBefore(e, h.firstChild); I.iticks.call = function (a, b) { I.iticks.queue.push([a, b]); }; })(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
+  </script>
 
-<p>
-<h3 id="a4">What is Tag?</h3>
-<ul>
-<li>HTML tags are like keywords which defines that how web browser will format and display the content.</li>
-<li>With the help of tags, a web browser can distinguish between an HTML content and a simple content.</li>
-<li>HTML tags contain three main parts: opening tag, content and closing tag.</li>
-<li>Ex: <b>&lt;b&gt;</b> This is bold Tag of HTML &lt;/b&gt;<br/>
-<b>&lt;b&gt;</b> --->It is opening tag<br/>
-<b>&lt;/b&gt;</b> --->It is closing tag<br/>
-This is bold Tag of HTML--->This is content
-</li>
-</ul>
-</p>
-<p>
-<h3 id="a6">Types of HTML Tags :</h3>
-<ol>
-<li id="a6.1"><b>Paired or container Tag</b> 
+  <script>
+    var loader = document.getElementById("preloader");
 
-
-ex:	&lt;html&gt; ---&lt;/html&gt; <br>
-	&lt;head&gt; ---&lt;/head&gt;<br>
-	&lt;body&gt; ---&lt;/body&gt;<br>
-	&lt;b&gt; ---&lt;/b&gt;
-
-</li>
-<li id="a6.2"><b>Empty or Singular Tag</b><br/>
-
-ex: &lt;img/&gt; --->Use to add images on webpage.<br>
-	&lt;br/&gt; --->Use to Break Line<br>
-	&lt;hr/&gt;--->Use to add Horizontal Line
-
-</li>
-<li id="a6.3"><b>Block Level Tag</b><br/>
-The Tag that produces line break itself are known as Block Level Tag<br/>
-
-ex:	The &lt;p&gt;---&lt;/p&gt;----> tag is block level tag it produce line break. <br>
- &lt;h1&gt;&lt;/h1&gt; ---->Use to add Biggest Heading.<br>
- &lt;div&gt;&lt;/div&gt;--->Use to create division in webpage. 
-
-</li>
-<li id="a6.4"><b>Inline Level Tag</b><br/>
-The tag which doesn't produce line break are called Inline Level Tag.<br>
-
-	&lt;b&gt;---&lt;/b&gt; --->use to bold a text.<br>
-	&lt;img/&gt; --->Use to insert image in the webpage
-
-
-</li>
-</ol>
-</p>
-<p id="a7">
-<h3>Basic Structure of HTML</h3>
-<center><img src="images/one.png" alt="check path please"  title="Click to enlarge" style="width:100%;"/></center>
-<ul>
-<li><b>&lt;html&gt;</b>--->It represents the root of an HTML document.</li>
-<li><b>&lt;head&gt;</b>--->It is used to define the head portion of the document which contains information related to the document. 
-The <b>&lt;head&gt;</b> tag contains other head elements such as &lt;title&gt;, <b>&lt;meta&gt;</b>, &lt;link&gt;, &lt;style&gt; &lt;link&gt; etc. 
-In HTML 4.01 the &lt;head&gt; element was mandatory but in HTML5, the <head> element can be omitted.</li>
-<li><b>&lt;body&gt;</b>--->It acts as the body of the webpage. All components of the webpage is written within body tag.</li>
-</ul>
-</p>
-<hr/>
-<p id="a8">
-<h3> Basic Structure of HTML 5</h3>
-<center><img src="images/two.png" alt="error" title="Click to enlarge" style="width:100%;"/></center>
-
-<figcaption>Example 2:</figcaption>
-<center><img src="images/three.jpg"   title="Click to enlarge" style="width:100%;"/></center>
-<h3>HTML 5 Elements:</h3>
-<p>1) <b>html</b> ---> It is the root element of our webpage. <br>
-2) <b>head</b> ---> head tag is used to add title to our webpage and add fevicon icon .<br>
-3) <b>title</b> ---> title tag is used to add title to our webpage and the title is shown in the tab bar.<br>
-4) <b>meta</b> --->Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s source code. Meta tags are essentially little content descriptors that help tell search engines what a web page is about.<br>
-5) <b>link </b>---> Use to add external css file into our html file<br>
-6) <b>body</b> ---> it contain all the content present in our webpage.<br>
-7) <b>header</b> ---> use to prepare header of our webpage which consist of companies logo and Companies name and Navigation bars<br>
-
-8) <b>nav</b> ---> nav tag is used to create navigation bars<br>
-9) <b>main</b> --->this tag contain the main content of our webpage that is content between header and footer tag .<br>
-10) <b>section</b> ---> section tag is use to divide webpage into different sections<br>
-11) <b>article</b> ---> article tag is used to add text which is totally independent from the rest of the content on the webpage,example news forums, blogs etc.<br>
-12) <b>aside</b> ---> Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage</p>
-
-<hr/>
-<p id="f">
-<h3>Formatting Tags in HTML5:</h3>
-<ol>
-<li><h3>&lt;strong&gt; Tag and &lt;b&gt; Tag:</h3><br>
-These tags are used to apply bold formatting on a text enclosed between strong or b tag.
-<br>
-Ex: As Shown in the figure below.<br>
-<center><img src="images/four.png" alt="error" title="Click to enlarge" style="width:100%;" /></center>
-<br>
-Output of the above code :<br>
-<center><img src="images/four1.png" alt="error"  title="Click to enlarge" style="width:100%;"/></center>
-</li>
-
-<li><h3>&lt;i&gt; Tag and &lt;em&gt; Tag</h3><br>
-These tags are used to add italic and emphasized formatting on the text present between these tags.<br>
-<h3>Example of i and em tag in html.</h3>
-<center><img src="images/five.png" height="350vh" width="800vw" title="Click to enlarge" style="width:100%;"/></center>
-<br>
-<h3>Output:</h3>
-<center><img src="images/five1.png" width="600vw" title="Click to enlarge" style="width:100%;"/></center>
-</li>
-<li><h3>
-&lt;u&gt; Tag and &lt;ins&gt; Tag</h3><br>
-These tags are used to used to underline the content present between them,ins stands for inserted text.<br>
-<h3>Example:</h3>
-<br>
-<center><img src="images/six.png" height="400vh" width="800vw" title="Click to enlarge" style="width:100%;"/></center>
-<br>
-Output:<br>
-<center><img src="images/six1.png"  height="130vh" width="500vw" title="Click to enlarge" style="width:100%;"></center>
-
-</li>
-<li><h3>
-&lt;del&gt; Tag and &lt;strike&gt; Tag</h3><br>
-These tags are used to add a line in the middle of the text present between these tags.
-<h3>For Example:</h3>
-<br>
-<center><img src="images/seven.png" width="800vw" title="Click to enlarge" style="width:100%;" /><br></center>
-Output is:<br>
-<center><img src="images/seven1.png" width="600vw" title="Click to enlarge" style="width:100%;"></center>
-
-</li>
-<li><h3>
-&lt;sup&gt;Tag and &lt;sub&gt;Tag</h3><br>
-sup tag is used to make text superscript,whereas sub tag is use to make text subscript.
-<h3>Example:</h3><br>
-<center><img src="images/eight.png"  width="800vw" title="Click to enlarge" style="width:100%;"><br></center>
-Output:<br>
-
-<center><img src="images/eight1.png" width="600vw" title="Click to enlarge" style="width:100%;"></center>
-</li>
-<li><h3>
-&lt;big&gt;Tag and &lt;small&gt;Tag</h3><br>
-big tag is use to increase the font size of text one more than the remaining text.<br>
-small tag is use to decrease the font size of text one less than the remaining text.<br>
-<h3>Example:</h3><br>
-<center><img src="images/nine.png" width="800vw" title="Click to enlarge" style="width:100%;"/><br></center>
-Output:<br>
-<center><img src="images/nine1.png" width="600vw" title="Click to enlarge" style="width:100%;"/></center>
-</li>
-<li><h3>
-&lt;mark&gt; Tag:<br></h3>
-This tag is used to highlight a text.<br>
-<h3>Example:<br>
-<center><img src="images/ten.png" width="800vw" title="Click to enlarge" style="width:100%;"/><br></center>
-Output:<br>
-<center><img src="images/ten1.png" width="600vw" title="Click to enlarge" style="width:100%;"></center>
-</li>
-</ol>
-</p>
-
-<p id="Heading">
-<h3>Heading Tags in HTML</h3>
-Heading Tags are used to create heading.<br/>
-<b>&lt;h1&gt;</b>-->Is used to create biggest heading.<br>
-<b>&lt;h6&gt;</b>-->Is used to create the smallest heading.<br>
-Example:<br>
-<center><img src="images/eleven.png" alt="oops" style="width:100%;" /></center><br>
-Output:<br>
-<center><img src="images/eleven1.png" alt="oops" style="width:100%;"/></center>
-
-	</p>
-
-<p id="inline">
-<h3>Understanding Block Level Tags</h3>
-<div style="text-align:justify;">A block-level element always starts on a new line and takes up the full width of a page, from left to right. A block-level element can take up one line or multiple lines and has a line break before and after the element.</div>
-
-Example:<br>
-<center><img src="images/twelve.png" alt="oops"style="width:100%;"/></center>
-<br>
-Output:<br>
-<center><img src="images/twelve1.png" alt="oops" style="width:100%;"/></center>
-<br>
-<center>
-<h3>Examples of blocks level tags in HTML.</h3>
-<table border="1px" cellspacing="0" cellpadding="0">
-<tr><th>Block Level Tags</th><th>Usage</th></tr>
-<tr><td>Heading Tags(&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;)</td><td>Use to create heading.</td></tr>
-<tr><td>Paragraph Tag(&lt;p&gt;)</td><td>Use to create Paragraphs</td></tr>
-<tr><td>Div Tag(&lt;div&gt;)</td><td>Use as a Universal Tag.Use to create division or sections of your webpage.</td></tr>
-<tr><td>Other examples </td><td><b>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;canvas&gt;&lt;dd&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;-&lt;h6&gt;&lt;header&gt;&lt;hr&gt;&lt;li&gt;&lt;main&gt;&lt;nav&gt;&lt;noscript&gt;&lt;ol&gt;&lt;p&gt;&lt;pre&gt;&lt;section&gt;&lt;table&gt;&lt;tfoot&gt;&lt;ul&gt;&lt;video&gt;</b></td></tr>
-</table>
-</center>
-<br>
-</p>
-<p>
-<h3>Understanding inline level elements.</h3>
-<div style="text-align:justify;">An inline element does not cause a line break (start on a new line) and does not take up the full width of a page, only the space bounded by its opening and closing tag. It is usually used within other HTML elements.<br></div>
-Example:<br>
-<center><img src="images/thirteen.png" alt="error" style="width:100%;"/></center>
-<br>
-Output:<br>
-<center><img src="images/thirteen1.png" alt="error" style="width:100%;"/></center>
-<center>
-<h3>Examples of Inline Level Tags in HTML.</h3>
-<table border="1px" cellpadding="0" cellspacing="0" >
-<tr><th>Inline Tag</th><th>Usage</th></tr>
-<tr><td>span Tag</td><td>span tag is used for grouping and applying styles to elements. It acts as a inline container.</td></tr>
-<tr><td>img Tag</td><td>Use to add Image on to our webpage</td></tr>
-<tr><td>mark Tag</td><td>Use to highlight a text.</td></tr>
-<tr><td>Other Tags:</td><td><b>&lt;a&gt;&lt;abbr&gt;&lt;acronym&gt;&lt;b&gt;&lt;bdo&gt;&lt;big&gt;&lt;br&gt;&lt;button&gt;&lt;cite&gt;&lt;code&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;img&gt;&lt;input&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;object&gt;&lt;output&gt;&lt;q&gt;&lt;samp&gt;&lt;script&gt;&lt;select&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;textarea&gt;&lt;time&gt;&lt;tt&gt;&lt;var&gt;</b></td></tr>
-</table>
-</center>
-</p>
-<p>
-<center><h3>Frame and Frameset Tag:</h3></center>
- 
-<p>1) Frameset is a collection of frames.<br>
-2) Frames are separate sections of your browser window where different html files will load.<br>
-3) If we want to display more than one html file on a single webpage in that case we must use Frame and Frameset Tag.<br>
-4) Note: We never use body tag along with Frameset Tag<br>
-5) "*" --->wildcard Character--->representing remaining spaces(for example: rows="40%,40%,*"--->*(Remaining Space=20%)</p>
-	<br>
-<h3>Example of Frameset Tag:</h3>
-<center><h3>1)Dividing Our webpage into two frames Vertically:(using <span style="color:red;">cols</span> attribute)</h3></center>
-<center><img src="images/fourteen.png" alt="error" style="width:100%;"/></center>
-<br>
-OUTPUT:
-<br>
-<center>
-<img src="images/fourteen1.png" alt="error" style="width:100%;" style="border:1px solid red;"/></center><br>
-
-
-<center><h3>2)Dividing Our webpage into two frames horizontally.(Using <span style="color:red;">rows</span> attribute)</h3></center>
-<center><img src="images/fifteen.png" alt="error" style="width:100%;"/></center><br>
-OUTPUT:<br>
-<center><img src="images/fifteen1.png" alt="error" style="width:100%;" style="border:1px solid red;"/></center>
-
-
-<center><h3>3)Divide your webpage into two rows where the second row is again divided into three columns.</h3></center>
-<center><img src="images/sixteen.png" alt="error" style="width:100%;" /></center><br>
-OUTPUT:<br>
-<center><img src="images/sixteen1.png" alt="error" style="width:100%;" style="border:1px solid red;"/></center>
-</p>
-<h3>Try To Create these Frames:</h3>
-<p>
-<ul>
-<li>Assignment 1<br><br>
-<center><img src="images/16.1.png" alt="error" style="width:100%;" style="border:1px solid red;"/></center>
-</li><br><br>
-<li>Assignment 2<br><br><center><img src="images/16.2.png" alt="error" style="width:100%;" style="border:1px solid red;"/></center></li>
-<li>Assignment 3<br><br><center><img src="images/16.3.png" alt="error" style="width:100%;" style="border:1px solid red;"/></center></li>
-</ul>
-
-
-<h3>Marquee Tag in html.</h3>
- 
-<p>1) Marquee tag is used toused to create a scrolling text or an image.</p>
-<p>2) It was used to make the text/image scroll horizontally across or vertically down the web page.</p>
- 
-Example:
-<center>
-<img src="images/marquee1.png" alt="error" style="width:100%;"/><br>
-OUTPUT:
-<br><br>
-<iframe style="width:100%;" src="videos/marquee1.mp4"></iframe></center>
-	<br><br>
-<center><h3>Behaviour of Marquee tags:</h3></center>
-<center><p>By Default the behavior of Marquee Tag is <span style="color:red;">Scroll</span><br>
-<center>
-<table border="1px" cellspacing="0" cellpadding="0" >
-<tr><th>Behavior attribute value</th><th>Working</th></tr>
-<tr><td>Scroll(By Default)</td><td>The element inside the marquee tag keeps on moving in a continuous loop.</td></tr>
-<tr><td>Slide</td><td>The element inside the marquee tag slide and stop when it reaches the end of the web page.(Right to left)</td></tr>
-<tr><td>alternate</td><td>The element inside the marquee tag move from left to right and then from right to left and this continuos.</td></tr>
-</table>
-
-</center>
-</p></center>
-<center>Example:</center>
-<center><img src="images/marquee2.png" alt="error" style="width:100%;"/></center><br><br>
-<center>OUTPUT:</center>
-<center><iframe src="videos/marquee2.mp4" style="width:100%;"></iframe></center>
-<br><br>
-<center><h3>Controlling the speed of the moving content of marquee tag using<span style="color:red;"> scrollamount attribute.</span></h3></center><br><br>
-<center><img src="images/marquee3.png" alt="error" style="width:100%;"/></center><br><br>
-<center><iframe src="videos/marquee3.mp4" style="width:100%;"></iframe></center><br><br>
-<center>Changing Direction of the content of the marquee tag using <span style="color:red;">direction attribute</span></center><br><br>
-<center><img src="images/marquee4.png" alt="error" style="width:100%;"/></center>
-<center><iframe src="videos/marquee4.mp4" style="width:100%;"></iframe></center>
-</p>
- 
-<h3>Table tag in HTML.</h3>
-<p>Table tag is used to create a Table in html.<br>
-<center>
-<table border="1px" cellspacing="0" cellpadding="0">
-<tr><th>Table Tags</th><th>Uses</th></tr>
-<tr><td>&lt;tr&gt;</td><td>use to create a row in a table.</td></tr>
-<tr><td>&lt;th&gt;</td><td>use to create table heading.</td></tr>
-<tr><td>&lt;td&gt;</td><td>use to create table data.</td></tr>
-<tr><td>&lt;thead&gt;</td><td>use to create a section which holds the table heading tags.</td></tr>
-<tr><td>&lt;tbody&gt;</td><td>use to create a section holding the table body other than the header and footer of a table.</td></tr>
-<tr><td>&lt;tfoot&gt;</td><td>use to create a section to hold the content of the footer part of the table.</td></tr>
-</table>
-<br>
-<h3>Creating a Simple Table having 2 rows and 2 columns.</h3>
-<br>
-Step1:<br>
-<img src="images/step1.png" alt="error" style="width:100%;"/><br><br>
-Step2:<br>
-<img src="images/step2.png" alt="error" style="width:100%;"/><br><br>
-Step3:<br>
-<img src="images/step3.png" alt="error" style="width:100%;"/><br><br>
-Output after step3:<br>
-<img src="images/step3output.png" alt="error" style="width:100%;"/><br><br>
-Step4:<br>
-<img src="images/step4.png" alt="error" style="width:100%;"/><br><br>
-Output after step4:<br>
-<img src="images/step4output.png" alt="error" style="width:100%;"/>
-<h3>CellSpacing: <span style="color:red;">It is the Spaces present between the cells.</span></h3>
-<h3>Cellpadding: <span style="color:Red;">It is the Space present between the text and cell border.</span></h3>
-<h3>Figure illustrating Cellpadding and Cellspacing in a table.</h3>
-<img src="images/cellspacing.png" alt="error" style="width:100%;"/>
-</p></center>
-
-<p>Example1:<br><br>
-Q.write html code to draw the following table using html and then modify the code into html 5.<br><br>
-<center><img src="images/q1.png" alt="error" style="width:100%;"/></center><br><br>
-<center><h3>HTML code:<br><br>
-<img src="images/q11.png" alt="error" style="width:100%;" /><br><br><br><br>
-<h3>HTML 5 code:</h3>
-<img src="images/q11html5.png" alt="error" style="width:100%;"/>
-</h3></center>
-</p>
-
-
-<h3>NOTE: In html three new table tags were introduced they are, thead,tbody,tfoot.
-<br>
-1)<font color="red">&lt;thead&gt; &lt;/thead&gt; </font> : thead is a container tag which is use to hold the heading section of the table.<br>
-2)<font color="red">&lt;tbody&gt;  &lt;/tbody&gt;</font>: tbody is a container tag which is use to hold the body section of the table containing data other than the heading and footer.<br>
-3)<font color="red">&lt;tfoot&gt;  &lt;/tfoot&gt;</font>: tfoot is a container tag which is use to hold the footer section of the table if needed.<br>
-</h3>
-<center>Figure illustrating the newly added table tags in html 5.<br>
-<img src="images/q11example.png" alt="error" style="width:100%;" style="cursor: zoom-out;"/></center>
-</div>
-<center>
-<h3>Phase 2:Working with <font color="red">rowspan</font> attribute of table tag</h3>
-<p>
-rowspan attribute is use to merge rows in a table.<br>
-Lets understand it with the help of a basic example:<br>
-Follow these steps to understand rowspan and freely use it to create tables.<br>
-<img src="images/rspan.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br><br>
-HTML code solution for the above table:<br><br>
-<img src="images/rspan1.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br><br>
-<h3>Lets look another example to understand rowspan:</h3>
-<img src="images/rspan2.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
-HTML Source code for the above table.<br><br>
-<img src="images/rspan2code.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
-
-<h3>Practice Assignments:</h3>
-1) <br><img src="images/rspan3.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br>
-<br>
-2)<br><img src="images/rspan4.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br><br>
-</p>
-<h3>Understanding <font color="red">colspan</font> attribute of table tag in html</h3>
-colspan attribute is use to combine or merge columns.<br>
-Let's understand colspan attributes with the help of an example.
-<br>
-<img src="images/colspan.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
-Code Solution<br>
-<img src="images/colspan1.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br><br>
-<br><br>
-Example 2:
-<br><img src="images/colspan2.png" alt="error" style="width:100%;" style="cursor: zoom-in;" /><br><br>
-Solution:<br><br>
-<img src="images/colspan22.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br><br>
-<h3>Practice Assignments on colspan:</h3>
-1)<br>
-<img src="images/cspan.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br>
-<br>
-2)<br>
-<img src="images/cspana.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/>
-<br><br>
-<h3>Now lets Practice both rowspan and colspan.</h3>
-<img src="images/rac.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br><br>
-Solution:<br><br>
-<img src="images/rac1.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/>
-
-<h3>Practice Assignments to get better at creating Tables.</h3>
-1)<br>
-<img src="images/ass1.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/><br>
-<br><br>
-2)<br>
-<img src="images/ass2.png" alt="error" style="width:100%;" style="cursor: zoom-in;"/>
-</center>
-</div>
-
-<div class="footer">
-	  <footer style="background-color:#1177ca; color:white;">
-	<div id="foot"> 
-<h3>Designed And Developed by Piyush Srivastava</h3> 
-<p>
-Founder:Piyush Srivastava<br>
-Bio:Piyush Srivastava is a A Level Certified Trainer, Trained 100+ Candidates in the field of Web Development and Programming Lanugages,An Open Source Contributer , contributed to 3+ Open source Projects, worked with clients like anythink form Wilco,Intern from IamHere software Lab,Suven Consultants,shine Projects. </p></div> 
-<div class="foot">
-<div>
-<ul>Social Links<hr><br>
-<li>LinkedIn</li>
-<li>Twitter</li>
-<li>Email</li>
-<li>Youtube</li>
-</ul></div>
-<div>
-<ul>Courses<hr><br>
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>LibreOffice</li>
-<li>Java</li>
-</ul></div>
-<div>
-<ul>Roadmaps:<hr><br>
-<li>FrontEnd Development</li>
-<li>Backend Development</li>
-<li>Devops</li>
-</ul></div>
-<div>
-<ul>Jobs<hr><br>
-<li>Remote Jobs</li>
-<li>Government Jobs</li>
-<li>Internships</li>
-</ul></div>
-</div>
-
-</footer>
-</div>
-    </div>                    
-<script type='text/javascript'>
-		(function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'yzXX7ENtB2Q7yZkCa_c', {});
-</script>	 
+    window.addEventListener("load", () => {
+      loader.style.display = "none"
+    })
+  </script>
 </body>
+
 </html>
