@@ -5,7 +5,7 @@ Welcome to One Liner Notes, this website is designed specially for university gr
 Our Aim is to Create an Open source Website where Anyone can share their Knowledge and gets help from the Contents present on our Websites.
 
 Main Goal of this Website is to always available with easy quick remember notes,Lots of Mcqs level wise and Easy explanation .
-View Full Website: https://piyush-sri.github.io/OneLiner.github.io/
+View Full Website: https://piyush-sri.github.io/OneLinerNotes.github.io/
 ## How to Get Started?
 
  How to get started❓
