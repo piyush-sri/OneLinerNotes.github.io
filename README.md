@@ -23,7 +23,7 @@ If you don't have git on your machine, [install](https://help.github.com/article
 ## Contribution Guidelines 🏗
 
 To start contributing, follow the below guidelines:
-
+**🌟.**  Star🌟 the repo to appreciate the work.<br><br>
 **0.**  Take a look at the existing [issues](https://github.com/piyush-sri/OneLiner.github.io/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
 **1.**  Fork [this](https://github.com/piyush-sri/OneLiner.github.io) repository.
@@ -101,3 +101,5 @@ git push -u origin <your_branch_name>
 Follow me :<br>
 <a href="https://www.linkedin.com/in/piyush-srivastava-395841192" ><img src="https://th.bing.com/th/id/R.abdb36b128f0cfcee1329ddb1365a99b?rik=Q8UtGzuevu7ZBw&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f04%2flinkedin_logo.jpg&ehk=WX0fSjGgisCu4YfNc2IBnr7nLADE%2f06resHyt%2fqG1pg%3d&risl=&pid=ImgRaw&r=0" alt="LinkedIN" width="50px" height="50px"/></a>
  
+ # Our Contributors:
+ <a href="https://github.com/piyush-sri/OneLiner.github.io/graphs/contributors"><img src="https://contrib.rocks/image?repo=piyush-sri/OneLiner.github.io" alt="piyush-sri" /></a>
