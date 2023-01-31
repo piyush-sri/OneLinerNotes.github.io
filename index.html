@@ -664,6 +664,29 @@
       loader.style.display = "none"
     })
   </script>
+  <style>
+    .foot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .foot div {
+      width: 100%;
+    }
+
+    .foot ul {
+      list-style: none;
+      width: 100%;
+    }
+
+    @media (max-width: 720px) {
+      .foot {
+        flex-direction: column;
+      }
+
+    }
+  </style>
 </body>
 
 </html>
